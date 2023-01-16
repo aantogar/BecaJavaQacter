@@ -1,7 +1,7 @@
 Esto es otra prueba creando otra rama.
-<<<<<<< HEAD
+
 Estamos probando cambios para utilizar comando "diff"
 Nuevos comandos, probando
-=======
-Estamos probando cambios para utilizar comando "diff"
->>>>>>> e0d15326605ba30f9d73c1c49d0a82167fadb3ad
+
+volvemos a probar!! hacemos otro cambio!!
+probando el comando restore
