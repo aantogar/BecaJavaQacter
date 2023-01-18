@@ -2,6 +2,8 @@ package primerosPasos;
 
 public class ArraysPrimeraClase {
 	public static void main(String[]args) {
+		
+		System.out.println("EJERCICIOS DE CLASE");
 		int []diaMes={31,28,31,30,31,30,31,31,30,31,30,21};
 		
 		int[][]elMes= new int[2][7];
