@@ -80,6 +80,16 @@ public class FraseDelReves {
 		}
 		System.out.println();
 		System.out.println(salida5);
+		
+		System.out.println("\n\nOTRA MANERA MÁS DE HACER EL EJERCICIO ANTERIOR:\n"
+				+ "");
+		salida+=(char)0;
+		int pos=0;
+		String salida6="";
+		while(salida.charAt(pos)!=(char)0) {
+			salida6=salida.charAt(pos++)+salida6;
+		}System.out.println(salida6);
+		
 	}
 
 }
