@@ -6,7 +6,7 @@ public class DeNumerosaLetras {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 String unidades[] = new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
+		 /*String unidades[] = new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
 	                "siete", "ocho", "nueve"};
 
 	        String especiales[] = new String[]{"diez","once", "doce", "trece", "catorce", "quince", "dieciseis",
@@ -45,7 +45,7 @@ public class DeNumerosaLetras {
 	         * Otra manera de solucionarlo
 	         *
 	         */
-	        /*Para hacer en el finde 
+	        //Para hacer en el finde 
 	        int unidads,decens;
 	        String[]parte1= new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
 	                "siete", "ocho", "nueve"};
@@ -57,8 +57,15 @@ public class DeNumerosaLetras {
 	        System.out.println("Introduce el numero en INTEGER: ");
 	        Scanner entrada1=new Scanner(System.in);
 	        int numero1=entrada1.nextInt();
-	        int dIndex = (numero/10)-2;
-            int uIndex = (numero%10);*/
+	        int dIndex = (numero1/10)-2;
+            int uIndex = (numero1%10);
+            if(numero1<10) {
+            	System.out.println(parte1[numero1]);
+            }else if(numero1<20) {
+            	System.out.println(parte2[numero1 -10]);
+            }else if(numero1<100) {
+            	System.out.println(part3[dIndex]+ " y "+parte1[uIndex]);
+            }
 	        
 
 	}
