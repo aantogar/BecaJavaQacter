@@ -2,7 +2,7 @@ package primerosPasos;
 
 import java.util.Arrays;
 
-public class Array_rellenado {
+public class ArrayRellenado {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

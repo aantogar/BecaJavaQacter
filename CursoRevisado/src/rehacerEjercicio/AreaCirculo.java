@@ -1,4 +1,4 @@
-package primerosPasos;
+package rehacerEjercicio;
 
 
 public class AreaCirculo {
@@ -6,10 +6,11 @@ public class AreaCirculo {
 
 	public static void main(String[] args) {
 		/**
-		 * Función con Math para calcular la longitud y area.
+		 * Funcion con Math para calcular la longitud y area.
 		 */
 		double area=Math.PI * Math.pow(radio, 2);
 		double longitud;
+		System.out.println("EJERCICIO CALCULAR MEDIDAS CÍRCULO: \n");
 		System.out.println("El área de un círculo con el radio: "+
 		radio+" es : "+area);
 		longitud= (2* Math.PI)*radio;

@@ -1,4 +1,4 @@
-package primerosPasos;
+package rehacerEjercicio;
 
 public class Ejercicio2MartesTarde {
 	static int nota=2;
