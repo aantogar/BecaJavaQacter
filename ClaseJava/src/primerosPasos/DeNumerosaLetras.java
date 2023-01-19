@@ -45,7 +45,7 @@ public class DeNumerosaLetras {
 	         * Otra manera de solucionarlo
 	         *
 	         */
-	        //Para hacer en el finde 
+	    	System.out.println("EJERCICIO DE CONVERSIÓN A LETRAS: \n");
 	        int unidads,decens;
 	        String[]parte1= new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
 	                "siete", "ocho", "nueve"};
@@ -53,7 +53,6 @@ public class DeNumerosaLetras {
                 "diecisiete", "dieciocho", "diecinueve"};
 	        String []part3 = new String[]{ "veinte", "treinta", "cuarenta", "cincuenta", "sesenta",
 	                "setenta", "ochenta", "noventa"};
-	        String mensaje="";
 	        System.out.println("Introduce el numero en INTEGER: ");
 	        Scanner entrada1=new Scanner(System.in);
 	        int numero1=entrada1.nextInt();
