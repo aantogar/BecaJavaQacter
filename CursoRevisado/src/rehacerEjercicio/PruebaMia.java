@@ -2,10 +2,12 @@ package rehacerEjercicio;
 
 import javax.swing.JOptionPane;
 
-public class Practicando {
+public class PruebaMia {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/**
+		 * Ejercicio realizado para recordar algunas funciones
+		 */
 		String nombre=JOptionPane.showInputDialog("Cual es tu nombre?");
 		String entrada=JOptionPane.showInputDialog("¿Hoy que día estás cursando de curso?");
 		int numdia=Integer.parseInt(entrada);

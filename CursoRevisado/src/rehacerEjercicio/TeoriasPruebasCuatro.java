@@ -2,7 +2,7 @@ package rehacerEjercicio;
 
 import java.time.LocalTime;
 
-public class primerosEjemplos {
+public class TeoriasPruebasCuatro {
 
 	private boolean seguro=false;
 	private int importe=0;

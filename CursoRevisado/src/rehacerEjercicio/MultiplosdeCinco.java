@@ -5,7 +5,6 @@ public class MultiplosdeCinco {
 	static final int num2=10;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		/**
 		 * Función realizada para calcular la suma ´
 		 * de los primeros diez múltiplos de 5.

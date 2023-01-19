@@ -1,6 +1,6 @@
 package rehacerEjercicio;
 
-public class DatosArray {
+public class TeoriaPruebasTres {
 	int[]miArray= {31,28,30,31,30,30,31,30,31,31,30,31};
 	static int[][]elMes= new int[5][7];
 	public static void main(String[]args) {

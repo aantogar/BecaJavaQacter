@@ -1,12 +1,20 @@
 package rehacerEjercicio;
 
 public class NumerosPrimos {
+	static boolean primo;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 boolean primo;
-		 	System.out.println("EJERCICIO DE NÚMEROS PRIMOS: ");
-	        System.out.println("Son números primos del 1 al 100:\n");
+		/**
+		 * Declaramos el ejercicio y 
+		 * llamamos a su método correspondiente
+		 */
+		 
+		 	System.out.println("EJERCICIO DE NÚMEROS PRIMOS\n");
+	        System.out.println("Son números primos del 1 al 100:");
+	        comprobarPrimos();
+
+	    }
+	public static void comprobarPrimos() {
 	      /**
 	       * Función realizada con un for y luego
 	       *  comprobamos con un if los que son primos para agregar contador
@@ -26,9 +34,11 @@ public class NumerosPrimos {
 	            }
 	        }
 	        System.out.println("El total de números primos es: "+contador);
-	    }
+	}
+		
+}
 
 
 	
 
-}
+

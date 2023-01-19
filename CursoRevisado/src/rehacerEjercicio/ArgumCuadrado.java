@@ -1,6 +1,6 @@
 package rehacerEjercicio;
 
-public class argsCuadrado {
+public class ArgumCuadrado {
 	static int num;
 	static int cuadrado;
 	public static void main(String[] args) {
