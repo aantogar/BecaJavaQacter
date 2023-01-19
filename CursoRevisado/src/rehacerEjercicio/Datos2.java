@@ -1,4 +1,4 @@
-package primerosPasos;
+package rehacerEjercicio;
 
 
 public class Datos2 {
