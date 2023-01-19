@@ -40,6 +40,26 @@ public class DeNumerosaLetras {
 	        }
 	        //si retorna null es porque el numero  no es valido
 	     
+	        
+	        /**
+	         * Otra manera de solucionarlo
+	         *
+	         */
+	        /*Para hacer en el finde 
+	        int unidads,decens;
+	        String[]parte1= new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
+	                "siete", "ocho", "nueve"};
+	        String[]parte2= new String[]{"diez","once", "doce", "trece", "catorce", "quince", "dieciseis",
+                "diecisiete", "dieciocho", "diecinueve"};
+	        String []part3 = new String[]{ "veinte", "treinta", "cuarenta", "cincuenta", "sesenta",
+	                "setenta", "ochenta", "noventa"};
+	        String mensaje="";
+	        System.out.println("Introduce el numero en INTEGER: ");
+	        Scanner entrada1=new Scanner(System.in);
+	        int numero1=entrada1.nextInt();
+	        int dIndex = (numero/10)-2;
+            int uIndex = (numero%10);*/
+	        
 
 	}
 	
