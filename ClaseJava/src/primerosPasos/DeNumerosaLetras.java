@@ -46,7 +46,6 @@ public class DeNumerosaLetras {
 	         *
 	         */
 	    	System.out.println("EJERCICIO DE CONVERSIÓN A LETRAS: \n");
-	        int unidads,decens;
 	        String[]parte1= new String[]{"cero", "uno", "dos", "tres", "cuatro", "cinco", "seis",
 	                "siete", "ocho", "nueve"};
 	        String[]parte2= new String[]{"diez","once", "doce", "trece", "catorce", "quince", "dieciseis",
