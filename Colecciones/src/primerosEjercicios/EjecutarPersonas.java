@@ -27,6 +27,11 @@ public class EjecutarPersonas{
 		Scanner entrada= new Scanner(System.in);
 		String nombre=entrada.nextLine();
 		c3.setNombre(nombre);
+		System.out.println("El nombre metido por consolda es: "+c3.getNombre()+"\n");
+		ClienteExportacion expor= new ClienteExportacion("Andrea", "Madrid", "andrea@gmailcom", "344334");
+		System.out.println("El cliente con nombre: "+expor.getNombre()+
+				"con residencia: "+expor.getDireccion()+ " y correo: "
+				+expor.getCorreo()+", su VAT es : "+expor.getVat());
 		
 		
 		

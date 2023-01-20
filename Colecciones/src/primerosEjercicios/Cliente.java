@@ -6,18 +6,13 @@ public  class Cliente extends Persona{
 	
 	
 	
-	public static void main(String[]args) {
-		
-		
-		
-	}
-	
 	public Cliente() {
 		super();
 		numeroCliente="13";
 		fechaAlta="24/02/2022";
 	
 	}
+
 
 	public String getFecha() {
 		return fechaAlta;

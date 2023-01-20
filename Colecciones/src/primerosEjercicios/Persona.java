@@ -1,11 +1,11 @@
 package primerosEjercicios;
 
-public abstract class Persona {
+public abstract class Persona implements Cosas{
 	private String nombre;
 	private String direccion;
 	private String correo;
 	
-	//abstract String aString();
+	//public abstract String aString();
 	
 	public String aString() {
 		return "nombre: " +nombre+" " + " y correo: "+ correo;
@@ -17,6 +17,7 @@ public abstract class Persona {
 		direccion="Madrid";
 		
 	}
+
 	public String getCorreo() {
 		return correo;
 	}
