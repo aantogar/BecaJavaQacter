@@ -1,5 +1,7 @@
 package primerosEjercicios;
 
+import java.util.Scanner;
+
 public class EjecutarPersonas{
 
 	
@@ -20,6 +22,12 @@ public class EjecutarPersonas{
 				"con nombre: "+usu1.getNombre()+
 				" hemos asignado un código "+usu1.getCodigo()+
 				" y también una ciudad: "+usu1.getDireccion());
+		Cliente c3=new Cliente();
+		System.out.println("Introduce el nombre del nuevo cliente: ");
+		Scanner entrada= new Scanner(System.in);
+		String nombre=entrada.nextLine();
+		c3.setNombre(nombre);
+		
 		
 		
 
