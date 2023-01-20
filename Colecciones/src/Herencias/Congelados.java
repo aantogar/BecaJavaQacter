@@ -23,9 +23,9 @@ public class Congelados extends Productos{
 
 	@Override
 	public String toString() {
-		return "Congelados [temprecomen=" + temprecomen + ", forma=" + forma + ", getTemprecomen()=" + getTemprecomen()
-				+ ", getForma()=" + getForma() + ", getFechaCaduc()=" + getFechaCaduc() + ", getNumLote()="
-				+ getNumLote() + "]";
+		return "Estos productos han sido congelados  con el método=" + forma + ", su temperatura reocmendada es"+ getTemprecomen()
+				+ "y su forma de congelación ha sido: " + getForma() + ", fecha de caducidad: " + getFechaCaduc() + "y su número de lote: "
+				+ getNumLote() + "";
 	}
 
 

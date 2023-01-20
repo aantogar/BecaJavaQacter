@@ -5,7 +5,7 @@ public class Frescos extends Productos{
 	private String fechaEnv;
 	
 	public Frescos() {
-		super();
+		super("2020-10-01","17171");
 	}
 
 	@Override
