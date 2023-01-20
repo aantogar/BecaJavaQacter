@@ -40,7 +40,7 @@ public class Main {
                 break;
             }
             default:{
-                System.out.println("No existe la opción disponible");
+                System.out.println("Error, no existe esta opción.");
             }
  
  
