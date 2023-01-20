@@ -94,7 +94,10 @@ public class Congelados extends Productos{
 		}else if(this.forma.equalsIgnoreCase("aire")) {
 			gramosSal();
 		}else if(this.forma.equalsIgnoreCase("nitrogeno")) {
-			System.out.println("Se ha congelado mediante nitrógeno y el tiempo ha sido de 10 horas.");
+			metNitro();
+		}else{
+			System.out.println("La forma de congelación introducida no es correcta.");
+					
 		}return forma;
 		
 	}
