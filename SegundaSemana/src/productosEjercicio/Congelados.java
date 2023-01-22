@@ -46,17 +46,7 @@ public class Congelados extends Productos{
 	public void setForma(String forma) {
 		this.forma = forma;
 	}
-	public void metNitro() {
-		String metodo="";
-		String tiempo="";
-		System.out.println("Introduzca el método de congelación de nitrógeno: ");
-        Scanner met= new Scanner(System.in);
-        metodo=	met.nextLine();
-        System.out.println("Introduzca el método de congelación de nitrógeno: ");
-        Scanner temp= new Scanner(System.in);
-        tiempo=	temp.nextLine();
-		System.out.println("  Se han utilizado el metodo"+metodo+" y el tiempo de congelación ha sido: "+tiempo);
-	}
+
 	public String comprobarTemp(String forma) {
 
 		if(this.forma.equalsIgnoreCase("agua")) {
