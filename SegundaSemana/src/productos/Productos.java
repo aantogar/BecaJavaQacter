@@ -1,4 +1,4 @@
-package Herencias;
+package productos;
 
 public class Productos {
 	private String fechaCaduc;

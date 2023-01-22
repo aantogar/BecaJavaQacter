@@ -1,4 +1,4 @@
-package Herencias;
+package productos;
 
 public class Refrigerados extends Productos{
 	private String codOrg;

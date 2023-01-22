@@ -1,4 +1,4 @@
-package Herencias;
+package figuras;
 
 import java.util.Scanner;
 

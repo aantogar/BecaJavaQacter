@@ -1,4 +1,4 @@
-package Herencias;
+package productos;
 
 public class Frescos extends Productos{
 	private String pais;

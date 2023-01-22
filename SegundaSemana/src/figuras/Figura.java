@@ -1,4 +1,4 @@
-package Herencias;
+package figuras;
 
 public class Figura {
 

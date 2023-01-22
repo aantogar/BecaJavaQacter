@@ -1,10 +1,10 @@
-package Herencias;
+package productos;
 
 import java.util.Scanner;
 
 public class Congelados extends Productos{
-	private String temprecomen;
-	private String forma;
+	protected String temprecomen;
+	protected String forma;
 
 
 	
@@ -43,38 +43,8 @@ public class Congelados extends Productos{
 		return comprobarTemp(forma);
 	}
 
-
-
 	public void setForma(String forma) {
 		this.forma = forma;
-	}
-	public void porcentaje() {
-		String nitro="";
-		String oxigeno="";
-		String dioxido="";
-		String vapor="";
-		System.out.println("Introduzca el porcentaje de composición de nitrogeno: ");
-        Scanner nt= new Scanner(System.in);
-        nitro=nt.nextLine();
-        System.out.println("Introduzca el porcentaje de composición de oxigeno: ");
-        Scanner ox= new Scanner(System.in);
-        oxigeno=ox.nextLine();
-        System.out.println("Introduzca el porcentaje de composición de dioxido: ");
-        Scanner diox= new Scanner(System.in);
-        dioxido=diox.nextLine();
-        System.out.println("Introduzca el porcentaje de composición de vapor de agua: ");
-        Scanner vap= new Scanner(System.in);
-        vapor=	vap.nextLine();
-		System.out.println("  Se ha congelado mediante agua ,"+nitro+"% de nitrogeno, "+
-				oxigeno+ "% de oxigeno, "+dioxido+"%de dioxido,y "+vapor+
-				"% vapor de agua");
-	}
-	public void gramosSal() {
-		String gramos="";
-		System.out.println("Introduzca los gramos de sal en agua: ");
-        Scanner gr= new Scanner(System.in);
-        gramos=	gr.nextLine();
-		System.out.println("  Se han utilizado "+gramos+"de sal por litro de agua para la salinización.");
 	}
 	public void metNitro() {
 		String metodo="";
@@ -89,12 +59,14 @@ public class Congelados extends Productos{
 	}
 	public String comprobarTemp(String forma) {
 
-		if(this.forma.equals("agua")) {
-			porcentaje();
+		if(this.forma.equalsIgnoreCase("agua")) {
+			Agua ag=new Agua("75","30","40","25");
+			System.out.println(ag.toString());
 		}else if(this.forma.equalsIgnoreCase("aire")) {
-			gramosSal();
+			Aire air=new Aire("200");
 		}else if(this.forma.equalsIgnoreCase("nitrogeno")) {
-			metNitro();
+			Nitrogeno n1=new Nitrogeno("metodo 2","15");
+			System.out.println(n1.toString());
 		}else{
 			System.out.println("La forma de congelación introducida no es correcta.");
 					
