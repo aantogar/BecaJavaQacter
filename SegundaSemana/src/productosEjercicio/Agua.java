@@ -9,7 +9,7 @@ public class Agua extends Congelados{
 	private String vapor;
 
 	public Agua(String ox, String diox, String vap, String nitro) {
-		super("-4", "agua");
+		super("", "agua");
 		this.oxigeno=ox;
 		this.dioxido=diox;
 		this.vapor=vap;
@@ -50,7 +50,7 @@ public class Agua extends Congelados{
 		return "Congelados por agua % de nitrogeno: " + nitro +
 				"%, oxigeno: " + oxigeno + "%, dioxido:" + dioxido + 
 				"% y de  vapor:" + vapor + 
-				". Temperatura recomendada: " + temprecomen + "y la forma:" + forma + ".";
+				".";
 	}
 
 	

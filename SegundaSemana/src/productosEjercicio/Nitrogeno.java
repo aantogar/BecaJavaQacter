@@ -14,9 +14,7 @@ public class Nitrogeno extends Congelados{
 	@Override
 	public String toString() {
 		return "La congelación por nitrogeno ha utilizado el metodo: " + metodo1 + 
-				", el tiempo ha sido de : " + tiempo + "horas. La temperatura recomendada: "
-				+ temprecomen + ". Forma de congelación: "
-				+ forma + ".";
+				", el tiempo ha sido de : " + tiempo + "horas.";
 	}
 
 	public String getMetodo1() {

@@ -4,14 +4,16 @@ public class Frescos extends Productos{
 	private String pais;
 	private String fechaEnv;
 	
-	public Frescos() {
-		super("2020-10-01","17171");
+	public Frescos(String pais,String fecha) {
+		super("2020-10-01",0);
+		this.pais=pais;
+		this.fechaEnv=fecha;
 	}
 
 	@Override
 	public String toString() {
-		return "Frescos [pais=" + pais + ", fechaEnv=" + fechaEnv + ", getFechaCaduc()=" + getFechaCaduc()
-				+ ", getNumLote()=" + getNumLote() + "]";
+		return "Productos frescos de procedencia de : " +getPais() + ", con fecha de envase" + getFechaEnv() + ", su fecha de caducidad: " + getFechaCaduc()
+				+ "y número de lote: " + getNumLote() + ".";
 	}
 
 	public String getPais() {

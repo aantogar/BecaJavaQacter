@@ -10,7 +10,7 @@ public class Congelados extends Productos{
 	
 
 	public Congelados(String temp, String forma) {
-		super("10-09-2022", "1331");
+		super("10-09-2022", 0);
 		this.temprecomen=temp;
 		this.forma=forma;
 		
@@ -19,16 +19,17 @@ public class Congelados extends Productos{
 
 
 	public String getTemprecomen() {
-		return " El tiempo recomendado ha sido : "+temprecomen;
+		return temprecomen;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "Estos productos han sido congelados  con el método=" + forma + ", su temperatura reocmendada es"+ getTemprecomen()
-				+ "y su forma de congelación ha sido: " + getForma() + ", fecha de caducidad: " + getFechaCaduc() + "y su número de lote: "
-				+ getNumLote() + "";
+		return "Estos productos han sido congelados  con el método: " + forma + ", su temperatura recomendada es: "
+				+getTemprecomen()+"y su forma de congelación ha sido: " 
+	+ comprobarTemp(forma) + ". Fecha de caducidad: " + getFechaCaduc() + " y su número de lote: "
+				+ getNumLote() + ".";
 	}
 
 

@@ -4,7 +4,7 @@ public class Aire extends Congelados{
 	private String gramosSal;
 
 	public Aire(String gramos) {
-		super("-16", "aire");
+		super("", "aire");
 		this.gramosSal=gramos;
 		// TODO Auto-generated constructor stub
 	}
@@ -18,7 +18,7 @@ public class Aire extends Congelados{
 	@Override
 	public String toString() {
 		return " La congelación mediante aire contiene" + gramosSal + 
-				"gramos de sal, temperatura recomendada: " + temprecomen + "y su forma de congelación: " + forma + ".";
+				"gramos de sal.";
 	}
 
 	public void setGramosSal(String gramosSal) {

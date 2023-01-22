@@ -2,12 +2,20 @@ package productosEjercicio;
 
 public class Productos {
 	private String fechaCaduc;
-	private String numLote;
+	private int numLote;
+	private static int num=0;
+	private boolean isFilled;
 	
-	public Productos(String fecha, String num) {
-		this.fechaCaduc=fecha;
-		this.numLote=num;
+	
+	public Productos(String fecha, int num) {
 		
+		this.fechaCaduc=fecha;
+		setNumLote();
+		
+		
+	}
+	public Productos() {
+		setNumLote();
 	}
 
 	public String getFechaCaduc() {
@@ -18,12 +26,14 @@ public class Productos {
 		this.fechaCaduc = fechaCaduc;
 	}
 
-	public String getNumLote() {
-		return numLote;
+	public  int getNumLote() {
+		return num;
 	}
 
-	public void setNumLote(String numLote) {
-		this.numLote = numLote;
+	public void setNumLote() {
+		num++;
+
+		
 	}
 	
 
