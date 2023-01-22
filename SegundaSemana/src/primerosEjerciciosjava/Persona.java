@@ -1,4 +1,4 @@
-package primerosEjercicios;
+package primerosEjerciciosjava;
 
 public abstract class Persona implements Cosas{
 	private String nombre;

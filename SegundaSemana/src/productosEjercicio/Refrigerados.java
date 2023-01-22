@@ -1,4 +1,4 @@
-package productos;
+package productosEjercicio;
 
 public class Refrigerados extends Productos{
 	private String codOrg;

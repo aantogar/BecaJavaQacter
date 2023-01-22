@@ -1,4 +1,4 @@
-package productos;
+package productosEjercicio;
 
 public class Nitrogeno extends Congelados{
 	private String metodo1;

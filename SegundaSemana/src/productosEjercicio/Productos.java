@@ -1,4 +1,4 @@
-package productos;
+package productosEjercicio;
 
 public class Productos {
 	private String fechaCaduc;

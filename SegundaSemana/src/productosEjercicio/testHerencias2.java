@@ -1,4 +1,4 @@
-package productos;
+package productosEjercicio;
 
 public class testHerencias2 {
 
