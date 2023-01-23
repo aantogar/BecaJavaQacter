@@ -13,13 +13,10 @@ public class Rectangulo extends Figura{
     //creo el objeto
  
  
-    public Rectangulo(double alto, double ancho, double area, double perimetro) {
-        super(area, perimetro);
-        System.out.println("Introduzca el alto");
-        Scanner sc= new Scanner(System.in);
-        this.alto = sc.nextDouble();
-        System.out.println("Introduzca el ancho");
-        this.ancho = sc.nextDouble();
+    public Rectangulo(double alto, double ancho) {
+        super();
+        this.alto = alto;
+        this.ancho = ancho;
     }
  
  
@@ -47,9 +44,7 @@ public class Rectangulo extends Figura{
     }
  
     public void setAlto(double alto) {
-        System.out.println("Introduzca el alto");
-        Scanner sc= new Scanner(System.in);
-        this.alto = sc.nextDouble();
+        this.alto = alto;
     }
  
     public double getAncho() {
@@ -57,9 +52,7 @@ public class Rectangulo extends Figura{
     }
  
     public void setAncho(double ancho) {
-        System.out.println("Introduzca el ancho");
-        Scanner sc= new Scanner(System.in);
-        this.ancho = sc.nextDouble();
+        this.ancho = ancho;
     }
 
 }

@@ -28,7 +28,7 @@ public class Main {
         switch(opcion){
             case 1:{
             	
-                Rectangulo rectangulo = new Rectangulo(0,0,0,0);
+                Rectangulo rectangulo = new Rectangulo(4.5,3.2);
                 System.out.println("Dibujando el rectangulo......Para un rectangulo de alto "+ rectangulo.getAlto()+ " y de ancho "+ rectangulo.getAncho()+
                 " el area del rectangulo es "+ rectangulo.getArea()+ " y su perimetro es "+
                 rectangulo.getPerimetro()
@@ -36,13 +36,13 @@ public class Main {
                 break;
             }
             case 2:{
-                Circulo circulo = new Circulo (0);
+                Circulo circulo = new Circulo (4.7);
                 System.out.println("Dibujando el circulo.....El radio del circulo es "+ circulo.getRadio()+ " con lo cual su area es "
                         + circulo.getArea()+ " y su perimetro es "+ circulo.getPerimetro());
                 break;
             }
             case 3:{
-                Triangulo triangulo = new Triangulo(0.0, 0.0, 0.00, 0.00, 0.00);
+                Triangulo triangulo = new Triangulo(2.4,3.2,2.0,2.0,2.0);
                 System.out.println("Dibujando triángulo.....el area del triangulo es "+ triangulo.getArea()+ " y su perimetro es "+
                         triangulo.getPerimetro());
                 break;

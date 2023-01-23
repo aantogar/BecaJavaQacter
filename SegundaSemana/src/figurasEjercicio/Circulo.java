@@ -7,14 +7,12 @@ public class Circulo extends Figura{
 	 
 	public Circulo(double radio) {
 		this.radio = radio;
-		calcularArea();
+		calcularArea(radio);
 		calcularPerimetro();
 	}
  
-	public void calcularArea() {
-		System.out.println("Introduzca el radio: ");
-        Scanner rad= new Scanner(System.in);
-        this.radio = rad.nextDouble();
+	public void calcularArea(double radio) {
+        this.radio = radio;
 		altura = Math.PI * Math.pow(radio, 2);
 	}
  
@@ -22,9 +20,7 @@ public class Circulo extends Figura{
 		ancho = 2 * Math.PI * radio;
 	}
 	public void setCirculo(double radio) {
-		System.out.println("Introduzca el alto");
-        Scanner rad= new Scanner(System.in);
-        this.radio = rad.nextDouble();
+        this.radio =radio;
 	}
 	public double getRadio() {
 		return radio;

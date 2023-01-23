@@ -17,31 +17,21 @@ public class Triangulo extends Figura{
 			this.lado1 = lado1;
 			this.lado2 = lado2;
 			this.lado3 = lado3;
-			calcularArea();
-			calcularPerimetro();
+			calcularArea(altura,base);
+			calcularPerimetro(lado1,lado2,lado3);
 		}
 	 
-		public void calcularArea() {
-			System.out.println("Introduzca la altura: ");
-	        Scanner alt= new Scanner(System.in);
-	        this.altura = alt.nextDouble();
-	        System.out.println("Introduzca la base: ");
-	        Scanner bas= new Scanner(System.in);
-	        this.base = bas.nextDouble();
+		public void calcularArea(double altura, double base) {
+	        this.altura = altura;
+	        this.base = base;
 			altura = base * altura / 2;
 		}
 	 
 	
-		public void calcularPerimetro() {
-			System.out.println("Introduzca lado 1: ");
-	        Scanner l1= new Scanner(System.in);
-	        this.lado1 = l1.nextDouble();
-	        System.out.println("Introduzca lado 2: ");
-	        Scanner l2= new Scanner(System.in);
-	        this.lado2 = l1.nextDouble();
-	        System.out.println("Introduzca lado 3: ");
-	        Scanner l3= new Scanner(System.in);
-	        this.lado2 = l1.nextDouble();
+		public void calcularPerimetro(double lado1,double lado2, double lado3) {
+	        this.lado1 = lado1;
+	        this.lado2 = lado2;
+	        this.lado3 = lado3;
 			ancho = lado1 + lado2 + lado3;
 		}
 	 
