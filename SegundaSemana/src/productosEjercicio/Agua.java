@@ -7,9 +7,10 @@ public class Agua extends Congelados{
 	private String oxigeno;
 	private String dioxido;
 	private String vapor;
-
-	public Agua(String forma,String temp,String ox, String diox, String vap, String nitro) {
-		super(forma, temp);
+	private String forma;
+	public Agua(String fecha,String forma,String temp,String ox, String diox, String vap, String nitro) {
+		super(fecha, temp);
+		this.forma=forma;
 		this.oxigeno=ox;
 		this.dioxido=diox;
 		this.vapor=vap;
@@ -22,9 +23,6 @@ public class Agua extends Congelados{
 	+ nitro + ", oxigeno: " + oxigeno + ", dioxido: " + dioxido + ", vapor: " + vapor
 				+ ". Su temperatura recomendada es: " + getTemprecomen() + ", Fecha de caducidad: "
 				+ getFechaCaduc() + "y su número de lote es : " + getNumLote() + ".";
-	}
-	public Agua(String temp, String forma) {
-		super(temp,forma);
 	}
 
 	public String getNitro() {

@@ -10,9 +10,7 @@ public class Nitrogeno extends Congelados{
 		this.tiempo=tiempo;
 		// TODO Auto-generated constructor stub
 	}
-	public Nitrogeno(String temp, String forma) {
-		super(temp,forma);
-	}
+
 
 	@Override
 	public String toString() {

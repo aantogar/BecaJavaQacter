@@ -15,13 +15,7 @@ public class Aire extends Congelados{
 	public String getGramosSal() {
 		return gramosSal;
 	}
-	public Aire(String temp, String forma) {
-		super(temp,forma);
-	}
 
-
-
-	
 	@Override
 	public String toString() {
 		return " Los productos han sido congelados mediante el método: "+
