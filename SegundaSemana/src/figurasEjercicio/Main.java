@@ -6,11 +6,17 @@ public class Main {
 
 	
 	public static void main(String[] args) {
+		//Probando clase figura y cambiar coordenadas
+		Punto coorde=new Punto();
+		Figura fig=new Figura();
+		fig.acceder(9,2,3);
+		
+	
+		//ejercicio de herencia de figuras
         boolean enEjecucion= true;
         do{
  
-        System.out.println("1.Rectan1"
-        		+ "gulo");
+        System.out.println("1.Rectan1gulo");
         System.out.println("2.Circulo");
         System.out.println("3.Triangulo");
         System.out.println("Seleccione una opcion");

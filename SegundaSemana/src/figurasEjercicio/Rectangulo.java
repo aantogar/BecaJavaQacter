@@ -30,7 +30,7 @@ public class Rectangulo extends Figura{
     }
  
     public void setArea(double area) {
-        this.area = area;
+        this.alto = area;
     }
  
     public double getPerimetro() {
@@ -39,7 +39,7 @@ public class Rectangulo extends Figura{
  
  
     public void setPerimetro(double perimetro) {
-        this.perimetro = perimetro;
+        this.ancho = perimetro;
     }
  
     public double getAlto() {

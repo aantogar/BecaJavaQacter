@@ -28,7 +28,7 @@ public class Triangulo extends Figura{
 	        System.out.println("Introduzca la base: ");
 	        Scanner bas= new Scanner(System.in);
 	        this.base = bas.nextDouble();
-			area = base * altura / 2;
+			altura = base * altura / 2;
 		}
 	 
 	
@@ -42,7 +42,7 @@ public class Triangulo extends Figura{
 	        System.out.println("Introduzca lado 3: ");
 	        Scanner l3= new Scanner(System.in);
 	        this.lado2 = l1.nextDouble();
-			perimetro = lado1 + lado2 + lado3;
+			ancho = lado1 + lado2 + lado3;
 		}
 	 
 	    public double getBas() {
