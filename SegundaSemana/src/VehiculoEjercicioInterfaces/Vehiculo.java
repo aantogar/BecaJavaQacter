@@ -1,6 +1,6 @@
 package VehiculoEjercicioInterfaces;
 
-public class Vehiculo implements interfazDos {
+public class Vehiculo implements interfazLeerGrabar {
 	private int numMarchas;
 	private int velocMax;
 	private int numChasis;
@@ -11,6 +11,8 @@ public class Vehiculo implements interfazDos {
 		this.velocMax=velocidad;
 		this.numChasis=numCh;
 		this.numRuedas=ruedas;
+		accesoBBDD dao=new accesoBBDD();
+		dao.Accesograbar(this);
 	}
 
 	public int getNumMarchas() {
@@ -49,16 +51,16 @@ public class Vehiculo implements interfazDos {
 
 
 	@Override
-	public void grabar(String dato) {
+	public void grabar() {
 		// TODO Auto-generated method stub
-		System.out.println("Grabando: "+dato);
+		//convierte dominio a SQL
 		
 	}
 
 	@Override
-	public void leer(String dato) {
+	public void leer() {
 		// TODO Auto-generated method stub
-		System.out.println("Leyendo: "+dato);
+		//convierte SQL a dominio
 		
 	}
 

@@ -7,9 +7,11 @@ public class Main {
 	
 	public static void main(String[] args) {
 		//Probando clase figura y cambiar coordenadas
-		Punto coorde=new Punto();
+		
 		Figura fig=new Figura();
 		fig.acceder(9,2,3);
+		
+		
 		
 	
 		//ejercicio de herencia de figuras

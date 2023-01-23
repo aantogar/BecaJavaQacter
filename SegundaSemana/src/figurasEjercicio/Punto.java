@@ -14,16 +14,29 @@ public class Punto extends Figura{
 	}
 	
 	public void cambiarCoordenadas(int num1, int num2 , int num3) {
-		this.x=num1;
-		this.e=num2;
-		this.y=num3;
+		this.y=num1;
+		this.x=num2;
+		this.e=num3;
 		System.out.println(" El valor de X es: "+x);
 		System.out.println(" El valor de E es: "+e);
 		System.out.println(" El valor de Y es: "+y);
+		inverso(y,x,e);
 		
 		
 		
 	}
+	public void inverso(int num1,int num2,int num3) {
+		this.y=num1;
+		this.x=num2;
+		this.e=num3;
+		int[]lista= {y,x,e};
+		for (int i = lista.length - 1;i >= 0; i--) {
+		    System.out.println("Las cordenadas a la inversa : "+lista[i]);
+		}
+		
+	}
+		
+	
 	public Punto() {
 		
 	}
