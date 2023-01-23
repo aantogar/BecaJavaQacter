@@ -8,13 +8,23 @@ public class Agua extends Congelados{
 	private String dioxido;
 	private String vapor;
 
-	public Agua(String ox, String diox, String vap, String nitro) {
-		super("", "agua");
+	public Agua(String forma,String temp,String ox, String diox, String vap, String nitro) {
+		super(forma, temp);
 		this.oxigeno=ox;
 		this.dioxido=diox;
 		this.vapor=vap;
 		this.nitro=nitro;
 
+	}
+	@Override
+	public String toString() {
+		return "Alimentos congelados por : "+getForma()+" Porcentajes, nitrógeno: " 
+	+ nitro + ", oxigeno: " + oxigeno + ", dioxido: " + dioxido + ", vapor: " + vapor
+				+ ". Su temperatura recomendada es: " + getTemprecomen() + ", Fecha de caducidad: "
+				+ getFechaCaduc() + "y su número de lote es : " + getNumLote() + ".";
+	}
+	public Agua(String temp, String forma) {
+		super(temp,forma);
 	}
 
 	public String getNitro() {
@@ -43,16 +53,6 @@ public class Agua extends Congelados{
 	public void setVapor(String vapor) {
 		this.vapor = vapor;
 
-	}
-
-	@Override
-	public String toString() {
-		return "Congelados por agua % de nitrogeno: " + nitro +
-				"%, oxigeno: " + oxigeno + "%, dioxido:" + dioxido + 
-				"% y de  vapor:" + vapor + 
-				".";
-	}
-
-	
+	}	
 
 }

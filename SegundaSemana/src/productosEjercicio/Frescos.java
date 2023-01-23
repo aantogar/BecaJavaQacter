@@ -5,7 +5,7 @@ public class Frescos extends Productos{
 	private String fechaEnv;
 	
 	public Frescos(String pais,String fecha) {
-		super("2020-10-01",0);
+		super();
 		this.pais=pais;
 		this.fechaEnv=fecha;
 	}

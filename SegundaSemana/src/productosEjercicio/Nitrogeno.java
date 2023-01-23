@@ -4,17 +4,21 @@ public class Nitrogeno extends Congelados{
 	private String metodo1;
 	private String tiempo;
 
-	public Nitrogeno(String metodo,String tiempo) {
-		super("-18", "nitrogeno");
+	public Nitrogeno(String metodo,String tiempo,String temp,String forma) {
+		super(temp,forma);
 		this.metodo1=metodo;
 		this.tiempo=tiempo;
 		// TODO Auto-generated constructor stub
 	}
+	public Nitrogeno(String temp, String forma) {
+		super(temp,forma);
+	}
 
 	@Override
 	public String toString() {
-		return "La congelación por nitrogeno ha utilizado el metodo: " + metodo1 + 
-				", el tiempo ha sido de : " + tiempo + "horas.";
+		return "Los productos han sido congelados por : " + getForma() + 
+				", con el método : " + getMetodo1() + ", el tiempo ha sido de : "+getTiempo()+
+				". Su fecha de caducidad es: "+getFechaCaduc()+" y su número de lote es: "+getNumLote();
 	}
 
 	public String getMetodo1() {

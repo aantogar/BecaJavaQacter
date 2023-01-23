@@ -5,7 +5,7 @@ public class Refrigerados extends Productos{
 	
 	
 	public Refrigerados(String codigo) {
-		super("10-20-2020", 0);
+		super();
 		this.codOrg=codigo;
 	}
 

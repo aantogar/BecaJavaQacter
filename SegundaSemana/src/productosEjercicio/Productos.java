@@ -1,10 +1,10 @@
 package productosEjercicio;
 
-public class Productos {
+public abstract class  Productos {
 	private String fechaCaduc;
 	private int numLote;
 	private static int num=0;
-	private boolean isFilled;
+
 	
 	
 	public Productos(String fecha, int num) {

@@ -2,19 +2,21 @@ package productosEjercicio;
 
 import java.util.Scanner;
 
-public class Congelados extends Productos{
-	protected String temprecomen;
-	protected String forma;
+public  class Congelados extends Productos{
+	private String temprecomen;
+	private String forma;
+	
 
 
 	
 
 	public Congelados(String temp, String forma) {
-		super("10-09-2022", 0);
+		super();
 		this.temprecomen=temp;
 		this.forma=forma;
 		
 	}
+
 
 
 
@@ -28,7 +30,7 @@ public class Congelados extends Productos{
 	public String toString() {
 		return "Estos productos han sido congelados  con el método: " + forma + ", su temperatura recomendada es: "
 				+getTemprecomen()+"y su forma de congelación ha sido: " 
-	+ comprobarTemp(forma) + ". Fecha de caducidad: " + getFechaCaduc() + " y su número de lote: "
+	+ getForma() + ". Fecha de caducidad: " + getFechaCaduc() + " y su número de lote: "
 				+ getNumLote() + ".";
 	}
 
@@ -41,27 +43,11 @@ public class Congelados extends Productos{
 
 
 	public String getForma() {
-		return comprobarTemp(forma);
+		return forma;
 	}
 
 	public void setForma(String forma) {
 		this.forma = forma;
 	}
 
-	public String comprobarTemp(String forma) {
-
-		if(this.forma.equalsIgnoreCase("agua")) {
-			Agua ag=new Agua("75","30","40","25");
-			System.out.println(ag.toString());
-		}else if(this.forma.equalsIgnoreCase("aire")) {
-			Aire air=new Aire("200");
-		}else if(this.forma.equalsIgnoreCase("nitrogeno")) {
-			Nitrogeno n1=new Nitrogeno("metodo 2","15");
-			System.out.println(n1.toString());
-		}else{
-			System.out.println("La forma de congelación introducida no es correcta.");
-					
-		}return forma;
-		
-	}
 }

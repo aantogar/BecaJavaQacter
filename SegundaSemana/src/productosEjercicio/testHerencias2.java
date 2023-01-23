@@ -3,7 +3,7 @@ package productosEjercicio;
 public class testHerencias2 {
 
 	public static void main(String[] args) {
-		Congelados cong1=new Congelados("10", "nitrogeno");
+		Congelados cong1=new Congelados("10","agua");
 		//System.out.println(cong1.toString());
 		Congelados c2=new Congelados("-5","agua");
 		System.out.println(c2.toString());
