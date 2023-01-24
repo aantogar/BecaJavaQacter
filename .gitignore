@@ -3,4 +3,4 @@ org.eclipse.*
 .metadata
 bin/
 tmp/
-/classpath
+./classpath
