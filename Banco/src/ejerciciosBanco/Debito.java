@@ -34,20 +34,16 @@ public class Debito extends Tarjeta{
 	@Override
 	public void ingresar(double x) throws Exception {
 		// TODO Auto-generated method stub
-		this.getCuentasoc().ingresar(x);
+		getCuentasoc().ingresar(x);
 	}
 
 	@Override
 	public void retirar(double x) throws Exception {
 		// TODO Auto-generated method stub
-		this.getCuentasoc().retirar(x);
+		getCuentasoc().retirar(x);
 	}
 
-	@Override
-	public String toString() {
-		return "Cuenta del titular: " + getTitular() + ", nº de cuenta" + getNumero() + "\nSaldo: "+ getSaldo()+
-				".Ha realizado los siguientes movimientos: "+mostrarMovimientos();
-	}
+
 
 
 

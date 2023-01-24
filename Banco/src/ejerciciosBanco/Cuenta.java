@@ -14,6 +14,7 @@ public  class Cuenta {
 	public Cuenta(String numero,String titular) {
 		this.titular=titular;
 		this.numero=numero;
+		
 	}
 	public Cuenta() {
 		
@@ -42,6 +43,7 @@ public  class Cuenta {
 	
 	public void ingresar(String concepto, double x) throws Exception {
 		Movimiento mov=new Movimiento();
+		List<Movimiento>set=getMovimientos();
 		if(x<=0)
 			throw new Exception("No se ha podido ingresar la cantidad.");
 		mov.setConcepto(concepto);
@@ -60,7 +62,7 @@ public  class Cuenta {
 		try {
 			if(x>0 || getSaldo()>x) {
 			mov.setConcepto(concepto);
-			mov.setMiimporte(-x);
+			mov.setMiimporte(x);
 			addMovimiento(mov);
 			}
 		}catch(Exception e) {
@@ -87,20 +89,23 @@ public  class Cuenta {
 	public List<Movimiento> getMovimientos() {
 		return movimientos;
 	}
-	public String mostrarMovimientos()  {
+	public void setMovimientos(List<Movimiento> movimientos) {
+		//Creo un nuevo HashSet identico al que se recibe para evitar lios con el
+		// pointer.
+		this.movimientos = new ArrayList<Movimiento>(movimientos);
+	}
+	public void mostrarMovimientos()  {
 		
-		String resultado = "\nListado de movimientos de la Cuenta " + getNumero() + ":\n";
-		for (int i=0;i<movimientos.size();i++) 
-		resultado += movimientos.get(i) + "\n";
-		
-		return resultado;
+		for (int i=0;i<movimientos.size();i++) {
+			System.out.println(movimientos.get(i).getMovimientos());
+		}
 
 	}
 
 	@Override
 	public String toString() {
 		return "Cuenta del titular: " + getTitular() + ", nº de cuenta" + numero + "\nSaldo: "+ getSaldo()+
-				".Ha realizado los siguientes movimientos: "+mostrarMovimientos();
+				".Ha realizado los siguientes movimientos: "+getMovimientos();
 	}
 
 	public void setMovimientos(List<Movimiento> movimientos,Movimiento m) {
@@ -109,7 +114,9 @@ public  class Cuenta {
 		
 	} 
 	protected void addMovimiento(Movimiento m) {
-		movimientos.add(m);
+		List<Movimiento>mov=getMovimientos();
+		mov.add(m);
+		;
 		
 	}
 

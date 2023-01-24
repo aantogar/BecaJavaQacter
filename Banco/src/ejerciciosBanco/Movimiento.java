@@ -11,9 +11,14 @@ public  class Movimiento extends Cuenta{
 	private double miimporte;
 	
 	public Movimiento() {
-		super();
+		setFecha(LocalDate.now());
 		
 		
+	}
+
+	@Override
+	public String toString() {
+		return "Movimiento concepto: " + concepto + ", fecha" + fecha + ", miimporte=" + miimporte + "]";
 	}
 
 	public String getConcepto() {
