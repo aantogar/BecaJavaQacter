@@ -10,13 +10,16 @@ public class testBanco {
 		
 		LocalDate date=LocalDate.now();
 		Debito deb=new Debito("33456","Andrea",date);
-		deb.ingresar(500);
+		deb.getCuentasoc().ingresar(500);
 		deb.ingresar(2000);
 		deb.ingresar(1000);
 		//System.out.println(dbb.getCuentasoc().getSaldo());
-		Credito cred=new Credito("33456","Andrea",date);
+		Credito cred=new Credito("133113","Laura",date);
 		cred.getCuentasoc().ingresar(500);
-		System.out.println(deb.getMovimientos());
+		System.out.println(deb.getCuentasoc().toString());
+		cred.getCuentasoc().ingresar(2000);
+		//cred.getCuentasoc().retirar(300);
+		System.out.println(cred.getCuentasoc().toString());
 		
 		
 	}

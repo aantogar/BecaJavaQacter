@@ -58,12 +58,31 @@ public class Credito extends Tarjeta{
 		
 	}
 
+
+
 	@Override
 	public double getSaldo()  {
 		// TODO Auto-generated method stub
-		return super.getSaldo();
+		double resultado=0.0;
+		for(Movimiento mov: movimientosCred) {
+			resultado+=mov.getMiimporte();
+		}
+		return resultado;
+	}
+	public void setSaldo(double x) {
+		Movimiento mov = new Movimiento();
+		mov.setConcepto("Saldo ingresado: ");
+		mov.setMiimporte(x);
+		movimientosCred.add(mov);
 	}
 
+
+
+
+	@Override
+	public String toString() {
+		return "Credito : " +getSaldo() + super.toString() + " y \n"+getMovimientosCred()+"\n";
+	}
 
 	@Override
 	public void ingresar(double x) {
@@ -99,6 +118,10 @@ public class Credito extends Tarjeta{
 		
     		
 	}
+	protected void addMovimiento(Movimiento m) {
+		List<Movimiento>mov=getMovimientos();
+		mov.add(m);
+	}
 
 	public List<Movimiento> getMovimientosCred() {
 		return movimientosCred;
@@ -106,12 +129,14 @@ public class Credito extends Tarjeta{
 
 	public void setMovimientos(List<Movimiento> movimientosCred) {
 	
-		this.movimientosCred = new ArrayList<Movimiento>(movimientosCred);	// pointer.
+		this.movimientosCred = new ArrayList<Movimiento>(movimientosCred);	
 	}
 
 	@Override
-	public void retirar(double x)  {
-
+	public void retirar(double x) throws Exception  {
+		if(x<=3)
+			throw new Exception("No se ha podido ingresar la cantidad.");
+			retirar("Retirada de efectivo",x);	
 	}
 
 }

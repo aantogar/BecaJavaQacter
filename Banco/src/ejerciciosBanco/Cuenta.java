@@ -29,7 +29,7 @@ public  class Cuenta {
 	}
 	public void setSaldo(double x) {
 		Movimiento mov = new Movimiento();
-		mov.setConcepto("Añadido saldo");
+		mov.setConcepto("Saldo ingresado: ");
 		mov.setMiimporte(x);
 		movimientos.add(mov);
 	}
@@ -95,8 +95,8 @@ public  class Cuenta {
 
 	@Override
 	public String toString() {
-		return "Cuenta del titular: " + getTitular() + ", nº de cuenta" + numero + "\nSaldo: "+ getSaldo()+
-				".Ha realizado los siguientes movimientos: "+getMovimientos();
+		return "Cuenta del titular: " + getTitular() + ", nº de cuenta" + numero + "\n"+
+				".Ha realizado los siguientes movimientos: \n"+getMovimientos();
 	}
 
 	public void setMovimientos(List<Movimiento> movimientos,Movimiento m) {
