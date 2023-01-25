@@ -14,7 +14,7 @@ public class Credito extends Tarjeta{
 	private double comision=5/100;
 	private double minimo=3;
 	
-	public Credito(String numero,String titular,LocalDate fechacaduc) {
+	public Credito(String numero,String titular,LocalDate fechacaduc) throws Exception {
 		super(numero,titular,fechacaduc);
 	}
 
@@ -26,15 +26,30 @@ public class Credito extends Tarjeta{
 		this.credito = credito;
 	}
 	public void liquidar(int mes, int anio) {
-		Movimiento liq=new Movimiento();
-		liq.setConcepto("Liquidación de operaciones tarj.credito, "+anio+" y "+mes+
-			"."	);
-		double r=0.0;
+
+		double cantidad=0.0;
+		double total =0;
+		for(int i=0;i<movimientosCred.size();i++) {
+			Movimiento mov=movimientosCred.get(i);
+			if((mov.getFecha().getMonthValue() == mes && mov.getFecha().getYear()==anio)) {
+				total+=mov.getMiimporte();
+				this.movimientosCred.remove(mov);			
+			}
+		}
+			Movimiento liquidar=new Movimiento();
+			liquidar.setMiimporte(-total);
+			liquidar.setConcepto("Liquidación de operaciones tarj.credito, "+anio+" y "+mes+
+				" cantidad: "+total	);
+			getCuentasoc().addMovimiento(liquidar);
+		
+		
+	
+		
 		/*for(int i=this.movimientosCred.size()-1;i<=0;i--) {
 			if(m.getFecha().getMonthValue()==mes && m.getFecha().getYear() == anio) {
 				r+=m-getImporte
 				movimiendosCred.remove(i);
-			}*/
+			}
 		for(Iterator it=movimientosCred.iterator();it.hasNext();){
 			Movimiento m=(Movimiento)it.next();
 			if(m.getFecha().getMonthValue()==mes && m.getFecha().getYear()== anio) {
@@ -44,17 +59,20 @@ public class Credito extends Tarjeta{
 		liq.setMiimporte(r);
 		if(r!=0) {
 		getCuentasoc().addMovimiento(liq);
-			}
-		}
+			}*/
+		
 	}
 	
 
 	@Override
-	public void pagoEstablecimiento(String datos, double x) {
+	public void pagoEstablecimiento(String concepto, double x) {
 		// TODO Auto-generated method stub
-		/*datos=("Pago con la tarjeta de credito: "+x);
-		this.getCuentasoc().addMovimiento(datos, x);
-		credito-=x;*/
+		Movimiento mov=new Movimiento();
+		concepto=("Pago con la tarjeta de credito: ");
+		mov.setConcepto(concepto);
+		mov.setMiimporte(x);
+		getCuentasoc().addMovimiento(mov);
+		credito-=x;
 		
 	}
 
@@ -114,7 +132,7 @@ public class Credito extends Tarjeta{
 		mov.setConcepto(concepto);
 		mov.setMiimporte(x);
 		credito-=x;
-		getCuentasoc().addMovimiento(mov);
+		addMovimiento(mov);
 		
     		
 	}

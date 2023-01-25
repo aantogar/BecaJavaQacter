@@ -1,10 +1,16 @@
 package ejerciciosBanco;
 
 import java.util.ArrayList;
+import bancoUtils.Filtros;
 import java.util.Collection;
 import java.util.List;
 
 public  class Cuenta {
+
+	private final int MIN_NAME=15;
+	private final int MAX_NAME=40;
+	
+	
 	private String titular;
 	private String numero;
 	private  List<Movimiento> movimientos=new ArrayList<Movimiento>();
@@ -12,6 +18,7 @@ public  class Cuenta {
 	
 	
 	public Cuenta(String numero,String titular) {
+		
 		this.titular=titular;
 		this.numero=numero;
 		
@@ -70,12 +77,14 @@ public  class Cuenta {
 	}
 	
 
-	public String getTitular() {
+	public String getTitular()  {
 		return titular;
 	}
 
-	public void setTitular(String titular) {
+	public void setTitular(String titular)  {
+	
 		this.titular = titular;
+		
 	}
 
 	public String getNumero() {

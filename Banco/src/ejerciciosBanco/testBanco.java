@@ -18,6 +18,7 @@ public class testBanco {
 		cred.getCuentasoc().ingresar(500);
 		System.out.println(deb.getCuentasoc().toString());
 		cred.getCuentasoc().ingresar(2000);
+		cred.liquidar(1, 2023);
 		//cred.getCuentasoc().retirar(300);
 		System.out.println(cred.getCuentasoc().toString());
 		

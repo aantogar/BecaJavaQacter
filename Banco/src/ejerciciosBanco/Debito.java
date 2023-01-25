@@ -23,8 +23,6 @@ public class Debito extends Tarjeta{
 		}
 	}
 
-
-
 	@Override
 	public double getSaldo()  {
 		// TODO Auto-generated method stub
