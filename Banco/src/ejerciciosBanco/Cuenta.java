@@ -57,8 +57,8 @@ public  class Cuenta {
 		addMovimiento(mov);
 	}
 	public void retirar(double x) throws Exception  {  
-		if(x>0 || getSaldo()>x)
-		throw new Exception("No se ha podido ingresar la cantidad.");
+		if(x<0 || getSaldo()<x)
+			throw new Exception("No se ha podido ingresar la cantidad.");
 		retirar("Retirada de efectivo",x);
     		
 	}
@@ -68,7 +68,7 @@ public  class Cuenta {
 		try {
 			if(x>0 || getSaldo()>x) {
 			mov.setConcepto(concepto);
-			mov.setMiimporte(x);
+			mov.setMiimporte(-x);
 			addMovimiento(mov);
 			}
 		}catch(Exception e) {
@@ -104,8 +104,9 @@ public  class Cuenta {
 
 	@Override
 	public String toString() {
-		return "Cuenta del titular: " + getTitular() + ", nº de cuenta" + numero + "\n"+
-				".Ha realizado los siguientes movimientos: \n"+getMovimientos();
+		return "\n*************************************************\n\n \t\tEXTRACTO BANCARIO\n\n*************************************************\nCuenta del titular:\t" 
+	+ getTitular() +"\nNº de cuenta:\t" + getNumero() + "\nSaldo disponible:\t"+getSaldo()+
+				"\n\nHa realizado los siguientes MOVIMIENTOS\n"+getMovimientos();
 	}
 
 	public void setMovimientos(List<Movimiento> movimientos,Movimiento m) {

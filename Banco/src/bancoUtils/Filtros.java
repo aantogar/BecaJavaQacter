@@ -4,21 +4,26 @@ import java.time.LocalDate;
 
 public class Filtros {
 	
-	public static boolean Filtername(String name,int min,int max)throws Exception {
-		if(name.length()< min || name.length()> max)
-			throw new Exception("El nombre ha superado los límites mínimos o máximos");
-		return true;	
+	public static boolean Filtername(String name,int min, int max) {
+		if(name.length() < min || name.length() >max )
+			return false;
+		return true;
 	}
-	public static boolean FilterDate(LocalDate fecha) throws Exception {
+	
+	public static boolean FilterDate(LocalDate fecha) {
 		fecha=LocalDate.now();
-		if(fecha.getYear()< 3 || fecha.getYear() >5)
-			throw new Exception("La fecha de vencimiento no es correcta");
+		if(fecha.getYear()< fecha.getYear()-3 || fecha.getYear() >fecha.getYear()+5)
+			return false;
 		return true;
 	}
-	public static boolean Filterconcept(String concepto, double x,int min,int max) throws Exception {
+	
+	public static boolean Filterconcept(String concepto, int min,int max) {
 		if(concepto.length()< min || concepto.length()> max)
-			throw new Exception("El nombre ha superado los límites mínimos o máximos");
+			return false;
 		return true;
+	}
+	public static boolean FilterIngresarCantidad(double x, double y)  {
+		return x > y;
 		
 	}
 

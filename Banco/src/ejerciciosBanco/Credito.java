@@ -21,6 +21,13 @@ public class Credito extends Tarjeta{
 	public double getCredito() {
 		return credito;
 	}
+	public  double getSaldo()  {
+		double resultado=0.0;
+				for(Movimiento mov: movimientosCred) {
+					resultado+=mov.getMiimporte();
+				}
+				return resultado;		
+	}
 
 	public void setCredito(double credito) {
 		this.credito = credito;
@@ -71,27 +78,18 @@ public class Credito extends Tarjeta{
 		concepto=("Pago con la tarjeta de credito: ");
 		mov.setConcepto(concepto);
 		mov.setMiimporte(x);
-		getCuentasoc().addMovimiento(mov);
+		addMovimiento(mov);
 		credito-=x;
 		
 	}
 
 
-
-	@Override
-	public double getSaldo()  {
-		// TODO Auto-generated method stub
-		double resultado=0.0;
-		for(Movimiento mov: movimientosCred) {
-			resultado+=mov.getMiimporte();
-		}
-		return resultado;
-	}
 	public void setSaldo(double x) {
 		Movimiento mov = new Movimiento();
 		mov.setConcepto("Saldo ingresado: ");
 		mov.setMiimporte(x);
-		movimientosCred.add(mov);
+		//movimientosCred.add(mov);
+		addMovimiento(mov);
 	}
 
 
@@ -99,7 +97,7 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public String toString() {
-		return "Credito : " +getSaldo() + super.toString() + " y \n"+getMovimientosCred()+"\n";
+		return "Credito : " +getCredito() + super.toString() + " y \n"+getMovimientosCred()+"\n";
 	}
 
 	@Override
@@ -130,9 +128,9 @@ public class Credito extends Tarjeta{
 			throw new Exception("No se ha podido sacar dinero por ser menor que 3 euros.");
 		x+=x*comision;
 		mov.setConcepto(concepto);
-		mov.setMiimporte(x);
-		credito-=x;
+		mov.setMiimporte(-x);
 		addMovimiento(mov);
+		credito-=x;
 		
     		
 	}

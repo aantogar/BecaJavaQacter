@@ -18,7 +18,7 @@ public  class Movimiento extends Cuenta{
 
 	@Override
 	public String toString() {
-		return "Movimiento concepto: " + getConcepto() + ", Fecha: " + getFecha() + ", IMPORTE: " + getMiimporte() + ".\n";
+		return "Concepto:\t" + getConcepto() + "\nFecha:\t\t" + getFecha() + "\nIMPORTE:\t" + getMiimporte() + ".\n\n";
 	}
 
 	public String getConcepto() {

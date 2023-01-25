@@ -13,13 +13,16 @@ public class testBanco {
 		deb.getCuentasoc().ingresar(500);
 		deb.ingresar(2000);
 		deb.ingresar(1000);
+		deb.retirar(200);
 		//System.out.println(dbb.getCuentasoc().getSaldo());
 		Credito cred=new Credito("133113","Laura",date);
 		cred.getCuentasoc().ingresar(500);
 		System.out.println(deb.getCuentasoc().toString());
-		cred.getCuentasoc().ingresar(2000);
-		cred.liquidar(1, 2023);
+		cred.ingresar(2000);
+		//cred.liquidar(2023, 01);
 		//cred.getCuentasoc().retirar(300);
+		cred.getCuentasoc().ingresar(3000);
+		cred.getCuentasoc().retirar(300);
 		System.out.println(cred.getCuentasoc().toString());
 		
 		
