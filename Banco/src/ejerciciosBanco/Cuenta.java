@@ -43,7 +43,6 @@ public  class Cuenta {
 	
 	public void ingresar(String concepto, double x) throws Exception {
 		Movimiento mov=new Movimiento();
-		List<Movimiento>set=getMovimientos();
 		if(x<=0)
 			throw new Exception("No se ha podido ingresar la cantidad.");
 		mov.setConcepto(concepto);
@@ -90,16 +89,8 @@ public  class Cuenta {
 		return movimientos;
 	}
 	public void setMovimientos(List<Movimiento> movimientos) {
-		//Creo un nuevo HashSet identico al que se recibe para evitar lios con el
-		// pointer.
-		this.movimientos = new ArrayList<Movimiento>(movimientos);
-	}
-	public void mostrarMovimientos()  {
-		
-		for (int i=0;i<movimientos.size();i++) {
-			System.out.println(movimientos.get(i).getMovimientos());
-		}
-
+	
+		this.movimientos = new ArrayList<Movimiento>(movimientos);	// pointer.
 	}
 
 	@Override
@@ -116,7 +107,7 @@ public  class Cuenta {
 	protected void addMovimiento(Movimiento m) {
 		List<Movimiento>mov=getMovimientos();
 		mov.add(m);
-		;
+		
 		
 	}
 

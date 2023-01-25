@@ -64,6 +64,7 @@ public class Credito extends Tarjeta{
 		return super.getSaldo();
 	}
 
+
 	@Override
 	public void ingresar(double x) {
 		// TODO Auto-generated method stub
@@ -103,8 +104,9 @@ public class Credito extends Tarjeta{
 		return movimientosCred;
 	}
 
-	public void setMovimientosCred(List<Movimiento> movimientosCred) {
-		this.movimientosCred = movimientosCred;
+	public void setMovimientos(List<Movimiento> movimientosCred) {
+	
+		this.movimientosCred = new ArrayList<Movimiento>(movimientosCred);	// pointer.
 	}
 
 	@Override

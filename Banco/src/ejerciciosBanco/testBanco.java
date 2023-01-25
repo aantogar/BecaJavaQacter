@@ -16,7 +16,7 @@ public class testBanco {
 		//System.out.println(dbb.getCuentasoc().getSaldo());
 		Credito cred=new Credito("33456","Andrea",date);
 		cred.getCuentasoc().ingresar(500);
-		System.out.println(deb.getCuentasoc().getMovimientos());
+		System.out.println(deb.getMovimientos());
 		
 		
 	}
