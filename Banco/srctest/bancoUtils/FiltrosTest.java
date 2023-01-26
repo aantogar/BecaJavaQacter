@@ -27,16 +27,22 @@ class FiltrosTest {
 
 	@Test
 	void testFilterDate()  {
-		assertTrue(Filtros.FilterDate(fecha));
+		assertTrue(Filtros.FilterDate(fecha, fecha.getYear(), fecha.getMonthValue()));
 	}
 
 	@Test
 	void testFilterconcept()  {
-		assertTrue(Filtros.Filterconcept(CONCEPTO_UNO, 10, 30));
+		assertTrue(Filtros.Filtercncept(CONCEPTO_UNO, 10, 30));
 	}
 	
 	@Test
-	void testFilterInresarCantidad() throws Exception {
+	void testFilterIngresarCantidad() throws Exception {
+		Assertions.assertThrows(Exception.class, () -> {
+			Integer.parseInt(CONCEPTO_UNO);
+		});
+	}
+	@Test
+	void testFilterRetirarCantidad() throws Exception {
 		Assertions.assertThrows(Exception.class, () -> {
 			Integer.parseInt(CONCEPTO_UNO);
 		});

@@ -8,11 +8,16 @@ import java.util.List;
 
 import javax.xml.crypto.Data;
 
+import bancoUtils.Filtros;
+
 public class Credito extends Tarjeta{
 	private double credito;
 	private  List<Movimiento> movimientosCred=new ArrayList<Movimiento>();
 	private double comision=5/100;
 	private double minimo=3;
+	private final int MIN_INGR=0;
+	
+	Filtros filtros;
 	
 	public Credito(String numero,String titular,LocalDate fechacaduc) throws Exception {
 		super(numero,titular,fechacaduc);
@@ -83,7 +88,6 @@ public class Credito extends Tarjeta{
 		
 	}
 
-
 	public void setSaldo(double x) {
 		Movimiento mov = new Movimiento();
 		mov.setConcepto("Saldo ingresado: ");
@@ -92,30 +96,31 @@ public class Credito extends Tarjeta{
 		addMovimiento(mov);
 	}
 
-
-
-
 	@Override
 	public String toString() {
 		return "Credito : " +getCredito() + super.toString() + " y \n"+getMovimientosCred()+"\n";
 	}
 
 	@Override
-	public void ingresar(double x) {
-		// TODO Auto-generated method stub
-
+	public void ingresar(double x) throws Exception {
+		if(Filtros.FilterIngresarCantidad(x, MIN_INGR)) {
+			ingresar("Ingreso en efectivo: ",x);
+			}else
+			//se aplica la excepción si no se cumple el filtro.
+				throw new Exception("No se ha podido ingresar la cantidad.");
 	}
 
 	@Override
 	public void ingresar(String concepto, double x) throws Exception {
-		// TODO Auto-generated method stub
 		Movimiento mov=new Movimiento();
-		if(x<=0) 
+		if(filtros.FilterIngresarCantidad(x, MIN_INGR)) {
+			mov.setConcepto(concepto);
+			mov.setMiimporte(x);
+			addMovimiento(mov);
+			credito+=x;
+		}else
+		//se aplica la excepción si no se cumple el minimo para ingresar.
 			throw new Exception("No se ha podido ingresar la cantidad.");
-		mov.setConcepto(concepto);
-		mov.setMiimporte(x);
-		addMovimiento(mov);
-		credito+=x;
 	}
 	
 
@@ -124,15 +129,15 @@ public class Credito extends Tarjeta{
 		// TODO Auto-generated method stub
 		Movimiento mov=new Movimiento();
 		concepto=("Se ha retirado de la tarjeta de credito un total de ");
-		if(x<=3)
-			throw new Exception("No se ha podido sacar dinero por ser menor que 3 euros.");
-		x+=x*comision;
-		mov.setConcepto(concepto);
-		mov.setMiimporte(-x);
-		addMovimiento(mov);
-		credito-=x;
-		
-    		
+		if(Filtros.FilterRetirarCantidad(x, getSaldo())) {
+			x+=x*comision;
+			mov.setConcepto(concepto);
+			mov.setMiimporte(-x);
+			addMovimiento(mov);
+			credito-=x;
+		}else
+			//aplicamos la excepción si no hay saldo suficiente
+			throw new Exception("No hay saldo suficiente en la cuenta para realizar la operación");		
 	}
 	protected void addMovimiento(Movimiento m) {
 		List<Movimiento>mov=getMovimientos();
@@ -150,9 +155,10 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public void retirar(double x) throws Exception  {
-		if(x<=3)
-			throw new Exception("No se ha podido ingresar la cantidad.");
-			retirar("Retirada de efectivo",x);	
+		if(Filtros.FilterRetirarCantidad(x, getSaldo())) {
+			retirar("Retirada de efectivo",x);
+		}else
+			throw new Exception("No se ha podido ingresar la cantidad.");	
 	}
 
 }

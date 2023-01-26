@@ -7,7 +7,7 @@ import javax.xml.crypto.Data;
 
 public class Debito extends Tarjeta{
 	
-	public Debito(String numero,String titular,LocalDate fecha) {
+	public Debito(String numero,String titular,LocalDate fecha) throws Exception {
 		super(numero,titular,fecha);
 		
 	}

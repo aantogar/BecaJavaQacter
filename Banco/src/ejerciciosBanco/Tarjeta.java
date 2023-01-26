@@ -5,14 +5,24 @@ import java.util.Calendar;
 
 import javax.xml.crypto.Data;
 
+import bancoUtils.Filtros;
+
 public class Tarjeta extends Cuenta{
 	private LocalDate fecha;
 	private Cuenta cuentasoc=new Cuenta(getNumero(),getTitular());
+	LocalDate datanow=LocalDate.now();
+	private final int  MIN_ANIO=datanow.getYear()-3;
+	private final int MAX_ANIO=datanow.getYear()+5;
 	
-	public Tarjeta(String numero, String titular, LocalDate fechacaduc) {
+	Filtros filtros;
+	
+	public Tarjeta(String numero, String titular, LocalDate fechacaduc) throws Exception {
 		super(numero,titular);
-		this.fecha=LocalDate.from(fechacaduc);
-	
+		
+		if(Filtros.FilterDate(fecha, MIN_ANIO, MAX_ANIO)) {
+			this.fecha=LocalDate.from(fechacaduc);
+		}else 
+			throw new Exception("La fecha no es correcta");
 	}
 
 	@Override
@@ -24,6 +34,7 @@ public class Tarjeta extends Cuenta{
 	public LocalDate getFecha() {
 		return fecha;
 	}
+
 	public void pagoEstablecimiento(String datos, double x) throws Exception {
 		
 		

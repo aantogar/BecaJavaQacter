@@ -1,6 +1,7 @@
 package ejerciciosBanco;
 
 import java.util.ArrayList;
+
 import bancoUtils.Filtros;
 import java.util.Collection;
 import java.util.List;
@@ -8,7 +9,12 @@ import java.util.List;
 public  class Cuenta {
 
 	private final int MIN_NAME=15;
-	private final int MAX_NAME=40;
+	private final int MAX_NAME=21;
+	private final int MIN_CON=10;
+	private final int MAX_CON=40;
+	private final int MIN_INGRESAR=0;
+	
+	Filtros filtros;
 	
 	
 	private String titular;
@@ -17,10 +23,14 @@ public  class Cuenta {
 	
 	
 	
-	public Cuenta(String numero,String titular) {
-		
-		this.titular=titular;
-		this.numero=numero;
+	public Cuenta(String numero,String titular)throws  Exception {
+		    if(filtros.Filtername(titular, MIN_NAME, MAX_NAME)) {
+			this.titular=titular;
+			this.numero=numero;
+		    }else
+		    	throw new Exception("No cumple con los requisitos.");
+			//Aplicamos la excepción si no se cumple el filtro.
+				
 		
 	}
 	public Cuenta() {
@@ -42,41 +52,44 @@ public  class Cuenta {
 	}
 
 	public void ingresar(double x)throws Exception {
-		if(x<=0)
-			throw new Exception("No se ha podido ingresar la cantidad.");
+		if(filtros.FilterIngresarCantidad(x, MIN_INGRESAR)) {
 		ingresar("Ingreso en efectivo: ",x);
-	    }
+		}else
+		//se aplica la excepción si no se cumple el filtro.
+			throw new Exception("No se ha podido ingresar la cantidad.");
+	   }
 		
-	
 	public void ingresar(String concepto, double x) throws Exception {
 		Movimiento mov=new Movimiento();
-		if(x<=0)
-			throw new Exception("No se ha podido ingresar la cantidad.");
+		if(filtros.FilterIngresarCantidad(x, MIN_INGRESAR)) {
 		mov.setConcepto(concepto);
 		mov.setMiimporte(x);
 		addMovimiento(mov);
+		}else
+		//se aplica la excepción si no se cumple el minimo para ingresar.
+			throw new Exception("No se ha podido ingresar la cantidad.");
+		
 	}
 	public void retirar(double x) throws Exception  {  
-		if(x<0 || getSaldo()<x)
-			throw new Exception("No se ha podido ingresar la cantidad.");
+		if(filtros.FilterRetirarCantidad(x, getSaldo())){
 		retirar("Retirada de efectivo",x);
+		}else
+		//se aplica la excepción si no hay saldo disponible.
+			throw new Exception("No se ha podido ingresar la cantidad.");
+		
     		
 	}
 	public void retirar(String concepto, double x) throws Exception {
 		Movimiento mov=new Movimiento();
-		//metemos en un bloque try catch la operación por si no hay saldo.
-		try {
-			if(x>0 || getSaldo()>x) {
+		if(filtros.FilterRetirarCantidad(x, getSaldo())) {
 			mov.setConcepto(concepto);
 			mov.setMiimporte(-x);
 			addMovimiento(mov);
-			}
-		}catch(Exception e) {
+		}else
+			//aplicamos la excepción si no hay saldo suficiente
 			throw new Exception("No hay saldo suficiente en la cuenta para realizar la operación");
-		}
 	}
 	
-
 	public String getTitular()  {
 		return titular;
 	}
