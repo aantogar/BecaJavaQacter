@@ -9,7 +9,7 @@ import java.util.List;
 public  class Cuenta {
 
 	private final int MIN_NAME=15;
-	private final int MAX_NAME=21;
+	private final int MAX_NAME=30;
 	private final int MIN_CON=10;
 	private final int MAX_CON=40;
 	private final int MIN_INGRESAR=0;
@@ -24,6 +24,7 @@ public  class Cuenta {
 	
 	
 	public Cuenta(String numero,String titular)throws  Exception {
+		//aplicamos los filtros para crear el atributo titular
 		    if(filtros.Filtername(titular, MIN_NAME, MAX_NAME)) {
 			this.titular=titular;
 			this.numero=numero;
@@ -38,13 +39,21 @@ public  class Cuenta {
 	}
 
 	public  double getSaldo()  {
+		//Recorremos con un foreach para recuperar el importe
 		double r=0.0;
-				for(Movimiento m: movimientos) {
-					r+=m.getMiimporte();
-				}
-				return r;		
+		/*for(Movimiento m: movimientos) {
+			r+=m.getMiimporte();
+			}
+		return r;	*/
+		
+		//Manera de hacerlo con Stream
+		 r=movimientos.stream()
+				.map(mov->mov.getMiimporte())
+				.reduce(0d, (subtotal,element)->subtotal+ element);
+		 return r;
 	}
 	public void setSaldo(double x) {
+		//inicializamos el sado y lo añadimos a movimientos
 		Movimiento mov = new Movimiento();
 		mov.setConcepto("Saldo ingresado: ");
 		mov.setMiimporte(x);

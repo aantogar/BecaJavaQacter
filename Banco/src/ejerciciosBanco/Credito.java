@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Vector;
+import java.util.stream.Collectors;
 
 import javax.xml.crypto.Data;
 
@@ -24,56 +26,35 @@ public class Credito extends Tarjeta{
 	}
 
 	public double getCredito() {
-		return credito;
-	}
-	public  double getSaldo()  {
-		double resultado=0.0;
-				for(Movimiento mov: movimientosCred) {
-					resultado+=mov.getMiimporte();
-				}
-				return resultado;		
+		 double resultado=0.0;
+		for(Movimiento mov: movimientosCred) {
+			resultado+=mov.getMiimporte();
+		}
+		return resultado;
 	}
 
 	public void setCredito(double credito) {
 		this.credito = credito;
 	}
 	public void liquidar(int mes, int anio) {
-
-		double cantidad=0.0;
-		double total =0;
-		for(int i=0;i<movimientosCred.size();i++) {
-			Movimiento mov=movimientosCred.get(i);
-			if((mov.getFecha().getMonthValue() == mes && mov.getFecha().getYear()==anio)) {
-				total+=mov.getMiimporte();
-				this.movimientosCred.remove(mov);			
+		double resultado = 0;
+			for(Movimiento mov: movimientosCred) {
+			if((mov.getFecha().getMonthValue() == mes && mov.getFecha().getDayOfYear()==anio)) {
+				resultado += mov.getMiimporte();
+				movimientosCred.remove(resultado);
+				getCredito();
 			}
+			
 		}
-			Movimiento liquidar=new Movimiento();
-			liquidar.setMiimporte(-total);
-			liquidar.setConcepto("Liquidación de operaciones tarj.credito, "+anio+" y "+mes+
-				" cantidad: "+total	);
-			getCuentasoc().addMovimiento(liquidar);
 		
-		
-	
-		
-		/*for(int i=this.movimientosCred.size()-1;i<=0;i--) {
-			if(m.getFecha().getMonthValue()==mes && m.getFecha().getYear() == anio) {
-				r+=m-getImporte
-				movimiendosCred.remove(i);
-			}
-		for(Iterator it=movimientosCred.iterator();it.hasNext();){
-			Movimiento m=(Movimiento)it.next();
-			if(m.getFecha().getMonthValue()==mes && m.getFecha().getYear()== anio) {
-				r+=m.getMiimporte();
-				it.remove();
-		}
-		liq.setMiimporte(r);
-		if(r!=0) {
-		getCuentasoc().addMovimiento(liq);
-			}*/
-		
+		Movimiento movDos = new Movimiento();
+		movDos.setConcepto("Liquidación de importe");
+		movDos.setMiimporte(resultado);
+		addMovimiento(movDos);
+		getCuentasoc().addMovimiento(movDos);
 	}
+
+
 	
 
 	@Override
@@ -96,9 +77,13 @@ public class Credito extends Tarjeta{
 		addMovimiento(mov);
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Credito : " +getCredito() + super.toString() + " y \n"+getMovimientosCred()+"\n";
+		return "\n*************************************************\n\n\t\tEXTRACTO BANCARIO\n\n*************************************************"
+				+"\nTitular de Crédito: "+getTitular()+"\nNº de cuenta:\t" + getNumero()+ "\nCredito disponible:\t" + getCredito() + 
+				"\n\n Ha realizado los siguientes MOVIMIENTOS:\n"+getMovimientosCred()+"\n";
 	}
 
 	@Override
@@ -129,7 +114,7 @@ public class Credito extends Tarjeta{
 		// TODO Auto-generated method stub
 		Movimiento mov=new Movimiento();
 		concepto=("Se ha retirado de la tarjeta de credito un total de ");
-		if(Filtros.FilterRetirarCantidad(x, getSaldo())) {
+		if(Filtros.FilterRetirarCantidad(x, getCredito())) {
 			x+=x*comision;
 			mov.setConcepto(concepto);
 			mov.setMiimporte(-x);
@@ -140,7 +125,7 @@ public class Credito extends Tarjeta{
 			throw new Exception("No hay saldo suficiente en la cuenta para realizar la operación");		
 	}
 	protected void addMovimiento(Movimiento m) {
-		List<Movimiento>mov=getMovimientos();
+		List<Movimiento>mov=movimientosCred;
 		mov.add(m);
 	}
 
@@ -155,10 +140,14 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public void retirar(double x) throws Exception  {
-		if(Filtros.FilterRetirarCantidad(x, getSaldo())) {
+		if(Filtros.FilterRetirarCantidad(x, getCredito())) {
 			retirar("Retirada de efectivo",x);
 		}else
 			throw new Exception("No se ha podido ingresar la cantidad.");	
+	}
+	public void mostrar() {
+			System.out.println(getMovimientosCred()); 
+		System.out.println("Saldo Crédito disponible: " + getCredito());
 	}
 
 }
