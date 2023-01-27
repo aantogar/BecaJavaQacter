@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import ejerciciosBanco.Cuenta;
+import junit.framework.Assert;
 
 class FiltrosTest {
 	final String NOMBRE_UNO="Andrea Anton";
@@ -17,7 +18,10 @@ class FiltrosTest {
 	final double CANTIDAD_UNO=0.00;
 	final double COMPROBAR_CERO=0;
 	final LocalDate fecha=LocalDate.of(2022, 10, 01);
-	
+	final String FECHA_VEINTE="20.12.2020";
+	final String FORMATO_PUNTO="dd.MM.yyyy";
+	final String FECHA_VEINTEYTRES="20/12/2023";
+	final String FORMATO_BARRA="dd/MM/yyyy";
 
 	@Test
 	void testFiltername()  {
@@ -47,5 +51,18 @@ class FiltrosTest {
 			Integer.parseInt(CONCEPTO_UNO);
 		});
 	}
+	@Test
+	void testfechaCorrecta()  {
+		assertNotNull(Filtros.fechaCorrecta(FECHA_VEINTE, FORMATO_PUNTO));
+	}
+	@Test
+	void testfechaCorrectaDos()  {
+		assertNotNull(Filtros.fechaCorrecta(FECHA_VEINTEYTRES, FORMATO_BARRA));
+	}
+	@Test
+	void testfechaCorrectaOK()  {
+		assertEquals(Filtros.fechaCorrecta(FECHA_VEINTEYTRES),LocalDate.of(1980,10, 02));
+	}
+	//@Repeatedtest(value 5, name="Dates Strings erroneas")
 
 }
