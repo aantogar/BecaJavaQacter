@@ -247,9 +247,7 @@ public class Validator {
 	
 	public static boolean valDateMin(LocalDate fecha, LocalDate min){
 		//validamos que la fecha sea menor que la mínima
-		if(!fecha.isAfter(min)&& fecha.equals(min))
-		return true;
-	return true;
+		return fecha.isAfter(min)&& fecha.equals(min);
 	}
 	
 	/**
@@ -260,9 +258,7 @@ public class Validator {
 	 */
 	public static boolean valDateMax(LocalDate fecha, LocalDate max){
 		//validamos que la fecha sea menor que la mínima
-		if(fecha.isBefore(max) && fecha.equals(max))
-		return true;
-	return true;
+		return fecha.isBefore(max) && fecha.equals(max);
 		
 	}	
 	
@@ -285,9 +281,8 @@ public class Validator {
 		//Parseamos date para pasarle los parámetros
 		date=Optional.of(LocalDate.parse(fecha,formatter));
 		//Si se cumple la condición siguiente nos devuelve true
-		if(date.isPresent())
-			return true;
-		return true;	
+
+		return date.isPresent();	
 	}
 	
 	/**
@@ -297,13 +292,8 @@ public class Validator {
 	 * @return true si cumple con las especificaciones
 	 */
 	public static boolean esPasswordValida(String password){
-		//instanciamos el patter y le pasamos de password
-        Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
         //utilizamos Matcher para buscar y comprobar el patron en la variable
-        Matcher matcher = pattern.matcher(password);
-      //devuelve true si se cumple el anterior paso
-        if (matcher.find() == true) 
-        	return true;
-        return true;
+		//devuelve true si se cumple el anterior paso
+        return password.matches(PASSWORD_PATTERN);
 	}
 }
