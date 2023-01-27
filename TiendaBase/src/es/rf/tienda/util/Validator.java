@@ -133,8 +133,10 @@ public class Validator {
 	 * **************************************************************************************/
 	public static boolean cumpleDNI(String dni){
 		//utilizamos Matcher para buscar y comprobar el patron en la variable
-	    return dni != null && dni.matches(EMAIL_PATTERN)&& dni.length()<= LONGITUD_DNI && 
-	    	    dni.charAt(11) == LETRA_DNI.charAt(Integer.parseInt(dni.substring(0, 11)) % 23);
+		//comprobamos longitud y buscamos asignamos al caracter de la letra el % de 23
+		int numeros = dni.length()-1;
+	    return dni != null && dni.matches(DNI_PATTERN)&& dni.length() == LONGITUD_DNI-1  && 
+	    		dni.charAt(11) == LETRA_DNI.charAt(Integer.parseInt(dni.substring(0, 10)) % 23);
 	}
 	
 
@@ -165,7 +167,7 @@ public class Validator {
 			int valorMinimo,
 			int valorMaximo){
 		//devuelve true si valor es mayor que el mínimo y menor que el máximo
-		return ((int)valor > valorMinimo && (int)valor < valorMaximo);
+		return (int)valor >= valorMinimo && (int)valor <= valorMaximo;
 	}
 
 
@@ -188,7 +190,7 @@ public class Validator {
 			String texto, 
 			int longitudMinima){
 		//devuelve true si la longitud es mayor que la mínima
-		return texto.length() > longitudMinima;	
+		return texto.length() >= longitudMinima;	
 	}
 
 	/* ***************************************************************************************
@@ -210,7 +212,7 @@ public class Validator {
 			String texto, 
 			int longitudMaxima){
 		//devuelve true si la longitud 
-		return texto.length() < longitudMaxima;
+		return !texto.isEmpty()&& texto.length() <= longitudMaxima;
 	}
 
 
@@ -235,7 +237,7 @@ public class Validator {
 			int longitudMinima, 
 			int longitudMaxima){
 		//devuelve true si se cumple que la longitud es mayor que la mínima y menor que la máxima
-	return texto.length() > longitudMinima && texto.length() < longitudMaxima;
+	return !texto.isEmpty() &&texto.length() >= longitudMinima && texto.length() <= longitudMaxima;
 
 	}
 	/**
@@ -294,6 +296,6 @@ public class Validator {
 	public static boolean esPasswordValida(String password){
         //utilizamos Matcher para buscar y comprobar el patron en la variable
 		//devuelve true si se cumple el anterior paso
-        return password.matches(PASSWORD_PATTERN);
+        return password !=null && password.matches(PASSWORD_PATTERN);
 	}
 }

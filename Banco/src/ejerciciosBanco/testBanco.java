@@ -26,7 +26,7 @@ public class testBanco {
 		cred.liquidar(01, 2023);
 		System.out.println(cred.toString());
 		
-		System.out.println(12345789%23);
+		System.out.println(26752080%23);
 		
 		
 	}

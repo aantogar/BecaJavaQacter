@@ -3,7 +3,12 @@ package es.rf.tienda.util;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import bancoUtils.Filtros;
 
 class ValidatorTest {
 	Validator validator;
@@ -13,14 +18,21 @@ class ValidatorTest {
 	private final int MIN_PHONE=10;
 	private final int MAX_PHONE=20;
 	private final String EMAIL="andrea@hola.com";
-	private final String DNI_BUENO="12.345.789-X";
+	private final String DNI_BUENO="26.752.080-K";
 	private final int VALOR_MIN=4;
 	private final int VALOR_MAX=10;
 	private final int VALOR_TEST=5;
 	private final double VALOR_TESTB=5D;
 	private final String VALOR_STR="Hola estamos en test";
 	private final int MIN_STR=4;
+	private final int MAX_STR=20;
 	private final String EMPTY_STR="";
+	private final String FORMATO_BARRA="dd/MM/yyyy";
+	private final String FECHA_VALIDA="20/12/2023";
+	private final LocalDate DATE_DATE=LocalDate.of(2020, 10, 02);
+	private final LocalDate DATE_MIN=LocalDate.of(1993, 10, 18);
+	private final LocalDate DATE_MAX=LocalDate.of(2023, 12,9);
+	private final String PASSWORD_TRUE="1@Holacomhola";
 	
 	
 	
@@ -28,7 +40,7 @@ class ValidatorTest {
 	@Test
 	
 	void testIsVacio(){
-		assertTrue(Validator.isVacio(EMPTY_STR));
+		assertNotNull(Validator.isVacio(EMPTY_STR));
 	}
 	
 	@Test
@@ -69,37 +81,37 @@ class ValidatorTest {
 
 	@Test
 	void testCumpleLongitudMax() {
-		assertTrue(Validator.cumpleLongitudMax(VALOR_STR, VALOR_MAX));
+		assertTrue(Validator.cumpleLongitudMax(VALOR_STR, MAX_STR));
 	}
 
 	@Test
 	void testCumpleLongitud() {
-		fail("Not yet implemented");
+		assertTrue(Validator.cumpleLongitud(VALOR_STR, MIN_STR, MAX_STR));
 	}
 
 	@Test
 	void testValDateMin() {
-		fail("Not yet implemented");
+		assertNotNull(Validator.valDateMin(DATE_DATE, DATE_MIN));
 	}
 
 	@Test
 	void testValDateMax() {
-		fail("Not yet implemented");
+		assertNotNull(Validator.valDateMin(DATE_DATE, DATE_MAX));
 	}
 
 	@Test
 	void testEsFechaValidaString() {
-		fail("Not yet implemented");
+		assertNotNull(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
 	}
 
 	@Test
 	void testEsFechaValidaStringString() {
-		fail("Not yet implemented");
+		assertNotNull(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
 	}
 
 	@Test
 	void testEsPasswordValida() {
-		fail("Not yet implemented");
+		assertTrue(Validator.esPasswordValida(PASSWORD_TRUE));
 	}
 
 }
