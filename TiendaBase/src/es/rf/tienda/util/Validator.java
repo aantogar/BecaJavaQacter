@@ -160,7 +160,7 @@ public class Validator {
 			int valorMinimo,
 			int valorMaximo){
 		//devuelve true si valor es mayor que el mínimo y menor que el máximo
-		return valor > valorMinimo && valor < valorMaximo;
+		return valor >= valorMinimo && valor <= valorMaximo;
 	}
 	public static boolean cumpleRango(
 			double valor, 
@@ -295,7 +295,7 @@ public class Validator {
 	 */
 	public static boolean esPasswordValida(String password){
         //utilizamos Matcher para buscar y comprobar el patron en la variable
-		//devuelve true si se cumple el anterior paso
+		//devuelve true si se cumple la condicion
         return password !=null && password.matches(PASSWORD_PATTERN);
 	}
 }
