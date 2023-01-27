@@ -70,7 +70,7 @@ public class Validator {
 	 * **************************************************************************************/
 	public static boolean isAlfanumeric(String texto){
 		//devuelve true si se cumple la condición
-		return texto != null && texto.matches("^[0-9a-zA-Z]+$");
+		return texto != null && texto.matches(ALFANUMERIC_PATTERN );
 	}
 	
 	public static boolean isVacio( String prueba ){
