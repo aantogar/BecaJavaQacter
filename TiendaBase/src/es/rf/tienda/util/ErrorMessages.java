@@ -38,8 +38,8 @@ public class ErrorMessages {
 	/**
 	 * Comprobación de campo de fecha correcta
 	 */
-	public static final String PROERR_007="La fecha no puede ser inferior que la indicada";
-	public static final String PROERR_008="La fecha no puede ser superior que la indicada";
+	public static final String PROERR_007="La fecha indicada no puede ser inferior.";
+	public static final String PROERR_008="La fecha indicada no puede ser superior.l";
 	public static final String PROERR_009="Formato introducido incorrecto o no es una fecha válida";
 	
 	/**

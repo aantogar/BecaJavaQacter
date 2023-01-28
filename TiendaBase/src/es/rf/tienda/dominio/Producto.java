@@ -2,6 +2,8 @@
 
 import java.time.LocalDate;
 
+import es.rf.tienda.util.*;
+
 public class Producto {
 	//atributos de la clase Producto
 	private String id_producto;
@@ -15,13 +17,16 @@ public class Producto {
 	private String pro_uniVenta;
 	private int pro_cantXUniVenta;
 	private String pro_uniUltNivel;
-	private static int id_pais;
+	private  int id_pais;
 	private String pro_usoRecomendado;
 	private static int id_categoria;
 	private int pro_stkReservado;
 	private int pro_nStkAlto;
 	private int pro_nStkBajo;
 	private String pro_stat;
+	
+	//variables generadas para aplicar los filtros
+	private final LocalDate FECHA_ACTUAL=LocalDate.now();
 	
 	
 	//Generamos un constructor vacio
@@ -32,15 +37,14 @@ public class Producto {
 	public Producto(String id_prod,String des_cor,String des_lar,double precio,
 			int stock,LocalDate fech_repo,LocalDate fech_act,LocalDate fech_des,
 			String unidad, int cant_x, String uni_ult,int id_pais,String uso_rec,
-			int id_categ, int stock_res, int stock_alt, int stock_baj,String estado) {
+			int id_categ, int stock_res, int stock_alt, 
+			int stock_baj,String estado)throws Exception {
+		//asignamos los parámetros a sus atributos
 		this.id_producto=id_prod;
 		this.pro_descripcion=des_cor;
 		this.pro_desLarga=des_lar;
 		this.pro_precio=precio;
 		this.stock=stock;
-		this.pro_fecRepos=fech_repo;
-		this.pro_fecActi=fech_act;
-		this.pro_fecDesacti=fech_des;
 		this.pro_uniVenta=unidad;
 		this.pro_cantXUniVenta=cant_x;
 		this.pro_uniUltNivel=uni_ult;
@@ -52,6 +56,27 @@ public class Producto {
 		this.pro_nStkBajo=stock_baj;
 		this.pro_stat=estado;
 		
+		//aplicamos el filtro de fecha minima para fecha de reposicion
+		if(Validator.valDateMin(fech_repo,FECHA_ACTUAL)){
+			this.pro_fecRepos=fech_repo;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_007);
+		
+		//aplicamos el filtro de fecha minima para fecha activacion
+		if(Validator.valDateMin(fech_act,FECHA_ACTUAL)){
+			this.pro_fecActi=fech_act;
+		}else //si no se cumple lanzamos el mensaje de error
+					throw new Exception(ErrorMessages.PROERR_007);
+		
+		//comprobamos que no haya fecha de activación para que sea superior a la actual
+		if(fech_act==null && Validator.valDateMin(fech_des, FECHA_ACTUAL)) {
+			this.pro_fecDesacti=fech_des;
+			//si tiene fecha de activación, la fecha será superior a ésta.
+		}else if(fech_act!=null) {
+			this.pro_fecDesacti=fech_des;
+			fech_des.isAfter(fech_act);
+		}else//lanzamos la excepción si no se cumple los pasos anteriores
+			throw new Exception(ErrorMessages.PROERR_007);	
 	}
 	
 	
@@ -130,9 +155,6 @@ public class Producto {
 	}
 	public void setId_pais(int id_pais) {
 		this.id_pais = id_pais;
-		int contador=1;
-		id_pais=contador;
-		contador ++;
 	}
 	public String getPro_usoRecomendado() {
 		return pro_usoRecomendado;
@@ -145,9 +167,6 @@ public class Producto {
 	}
 	public void setId_categoria(int id_categoria) {
 		this.id_categoria = id_categoria;
-		int contador=1;
-		id_categoria=contador;
-		contador ++;
 	}
 	public int getPro_stkReservado() {
 		return pro_stkReservado;
