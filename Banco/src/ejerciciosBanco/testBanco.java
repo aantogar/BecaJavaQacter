@@ -6,6 +6,7 @@ import java.util.Calendar;
 import javax.xml.crypto.Data;
 
 public class testBanco {
+	private final static String DNI_BUENO="26.752.080-K";
 	public static void main (String[]args) throws Exception {
 		
 		LocalDate date=LocalDate.now();
@@ -25,8 +26,9 @@ public class testBanco {
 		cred.retirar(300);
 		cred.liquidar(01, 2023);
 		System.out.println(cred.toString());
+		System.out.println(DNI_BUENO.length());
 		
-		System.out.println(26752080%23);
+
 		
 		
 	}

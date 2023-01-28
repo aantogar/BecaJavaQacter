@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import bancoUtils.Filtros;
+
 
 class ValidatorTest {
 	Validator validator;
@@ -28,7 +28,7 @@ class ValidatorTest {
 	private final int MAX_STR=20;
 	private final String EMPTY_STR="";
 	private final String FORMATO_BARRA="dd/MM/yyyy";
-	private final String FECHA_VALIDA="20/12/2023";
+	private final String FECHA_VALIDA="20/02/2023";
 	private final LocalDate DATE_DATE=LocalDate.of(2020, 10, 02);
 	private final LocalDate DATE_MIN=LocalDate.of(1993, 10, 18);
 	private final LocalDate DATE_MAX=LocalDate.of(2023, 12,9);
@@ -91,22 +91,22 @@ class ValidatorTest {
 
 	@Test
 	void testValDateMin() {
-		assertNotNull(Validator.valDateMin(DATE_DATE, DATE_MIN));
+		assertTrue(Validator.valDateMin(DATE_DATE, DATE_MIN));
 	}
 
 	@Test
 	void testValDateMax() {
-		assertNotNull(Validator.valDateMin(DATE_DATE, DATE_MAX));
+		assertTrue(Validator.valDateMax(DATE_DATE, DATE_MAX));
 	}
 
 	@Test
 	void testEsFechaValidaString() {
-		assertNotNull(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
+		assertTrue(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
 	}
 
 	@Test
 	void testEsFechaValidaStringString() {
-		assertNotNull(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
+		assertTrue(Validator.esFechaValida(FECHA_VALIDA, FORMATO_BARRA));
 	}
 
 	@Test

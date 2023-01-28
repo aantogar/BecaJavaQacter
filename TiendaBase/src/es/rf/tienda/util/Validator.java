@@ -134,8 +134,8 @@ public class Validator {
 	public static boolean cumpleDNI(String dni){
 		//utilizamos Matcher para buscar y comprobar el patron en la variable
 		//comprobamos longitud y buscamos asignamos al caracter de la letra el % de 23
-		int numeros = dni.length()-1;
-	    return dni != null && dni.matches(DNI_PATTERN)&& dni.length() == LONGITUD_DNI-1  && 
+		
+	    return dni != null && dni.matches(DNI_PATTERN)&& dni.length() == LONGITUD_DNI  && 
 	    		dni.charAt(11) == LETRA_DNI.charAt(Integer.parseInt(dni.substring(0, 10)) % 23);
 	}
 	
@@ -249,7 +249,7 @@ public class Validator {
 	
 	public static boolean valDateMin(LocalDate fecha, LocalDate min){
 		//validamos que la fecha sea menor que la mínima
-		return fecha.isAfter(min)&& fecha.equals(min);
+		return fecha.isAfter(min)|| fecha.equals(min);
 	}
 	
 	/**
@@ -260,7 +260,7 @@ public class Validator {
 	 */
 	public static boolean valDateMax(LocalDate fecha, LocalDate max){
 		//validamos que la fecha sea menor que la mínima
-		return fecha.isBefore(max) && fecha.equals(max);
+		return fecha.isBefore(max) || fecha.equals(max);
 		
 	}	
 	
@@ -272,7 +272,7 @@ public class Validator {
 	 */
 	public static boolean esFechaValida(String fecha){
 		//método(filtro)sobrecargado para pasarel patrón formato.
-		return esFechaValida(fecha,"dd-MM-yyyy");
+		return esFechaValida(fecha,"dd/MM/yyyy");
 	}
 	
 	public static boolean esFechaValida(String fecha,String formato){

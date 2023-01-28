@@ -20,8 +20,9 @@ class FiltrosTest {
 	final LocalDate fecha=LocalDate.of(2022, 10, 01);
 	final String FECHA_VEINTE="20.12.2020";
 	final String FORMATO_PUNTO="dd.MM.yyyy";
-	final String FECHA_VEINTEYTRES="20/12/2023";
-	final String FORMATO_BARRA="dd/MM/yyyy";
+	final String FECHA_VEINTEYTRES="2023/12/20";
+	final String FORMATO_BARRA="yyyy/MM/dd";
+	final String FECHA_CORRECTA="20-12-2023";
 
 	@Test
 	void testFiltername()  {
@@ -61,7 +62,7 @@ class FiltrosTest {
 	}
 	@Test
 	void testfechaCorrectaOK()  {
-		assertEquals(Filtros.fechaCorrecta(FECHA_VEINTEYTRES),LocalDate.of(1980,10, 02));
+		assertEquals(Filtros.fechaCorrecta(FECHA_CORRECTA),LocalDate.of(2023,12, 20));
 	}
 	//@Repeatedtest(value 5, name="Dates Strings erroneas")
 
