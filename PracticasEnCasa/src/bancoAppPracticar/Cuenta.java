@@ -15,7 +15,6 @@ public  class  Cuenta{
 	}
 	public void addMovimiento(Movimiento m) {
 		//añadidos al arraylist los movimientos que se crean
-		m=new Movimiento();
 		mMovimiento.add(m);
 		
 	}
