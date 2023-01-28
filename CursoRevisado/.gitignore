@@ -1,1 +1,6 @@
-/bin/
+org.eclipse.*
+.classpath
+.metadata
+bin/
+tmp/
+/classpath
