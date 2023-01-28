@@ -15,7 +15,7 @@ public class Producto {
 	private LocalDate pro_fecActi;
 	private LocalDate pro_fecDesacti;
 	private String pro_uniVenta;
-	private int pro_cantXUniVenta;
+	private double pro_cantXUniVenta;
 	private String pro_uniUltNivel;
 	private  int id_pais;
 	private String pro_usoRecomendado;
@@ -23,7 +23,7 @@ public class Producto {
 	private int pro_stkReservado;
 	private int pro_nStkAlto;
 	private int pro_nStkBajo;
-	private String pro_stat;
+	private char pro_stat;
 	
 	//variables generadas para aplicar los filtros
 	private final LocalDate FECHA_ACTUAL=LocalDate.now();
@@ -36,9 +36,9 @@ public class Producto {
 	//Generamos un constructor con todos sus atributos
 	public Producto(String id_prod,String des_cor,String des_lar,double precio,
 			int stock,LocalDate fech_repo,LocalDate fech_act,LocalDate fech_des,
-			String unidad, int cant_x, String uni_ult,int id_pais,String uso_rec,
+			String unidad, double cant_x, String uni_ult,int id_pais,String uso_rec,
 			int id_categ, int stock_res, int stock_alt, 
-			int stock_baj,String estado)throws Exception {
+			int stock_baj,char estado)throws Exception {
 		//asignamos los parámetros a sus atributos
 		this.id_producto=id_prod;
 		this.pro_descripcion=des_cor;
@@ -78,9 +78,6 @@ public class Producto {
 		}else//lanzamos la excepción si no se cumple los pasos anteriores
 			throw new Exception(ErrorMessages.PROERR_007);	
 	}
-	
-	
-	
 	
 	//Generamos getters and setters
 	public String getId_producto() {
@@ -138,10 +135,10 @@ public class Producto {
 	public void setPro_uniVenta(String pro_uniVenta) {
 		this.pro_uniVenta = pro_uniVenta;
 	}
-	public int getPro_cantXUniVenta() {
+	public double getPro_cantXUniVenta() {
 		return pro_cantXUniVenta;
 	}
-	public void setPro_cantXUniVenta(int pro_cantXUniVenta) {
+	public void setPro_cantXUniVenta(double pro_cantXUniVenta) {
 		this.pro_cantXUniVenta = pro_cantXUniVenta;
 	}
 	public String getPro_uniUltNivel() {
@@ -186,10 +183,10 @@ public class Producto {
 	public void setPro_nStkBajo(int pro_nStkBajo) {
 		this.pro_nStkBajo = pro_nStkBajo;
 	}
-	public String getPro_stat() {
+	public char getPro_stat() {
 		return pro_stat;
 	}
-	public void setPro_stat(String pro_stat) {
+	public void setPro_stat(char pro_stat) {
 		this.pro_stat = pro_stat;
 	}
 	
