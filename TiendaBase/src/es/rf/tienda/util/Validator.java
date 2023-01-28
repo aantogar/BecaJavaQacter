@@ -248,7 +248,7 @@ public class Validator {
 	 */
 	
 	public static boolean valDateMin(LocalDate fecha, LocalDate min){
-		//validamos que la fecha sea menor que la mínima
+		//validamos que la fecha sea mayor que la mínima o igual
 		return fecha.isAfter(min)|| fecha.equals(min);
 	}
 	
@@ -259,7 +259,7 @@ public class Validator {
 	 * @return
 	 */
 	public static boolean valDateMax(LocalDate fecha, LocalDate max){
-		//validamos que la fecha sea menor que la mínima
+		//validamos que la fecha sea menor que la máxima o igual
 		return fecha.isBefore(max) || fecha.equals(max);
 		
 	}	
