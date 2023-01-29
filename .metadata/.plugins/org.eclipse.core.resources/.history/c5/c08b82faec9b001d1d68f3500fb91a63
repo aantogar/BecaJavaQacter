@@ -1,0 +1,51 @@
+package ejerciciosBanco;
+
+import javax.xml.crypto.Data;
+
+public class Tarjeta extends Cuenta{
+	private Data fecha;
+	private Cuenta cuentasoc=new Cuenta(getNumero(),getTitular());
+	
+	public Tarjeta(String numero, String titular, Data fechacaduc) {
+		super(numero,titular);
+		this.fecha=fecha;
+	}
+
+	@Override
+	public double getSaldo() {
+		// TODO Auto-generated method stub
+		return super.getSaldo();
+	}
+
+	public Data getFecha() {
+		return fecha;
+	}
+	public void pagoEstablecimiento(String datos, double x) {
+		
+	}
+
+	public void setFecha(Data fecha) {
+		this.fecha = fecha;
+	}
+
+	public Cuenta getCuentasoc() {
+		return cuentasoc;
+	}
+
+	public void setCuentasoc(Cuenta cuentasoc) {
+		this.cuentasoc = cuentasoc;
+	}
+
+	@Override
+	public void ingresar(double x) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retirar(double x) {
+		// TODO Auto-generated method stub
+		super.retirar(x);
+	}
+
+}

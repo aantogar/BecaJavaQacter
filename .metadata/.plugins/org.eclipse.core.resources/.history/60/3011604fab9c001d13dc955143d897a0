@@ -1,0 +1,34 @@
+package bancoUtils;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+import ejerciciosBanco.Cuenta;
+
+class FiltrosTest {
+	final String NOMBRE_UNO="Andrea";
+	
+
+	@Test
+	void testFiltername() throws Exception {
+		assertTrue(Filtros.Filtername(NOMBRE_UNO,10,21));
+	}
+
+	@Test
+	void testFilternamemax() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFilterDate() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFilterconcept() {
+		fail("Not yet implemented");
+	}
+
+}

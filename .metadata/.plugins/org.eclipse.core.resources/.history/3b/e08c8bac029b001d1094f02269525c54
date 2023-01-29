@@ -1,0 +1,10 @@
+package herenciaEquipos;
+
+public class Entrenador extends Trabajador{
+	private String idFederacion;
+	
+	public Entrenador(String nombre, String apellidos,int edad, String federacion) {
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package productos;
+
+public class Aire extends Congelados{
+
+	public Aire(String temp, String forma) {
+		super(temp, forma);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class FormatoFecha {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+	public static LocalDate fechaCorrecta(String fecha) {
+		fecha = "yyyy-MM-dd";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(fecha);
+
+		String date = simpleDateFormat.format(new Date(10));
+		System.out.println(date);
+        
+		return date;
+		
+	}
+
+}

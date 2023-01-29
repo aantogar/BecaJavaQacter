@@ -1,0 +1,59 @@
+package ejerciciosBanco;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import ejerciciosBanco.Movimiento;
+
+class MovimientoTest {
+	
+	
+	@BeforeAll
+	 public void inicializar() {
+	  final  Movimiento mov= new Movimiento();    
+	  }
+	
+	
+	@Test
+	void testToString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testMovimiento() {
+		asser
+	}
+
+	@Test
+	void testGetConcepto() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetConcepto() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetFecha() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetFecha() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetMiimporte() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetMiimporte() {
+		assertTrue(Movimiento);
+	}
+
+}

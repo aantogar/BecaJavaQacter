@@ -1,0 +1,19 @@
+package ejerciciosBanco;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.crypto.Data;
+
+public class Tarjeta extends Cuenta{
+	private Data FechaCaducidad;
+	Cuenta cuentasoc=new Cuenta(getNumero(),getTitular());
+	
+	 
+
+	public Tarjeta(String numero,String titular, Data fecha ) {
+		super(numero,titular);
+		this.FechaCaducidad=fecha;
+		
+	}
+}

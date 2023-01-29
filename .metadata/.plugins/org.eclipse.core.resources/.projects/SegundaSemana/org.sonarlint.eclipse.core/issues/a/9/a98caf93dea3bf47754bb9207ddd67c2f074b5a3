@@ -1,0 +1,11 @@
+
+g
+java:S3518."7Make sure "x" can't be zero before doing this division.(™ËæÓ8éå·™Ş0HÖRCRITICALZBUG
+‰
+java:S1192"RDefine a constant instead of duplicating this literal "El resultado es: " 3 times.(‹íÀ®8éå·™Ş0HÙRCRITICALZ
+CODE_SMELL
+
+java:S1192"TDefine a constant instead of duplicating this literal "Programa finalizado" 3 times.(‚ªæ¾ÿÿÿÿÿ8éå·™Ş0HİRCRITICALZ
+CODE_SMELL
+o	java:S1251"<This block of commented-out lines of code should be removed.(ª¨8´òÀ™Ş0HáRMAJORZ
+CODE_SMELL

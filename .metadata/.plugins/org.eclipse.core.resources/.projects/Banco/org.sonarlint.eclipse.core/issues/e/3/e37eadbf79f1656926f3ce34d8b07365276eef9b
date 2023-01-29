@@ -1,0 +1,58 @@
+
+‹	java:S116"XRename this field "SALDO_DIS_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍˆÜ’8ÕºáÌŞ0HıŒRMINORZ
+CODE_SMELL
+Z
+java:S1170"!Make this final field static too.(Š ÛÃùÿÿÿÿ8±ùÌŞ0HşŒRMINORZ
+CODE_SMELL
+Z
+java:S1170"!Make this final field static too.(Ş…«Äüÿÿÿÿ8Â§ûÍŞ0HÿŒRMINORZ
+CODE_SMELL
+d
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ä¦ºÍŞ0H€RMINORZ
+CODE_SMELL
+‡	java:S116"TRename this field "VALOR_DOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„™ÁÈ8Â§ûÍŞ0H‚RMINORZ
+CODE_SMELL
+Z
+java:S1170"!Make this final field static too.(³Æ¨üÿÿÿÿ8Â§ûÍŞ0HƒRMINORZ
+CODE_SMELL
+	java:S116"WRename this field "CONCEPTO_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š ÛÃùÿÿÿÿ8±ùÌŞ0H„RMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(³÷Î´8³ ÌŞ0H…RMINORZ
+CODE_SMELL
+X
+java:S5960 "+Remove this assertion from production code.(á¬öÉ8³ ÌŞ0H†RMAJORZBUG
+M
+java:S1700"Rename field "cuentatest"(–µØ¯8³ ÌŞ0HŒRMAJORZ
+CODE_SMELL
+‹	java:S116"SRename this field "TOSTRING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Æ¨üÿÿÿÿ8Â§ûÍŞ0HRMINORZ
+CODE_SMELL
+Œ	java:S116"TRename this field "VALOR_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş…«Äüÿÿÿÿ8Â§ûÍŞ0HRMINORZ
+CODE_SMELL
+‹	java:S116"XRename this field "NUMERO_CUENTA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³÷Î´8³ ÌŞ0HRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(„™ÁÈ8Â§ûÍŞ0HRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.( àÁ¼8³ ÌŞ0H‘RMINORZ
+CODE_SMELL
+•
+java:S41441"aUpdate this method so that its implementation is not identical to "testRetirarDouble" on line 42.(Ï°‹‹8Îï‹ÍŞ0H’RMAJORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(Ñİõ–8³ ÌŞ0H”RMINORZ
+CODE_SMELL
+ˆ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ŸÔÙŠ8³ ÌŞ0H•RMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "CANTIDAD_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( àÁ¼8³ ÌŞ0H—RMINORZ
+CODE_SMELL
+d
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¬ÆµÍŞ0H˜RMINORZ
+CODE_SMELL
+‰	java:S116"VRename this field "TITULAR_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñİõ–8³ ÌŞ0HšRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(ÍˆÜ’8ÕºáÌŞ0H›RMINORZ
+CODE_SMELL

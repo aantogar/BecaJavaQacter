@@ -1,0 +1,14 @@
+package figurasEjercicio;
+
+public class Punto extends Figura{
+	private int x;
+	private int e;
+	private int y;
+	
+	public Punto(int x, int e , int y) {
+		this.x=x;
+		this.e=e;
+		this.y=y;
+	}
+
+}

@@ -1,0 +1,24 @@
+
+j
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‡¸¤Æß0HßµRINFOZ
+CODE_SMELL
+a
+java:S1185"(Remove this method to simply inherit it.(Á³ÃÎıÿÿÿÿ8‡¸¤Æß0HÜµRMINORZ
+CODE_SMELL
+~
+java:S1226/"LIntroduce a new variable instead of reusing the parameter "mCuentaAsociada".(÷ÆÊ¦øÿÿÿÿ8‡¸¤Æß0HÛµRMINORZBUG
+[
+java:S1185"(Remove this method to simply inherit it.(×äj8‡¸¤Æß0HŞµRMINORZ
+CODE_SMELL
+j
+java:S1135!"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‡¸¤Æß0HáµRINFOZ
+CODE_SMELL
+\
+java:S1185 "(Remove this method to simply inherit it.(‘Òåï8‡¸¤Æß0HàµRMINORZ
+CODE_SMELL
+j
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‡¸¤Æß0HİµRINFOZ
+CODE_SMELL
+·
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿ØŞ;8ƒ×¿Æß0HèµRCRITICALZ
+CODE_SMELL

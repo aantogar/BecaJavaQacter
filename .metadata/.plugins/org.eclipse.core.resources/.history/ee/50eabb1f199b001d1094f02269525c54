@@ -1,0 +1,13 @@
+package VehiculoEjercicioInterfaces;
+
+public class Utilities {
+
+	
+	public void leer(String dato) {
+		System.out.println("Leyendo..... "+dato);
+	}
+	public void grabar(String dato) {
+		System.out.println("Grabando..... "+dato);
+	}
+
+}

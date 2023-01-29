@@ -1,0 +1,5 @@
+package VehiculoEjercicioInterfaces;
+
+public class Camion {
+
+}

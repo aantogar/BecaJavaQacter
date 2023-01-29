@@ -1,0 +1,24 @@
+
+\
+java:S5960"+Remove this assertion from production code.(Ÿ÷©·úÿÿÿÿ8Çª®ÎÞ0HõWRMAJORZBUG
+o
+java:S1128"<Remove this unused import 'org.junit.jupiter.api.BeforeAll'.(—¦¹î8Çª®ÎÞ0HóWRMINORZ
+CODE_SMELL
+…	java:S116"SRename this field "CONCEPTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡èŸ¿8Çª®ÎÞ0HñWRMINORZ
+CODE_SMELL
+p
+java:S1128"8Remove this unused import 'org.junit.Assert.assertTrue'.(”ÄÜ™ûÿÿÿÿ8Í‰ÖÌÞ0HÊTRMINORZ
+CODE_SMELL
+‡
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Å»½ð8Í‰ÖÌÞ0HÌTRMINORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(¡èŸ¿8Çª®ÎÞ0HòWRMINORZ
+CODE_SMELL
+‚	java:S116"PRename this field "FECHA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÞÍÂ8Ù’ÃÎÞ0H‘XRMINORZ
+CODE_SMELL
+„	java:S116"RRename this field "IMPORTE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öìíà8Ù’ÃÎÞ0H’XRMINORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(Öìíà8Ù’ÃÎÞ0H“XRMINORZ
+CODE_SMELL

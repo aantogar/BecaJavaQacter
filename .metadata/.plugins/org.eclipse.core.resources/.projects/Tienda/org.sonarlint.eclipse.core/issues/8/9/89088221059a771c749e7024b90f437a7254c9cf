@@ -1,0 +1,99 @@
+
+†	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢µŒ§ûÿÿÿÿ8ÆìµÃß0H†³RMINORZ
+CODE_SMELL
+	java:S100t"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀµÊ­8ÆìµÃß0H³RMINORZ
+CODE_SMELL
+€	java:S116"TRename this field "user_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÚªÇHÜ²RMINORZ
+CODE_SMELL
+‰	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢µŒ§ûÿÿÿÿ8ÆìµÃß0Hù²RMINORZ
+CODE_SMELL
+„	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨áõ¨8ÆìµÃß0Hı²RMINORZ
+CODE_SMELL
+†	java:S100x"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÌœ¥úÿÿÿÿ8ÆìµÃß0H³RMINORZ
+CODE_SMELL
+‚
+java:S3008"URename this field "id_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õô÷—Hä²RMINORZ
+CODE_SMELL
+„	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»°“ı8¬ıÊÃß0H®³RMINORZ
+CODE_SMELL
+†	java:S116	"URename this field "user_email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òµ¬øÿÿÿÿHİ²RMINORZ
+CODE_SMELL
+†	java:S100h"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–Àıÿÿÿÿ8ÆìµÃß0HŒ³RMINORZ
+CODE_SMELL
+	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Óè¸8ÆìµÃß0H…³RMINORZ
+CODE_SMELL
+†	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¨õüÿÿÿÿ8ÆìµÃß0Hƒ³RMINORZ
+CODE_SMELL
+	java:S116"URename this field "user_envio" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á›´ÇHã²RMINORZ
+CODE_SMELL
+~	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ø´¸íıÿÿÿÿ8ˆÒÜÃß0HÔ³RMAJORZ
+CODE_SMELL
+Š	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹©Äêúÿÿÿÿ8ÆìµÃß0H€³RMINORZ
+CODE_SMELL
+‰	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–Àıÿÿÿÿ8ÆìµÃß0Hü²RMINORZ
+CODE_SMELL
+Š	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À«Ï¹øÿÿÿÿ8ÆìµÃß0Hÿ²RMINORZ
+CODE_SMELL
+b
+java:S1068".Remove this unused "id_usuario" private field.(Õô÷—8¬ıÊÃß0H³³RMAJORZ
+CODE_SMELL
+„	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¤ê¢8ÆìµÃß0Hû²RMINORZ
+CODE_SMELL
+t	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(­Ùâ¯8¬ıÊÃß0H°³RMAJORZ
+CODE_SMELL
+€	java:S100d"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒó±V8ÆìµÃß0H‹³RMINORZ
+CODE_SMELL
+~	java:S1129"FDefine and throw a dedicated exception instead of using a generic one.(êæ…âùÿÿÿÿ8¼àÄß0HÉ´RMAJORZ
+CODE_SMELL
+„	java:S116"SRename this field "user_dni" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÉ¼ƒûÿÿÿÿHß²RMINORZ
+CODE_SMELL
+†	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡‰…Ïÿÿÿÿÿ8ÆìµÃß0H‡³RMINORZ
+CODE_SMELL
+_
+java:S1068"+Remove this unused "id_tipo" private field.(¾¬ş8¼àÄß0HÏ´RMAJORZ
+CODE_SMELL
+ƒ	java:S116"WRename this field "user_fecAlta" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¥™Hà²RMINORZ
+CODE_SMELL
+~	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ø´¸íıÿÿÿÿ8ˆÒÜÃß0HÕ³RMAJORZ
+CODE_SMELL
+	java:S100H"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÜÄ8ÆìµÃß0H„³RMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "FECHA_ACTUAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Ş‡Ï8¼àÄß0HÌ´RMINORZ
+CODE_SMELL
+†	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›şâ‚ûÿÿÿÿ8ÆìµÃß0H‰³RMINORZ
+CODE_SMELL
+y	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(âÚ£¡8¼àÄß0HÊ´RMAJORZ
+CODE_SMELL
+‡	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÅ¯Àûÿÿÿÿ8ÆìµÃß0H“³RMINORZ
+CODE_SMELL
+„	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»°“ı8¬ıÊÃß0H¯³RMINORZ
+CODE_SMELL
+	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¤ê¢8ÆìµÃß0HŠ³RMINORZ
+CODE_SMELL
+ƒ	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ñós8ÆìµÃß0Hú²RMINORZ
+CODE_SMELL
+€	java:S116"TRename this field "user_pago" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òõ«Hâ²RMINORZ
+CODE_SMELL
+…	java:S116"RRename this field "id_tipo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¬ş8¼àÄß0HË´RMINORZ
+CODE_SMELL
+…	java:S116
+"TRename this field "user_pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ì®òøÿÿÿÿHŞ²RMINORZ
+CODE_SMELL
+‡	java:S100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹©Äêúÿÿÿÿ8ÆìµÃß0H”³RMINORZ
+CODE_SMELL
+	java:S100l"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À“ÙÕ8ÆìµÃß0H³RMINORZ
+CODE_SMELL
+‡	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À«Ï¹øÿÿÿÿ8ÆìµÃß0H’³RMINORZ
+CODE_SMELL
+†	java:S100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¹¸ÿÿÿÿÿ8ÆìµÃß0H‘³RMINORZ
+CODE_SMELL
+€	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ñós8ÆìµÃß0Hˆ³RMINORZ
+CODE_SMELL
+	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨áõ¨8ÆìµÃß0H³RMINORZ
+CODE_SMELL
+	java:S116"_Rename this field "user_fecConfirmacion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øñÕşøÿÿÿÿHá²RMINORZ
+CODE_SMELL
+‰	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÌœ¥úÿÿÿÿ8ÆìµÃß0Hş²RMINORZ
+CODE_SMELL
+~	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(êæ…âùÿÿÿÿ8Ä½˜Äß0HÕ´RMAJORZ
+CODE_SMELL

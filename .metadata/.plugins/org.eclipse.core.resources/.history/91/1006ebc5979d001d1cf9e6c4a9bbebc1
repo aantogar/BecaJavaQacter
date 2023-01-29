@@ -1,0 +1,25 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+public class FormatoFecha {
+
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+	public static LocalDate fechaCorrecta(String fecha) {
+		LocalDate date=LocalDate.parse(fecha);
+		//otra manera
+		/*LocalDate date = LocalDate.now();
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("'Son las' h 'y' mm");
+        System.out.println(date.format(f));*/
+  
+		return date;
+		
+	}
+
+}

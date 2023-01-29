@@ -1,0 +1,51 @@
+package ejerciciosBanco;
+
+import java.time.LocalDate;
+import java.util.Calendar;
+
+import javax.xml.crypto.Data;
+
+public class Debito extends Tarjeta{
+	
+	public Debito(String numero,String titular,LocalDate fecha) {
+		super(numero,titular,fecha);
+		
+	}
+
+	@Override
+	public void pagoEstablecimiento(String datos, double x) throws Exception {
+		// TODO Auto-generated method stub
+		super.pagoEstablecimiento(datos, x);
+	}
+
+	@Override
+	public String toString() {
+		return "La cuenta de Debito tiene un saldo" + getSaldo() + ", con fecha: " + getFecha() + ", la cuenta asociada: " + getCuentasoc()
+				+ ", titular: " + getTitular() + ", número" + getNumero() + ", y sus movimientos son: "
+				+ mostrarMovimientos() + ".";
+	}
+
+	@Override
+	public double getSaldo() {
+		// TODO Auto-generated method stub
+		if(getCuentasoc()==null) {
+			throw new Exception("No se ha podido ingresar la cantidad.");
+		}else {
+			
+		return getCuentasoc().getSaldo();
+	}
+	}
+
+	@Override
+	public void ingresar(double x) throws Exception {
+		// TODO Auto-generated method stub
+		this.getCuentasoc().ingresar(x);
+	}
+
+	@Override
+	public void retirar(double x) throws Exception {
+		// TODO Auto-generated method stub
+		this.getCuentasoc().retirar(x);
+	}
+
+}

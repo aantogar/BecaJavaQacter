@@ -1,0 +1,193 @@
+
+„	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‰ö8€êÁß0HÅ°RMINORZ
+CODE_SMELL
+	java:S116"]Rename this field "pro_usoRecomendado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìƒ¿÷8‘ô†Áß0Hú¯RMINORZ
+CODE_SMELL
+‚	java:S100Ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ØÅƒ8çŠÁß0H¶°RMINORZ
+CODE_SMELL
+„	java:S117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢õ8çŠÁß0H’°RMINORZ
+CODE_SMELL
+„	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅöØ°8€êÁß0HÃ°RMINORZ
+CODE_SMELL
+‡	java:S100¨"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ­Æ½úÿÿÿÿ8çŠÁß0H¹°RMINORZ
+CODE_SMELL
+	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›À¯Ä8çŠÁß0H¢°RMINORZ
+CODE_SMELL
+‡	java:S100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ê ¢øÿÿÿÿ8çŠÁß0H¿°RMINORZ
+CODE_SMELL
+„	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãó¯‡8€êÁß0HÊ°RMINORZ
+CODE_SMELL
+‡	java:S100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñí¦³ùÿÿÿÿ8çŠÁß0HÀ°RMINORZ
+CODE_SMELL
+„	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›À¯Ä8çŠÁß0H°RMINORZ
+CODE_SMELL
+	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¸Äé8çŠÁß0H¦°RMINORZ
+CODE_SMELL
+‡	java:S100´"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÿÌúÿÿÿÿ8çŠÁß0H½°RMINORZ
+CODE_SMELL
+y	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(ÑÉú8‚í¾Âß0HŞ±RMAJORZ
+CODE_SMELL
+†	java:S100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öñõşÿÿÿÿ8çŠÁß0H«°RMINORZ
+CODE_SMELL
+‚	java:S100·"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äœ€ 8çŠÁß0H¾°RMINORZ
+CODE_SMELL
+	java:S116"WRename this field "pro_nStkAlto" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÙìÛüÿÿÿÿ8‘ô†Áß0Hı¯RMINORZ
+CODE_SMELL
+†	java:S100f"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š É‰ùÿÿÿÿ8çŠÁß0H¥°RMINORZ
+CODE_SMELL
+s
+java:S2696¦"6Make the enclosing method "static" or remove this set.(Î³–øÿÿÿÿ8€Ê‰Âß0Hí°RCRITICALZ
+CODE_SMELL
+„	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‰ö8€êÁß0HÄ°RMINORZ
+CODE_SMELL
+„	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãó¯‡8€êÁß0HË°RMINORZ
+CODE_SMELL
+~	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(úÆ’æùÿÿÿÿ8¤ƒÒÂß0H²RMAJORZ
+CODE_SMELL
+ƒ	java:S116"WRename this field "pro_fecRepos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¨“H«¯RMINORZ
+CODE_SMELL
+o
+java:S2209¦"5Change this instance-reference to a static reference.(Î³–øÿÿÿÿ8€Ê‰Âß0Hæ°RMAJORZ
+CODE_SMELL
+	java:S116"[Rename this field "pro_stkReservado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Ç½ƒ8‘ô†Áß0Hü¯RMINORZ
+CODE_SMELL
+‡	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùø«ıÿÿÿÿ8çŠÁß0H¬°RMINORZ
+CODE_SMELL
+‚	java:S100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅûãÇ8çŠÁß0H·°RMINORZ
+CODE_SMELL
+]
+java:S2201M"+The return value of "isAfter" must be used.(¨ÈëĞıÿÿÿÿ8¨’ôÂß0H¡²RMAJORZBUG
+ƒ	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ë¼v8çŠÁß0H°RMINORZ
+CODE_SMELL
+†	java:S100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š—¢—ÿÿÿÿÿ8çŠÁß0Hª°RMINORZ
+CODE_SMELL
+„	java:S116"RRename this field "id_pais" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾îÍN8İ˜Âß0H‡±RMINORZ
+CODE_SMELL
+‡	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïä†£şÿÿÿÿ8çŠÁß0H±°RMINORZ
+CODE_SMELL
+…	java:S117Ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ØÅƒ8çŠÁß0H™°RMINORZ
+CODE_SMELL
+‰	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š¿­Âÿÿÿÿÿ8çŠÁß0H°RMINORZ
+CODE_SMELL
+‰	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š—¢—ÿÿÿÿÿ8çŠÁß0H“°RMINORZ
+CODE_SMELL
+	java:S100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óê„½8çŠÁß0H§°RMINORZ
+CODE_SMELL
+„	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èì“8€êÁß0HÈ°RMINORZ
+CODE_SMELL
+\
+java:S30105")Remove this assignment of "id_categoria".(š¤·H8€Ê‰Âß0Hª²RMAJORZ
+CODE_SMELL
+‚	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ã¾í8çŠÁß0H³°RMINORZ
+CODE_SMELL
+…	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¬íî8çŠÁß0H•°RMINORZ
+CODE_SMELL
+„	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãó¯‡8€êÁß0HÌ°RMINORZ
+CODE_SMELL
+„	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èì“8€êÁß0HÎ°RMINORZ
+CODE_SMELL
+	java:S116"\Rename this field "pro_cantXUniVenta" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÚì8ÀœùÀß0HÓ¯RMINORZ
+CODE_SMELL
+Š	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á‰Â½üÿÿÿÿ8çŠÁß0H›°RMINORZ
+CODE_SMELL
+„	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èì“8€êÁß0HÉ°RMINORZ
+CODE_SMELL
+‡	java:S116"VRename this field "pro_fecActi" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¦öşÿÿÿÿH¬¯RMINORZ
+CODE_SMELL
+‚	java:S100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â”Øæ8çŠÁß0H´°RMINORZ
+CODE_SMELL
+~	java:S112O"FDefine and throw a dedicated exception instead of using a generic one.(úÆ’æùÿÿÿÿ8ûÆÂß0Hø±RMAJORZ
+CODE_SMELL
+„	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¸Äé8çŠÁß0H‘°RMINORZ
+CODE_SMELL
+	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢õ8çŠÁß0H¨°RMINORZ
+CODE_SMELL
+Š	java:S116"YRename this field "pro_fecDesacti" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥È©—ûÿÿÿÿH­¯RMINORZ
+CODE_SMELL
+‡	java:S100Š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ÆËÃıÿÿÿÿ8çŠÁß0H¯°RMINORZ
+CODE_SMELL
+†	java:S100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¥ËÂüÿÿÿÿ8çŠÁß0H¡°RMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "FECHA_ACTUAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Ş‡Ï8‚í¾Âß0Hß±RMINORZ
+CODE_SMELL
+‡	java:S100«"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á‰Â½üÿÿÿÿ8çŠÁß0Hº°RMINORZ
+CODE_SMELL
+Š	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùø«ıÿÿÿÿ8çŠÁß0H”°RMINORZ
+CODE_SMELL
+„	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èì“8€êÁß0HÇ°RMINORZ
+CODE_SMELL
+†	java:S116"SRename this field "pro_stat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óüÙ8‘ô†Áß0Hÿ¯RMINORZ
+CODE_SMELL
+„	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç‰ö8€êÁß0HÆ°RMINORZ
+CODE_SMELL
+„	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÉú8€êÁß0HÍ°RMINORZ
+CODE_SMELL
+ƒ	java:S116"WRename this field "pro_desLarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö•­ÃH©¯RMINORZ
+CODE_SMELL
+„	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅöØ°8€êÁß0HÁ°RMINORZ
+CODE_SMELL
+†	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÃöŸüÿÿÿÿ8çŠÁß0H£°RMINORZ
+CODE_SMELL
+‹
+java:S3008"WRename this field "id_categoria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÓØğ8€Ê‰Âß0Hß°RMINORZ
+CODE_SMELL
+…	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê“¨ª8çŠÁß0Hš°RMINORZ
+CODE_SMELL
+‚	java:S100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áí…8çŠÁß0Hµ°RMINORZ
+CODE_SMELL
+…	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â”Øæ8çŠÁß0H˜°RMINORZ
+CODE_SMELL
+‡	java:S100±"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„«É®ıÿÿÿÿ8çŠÁß0H¼°RMINORZ
+CODE_SMELL
+	java:S116"WRename this field "pro_uniVenta" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó…”×ÿÿÿÿÿ8ÀœùÀß0HÒ¯RMINORZ
+CODE_SMELL
+„	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅöØ°8€êÁß0HÂ°RMINORZ
+CODE_SMELL
+…	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äœ€ 8çŠÁß0H°RMINORZ
+CODE_SMELL
+u	java:S107%"BConstructor has 18 parameters, which is greater than 7 authorized.(ÅöØ°8€êÁß0HÏ°RMAJORZ
+CODE_SMELL
+‚	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¬íî8çŠÁß0H®°RMINORZ
+CODE_SMELL
+‚	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş­Š8çŠÁß0H°°RMINORZ
+CODE_SMELL
+†	java:S116"URename this field "pro_precio" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¤…ÏùÿÿÿÿHª¯RMINORZ
+CODE_SMELL
+€	java:S100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ë¼v8çŠÁß0H¤°RMINORZ
+CODE_SMELL
+Š	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„«É®ıÿÿÿÿ8çŠÁß0Hœ°RMINORZ
+CODE_SMELL
+~	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(úÆ’æùÿÿÿÿ8¨’ôÂß0HŸ²RMAJORZ
+CODE_SMELL
+‚	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®œâ¼8çŠÁß0H­°RMINORZ
+CODE_SMELL
+’	java:S116"ZRename this field "pro_uniUltNivel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å›€¿úÿÿÿÿ8ÀœùÀß0HÔ¯RMINORZ
+CODE_SMELL
+Š	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñí¦³ùÿÿÿÿ8çŠÁß0H°RMINORZ
+CODE_SMELL
+h
+java:S22095"5Change this instance-reference to a static reference.(š¤·H8€Ê‰Âß0H¬²RMAJORZ
+CODE_SMELL
+…	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´äŠ8çŠÁß0H—°RMINORZ
+CODE_SMELL
+†	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š¿­Âÿÿÿÿÿ8çŠÁß0H °RMINORZ
+CODE_SMELL
+†	java:S100x"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Şô³ÿÿÿÿÿ8çŠÁß0H©°RMINORZ
+CODE_SMELL
+‡	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ºûµüÿÿÿÿ8çŠÁß0H»°RMINORZ
+CODE_SMELL
+…	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş­Š8çŠÁß0H–°RMINORZ
+CODE_SMELL
+‚	java:S100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê“¨ª8çŠÁß0H¸°RMINORZ
+CODE_SMELL
+†	java:S116
+"ZRename this field "pro_descripcion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇâôH¨¯RMINORZ
+CODE_SMELL
+ˆ	java:S116	"VRename this field "id_producto" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì°ô+8‘ô†Áß0Hø¯RMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "pro_nStkBajo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÄ™Í8‘ô†Áß0Hş¯RMINORZ
+CODE_SMELL
+‚	java:S100“"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´äŠ8çŠÁß0H²°RMINORZ
+CODE_SMELL
+€	java:S100S"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û®ı[8çŠÁß0HŸ°RMINORZ
+CODE_SMELL

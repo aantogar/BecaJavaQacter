@@ -1,0 +1,34 @@
+package fechas;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class FormatoFechaTest {
+	private  final String FECHA_UNO=("2020-12-07");
+	private  final String FECHA_DOS=("2020-12-07");
+	private  final String FECHA_TRES=("1993.10.02");
+	private  final String FECHA_CUATRO = "2022-08-0522:51:53";
+	FormatoFecha fecha=new FormatoFecha();
+
+	@Test
+	void testFechaCorrecta() {
+		assertNotNull(fecha.fechaCorrecta(FECHA_UNO));
+	}
+
+	@Test
+	void testFechaCorrectaDos() {
+		assertNotNull(fecha.fechaCorrecta(FECHA_DOS));
+	}
+	@Test
+	void testFechaCorrectaTres() {
+		assertNotNull(fecha.fechaCorrecta(FECHA_TRES));
+	}
+	@Test
+	void testFechaCorrectaCuatro() {
+		assertNotNull(fecha.fechaCorrecta(FECHA_CUATRO));
+	}
+
+
+}

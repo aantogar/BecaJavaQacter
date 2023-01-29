@@ -1,0 +1,13 @@
+
+g
+java:S1854":Remove this useless assignment to local variable "diaMes".(½ú¾ƒHÐ°RMAJORZ
+CODE_SMELL
+e
+java:S1854"8Remove this useless assignment to local variable "dato".(îáŠ°HÑ°RMAJORZ
+CODE_SMELL
+V
+java:S1481")Remove this unused "dato" local variable.(îáŠ°HÒ°RMINORZ
+CODE_SMELL
+X
+java:S1481"+Remove this unused "diaMes" local variable.(½ú¾ƒHÔ°RMINORZ
+CODE_SMELL

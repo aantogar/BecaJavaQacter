@@ -1,0 +1,43 @@
+
+…	java:S116	"TRename this field "FECHA_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾œÂëşÿÿÿÿH°‚RMINORZ
+CODE_SMELL
+…	java:S116
+"TRename this field "FECHA_DOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ï×äüÿÿÿÿH±‚RMINORZ
+CODE_SMELL
+	java:S116"URename this field "FECHA_TRES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÎ™×H²‚RMINORZ
+CODE_SMELL
+ˆ	java:S116"WRename this field "FECHA_CUATRO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ÏÔšşÿÿÿÿH³‚RMINORZ
+CODE_SMELL
+S
+java:S1170	"!Make this final field static too.(¾œÂëşÿÿÿÿH´‚RMINORZ
+CODE_SMELL
+S
+java:S1170
+"!Make this final field static too.(½ï×äüÿÿÿÿHµ‚RMINORZ
+CODE_SMELL
+N
+java:S1170"!Make this final field static too.(µÎ™×H¶‚RMINORZ
+CODE_SMELL
+S
+java:S1170"!Make this final field static too.(¹ÏÔšşÿÿÿÿH·‚RMINORZ
+CODE_SMELL
+Y
+java:S2440",Remove this instantiation of "FormatoFecha".(ÖşéÅH¸‚RMAJORZ
+CODE_SMELL
+g
+java:S2209"5Change this instance-reference to a static reference.(œ´øÿÿÿÿH¹‚RMAJORZ
+CODE_SMELL
+g
+java:S2209"5Change this instance-reference to a static reference.(Ğ÷ĞòşÿÿÿÿH»‚RMAJORZ
+CODE_SMELL
+a
+java:S2209"5Change this instance-reference to a static reference.(ŒşÁ1H½‚RMAJORZ
+CODE_SMELL
+a
+java:S2209"5Change this instance-reference to a static reference.(ŒşÁ1H¿‚RMAJORZ
+CODE_SMELL
+V
+java:S5960"+Remove this assertion from production code.(œ´øÿÿÿÿHÁ‚RMAJORZBUG
+b
+java:S1068"0Remove this unused "FECHA_CUATRO" private field.(¹ÏÔšşÿÿÿÿHÅ‚RMAJORZ
+CODE_SMELL

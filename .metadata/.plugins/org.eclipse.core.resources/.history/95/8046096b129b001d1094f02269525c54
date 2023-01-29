@@ -1,0 +1,58 @@
+package VehiculoEjercicioInterfaces;
+
+public class Vehiculo {
+	private int numMarchas;
+	private int velocMax;
+	private String color;
+	private int numChasis;
+	private int numRuedas;
+	
+	public Vehiculo(int numMarchas,int velocidad,String color,int numCh,int ruedas) {
+		this.numMarchas=numMarchas;
+		this.velocMax=velocidad;
+		this.color=color;
+		this.numChasis=numCh;
+		this.numRuedas=ruedas;
+	}
+
+	public int getNumMarchas() {
+		return numMarchas;
+	}
+
+	public void setNumMarchas(int numMarchas) {
+		this.numMarchas = numMarchas;
+	}
+
+	public int getVelocMax() {
+		return velocMax;
+	}
+
+	public void setVelocMax(int velocMax) {
+		this.velocMax = velocMax;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public int getNumChasis() {
+		return numChasis;
+	}
+
+	public void setNumChasis(int numChasis) {
+		this.numChasis = numChasis;
+	}
+
+	public int getNumRuedas() {
+		return numRuedas;
+	}
+
+	public void setNumRuedas(int numRuedas) {
+		this.numRuedas = numRuedas;
+	}
+
+}

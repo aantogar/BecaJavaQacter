@@ -1,0 +1,11 @@
+
+public class MiExcepcion extends RuntimeException {
+	
+	public MiExcepcion() {
+		
+	}
+	public MiExcepcion(String args0) {
+		super(args0);
+	}
+
+}

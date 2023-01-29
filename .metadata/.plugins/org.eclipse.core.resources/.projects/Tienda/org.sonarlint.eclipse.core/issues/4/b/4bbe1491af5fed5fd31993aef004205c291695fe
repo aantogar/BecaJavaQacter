@@ -1,0 +1,31 @@
+
+}	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÚŒH˜ˆRMINORZ
+CODE_SMELL
+z	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê“¨ªHŸˆRMINORZ
+CODE_SMELL
+z	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÚŒH£ˆRMINORZ
+CODE_SMELL
+‹	java:S116"ZRename this field "cat_descripcion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º–­ÌúÿÿÿÿH›ˆRMINORZ
+CODE_SMELL
+	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÂñùÿÿÿÿH¡ˆRMINORZ
+CODE_SMELL
+z	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅûãÇHˆRMINORZ
+CODE_SMELL
+}	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê“¨ªH–ˆRMINORZ
+CODE_SMELL
+	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¨­øÿÿÿÿH ˆRMINORZ
+CODE_SMELL
+z	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÒ¶íH¢ˆRMINORZ
+CODE_SMELL
+±
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚÚÏ–HœˆRCRITICALZ
+CODE_SMELL
+s
+java:S1126l"AReplace this if-then-else statement by a single return statement.(¡¹ÖşÿÿÿÿH¤ˆRMINORZ
+CODE_SMELL
+	java:S116"URename this field "cat_nombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§˜”ŞHšˆRMINORZ
+CODE_SMELL
+‚	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÂñùÿÿÿÿH—ˆRMINORZ
+CODE_SMELL
+ˆ	java:S116"WRename this field "id_categoria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¬Ô½øÿÿÿÿH™ˆRMINORZ
+CODE_SMELL

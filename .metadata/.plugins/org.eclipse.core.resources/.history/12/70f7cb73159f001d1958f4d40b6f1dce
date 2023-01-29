@@ -1,0 +1,21 @@
+package bancoAppPracticar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public  class  Cuenta {
+	private List<Movimiento>mMovimiento=new ArrayList<Movimiento>();
+	private String mNumero;
+	private String mTitular;
+	
+	public Cuenta(String numero, String titular) {
+		this.mTitular=titular;
+		this.mNumero=numero;
+	}
+	public void addMovimiento(Movimiento m) {
+		m=new Movimiento();
+		mMovimiento.add(m);
+		
+	}
+
+}
