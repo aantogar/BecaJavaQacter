@@ -10,7 +10,7 @@ public class Debito extends Tarjeta {
 
 	@Override
 	public double getSaldo() {
-		return super.getSaldo();
+		return getmCuentaAsociada().getSaldo();
 	}
 
 	@Override

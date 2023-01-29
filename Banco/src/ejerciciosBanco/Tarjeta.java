@@ -54,7 +54,7 @@ public class Tarjeta extends Cuenta{
 
 	@Override
 	public void ingresar(double x) throws Exception {
-		// TODO Auto-generated method stub
+		super.ingresar(x);
 		
 	}
 

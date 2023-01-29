@@ -3,8 +3,8 @@ package src.bancoAppPracticarJava;
 import java.time.LocalDate;
 
 public class Tarjeta extends Cuenta{
-	private Cuenta mCuentaAsociada;
 	private LocalDate mFechaCaducidad;
+	 private Cuenta mCuentaAsociada=new Cuenta(getmTitular(),getmNumero());
 	
 	public Tarjeta(String numero,String titular, LocalDate fechacaduc) {
 		//llamamos a los atributos del padre
@@ -43,7 +43,6 @@ public class Tarjeta extends Cuenta{
 
 	public void setmCuentaAsociada(Cuenta mCuentaAsociada) {
 		//creamos el objeto cuenta y le pasamos los metodos getter para vincular con cuenta
-		mCuentaAsociada=new Cuenta(getmTitular(),getmNumero());
 		this.mCuentaAsociada = mCuentaAsociada;
 	}
 

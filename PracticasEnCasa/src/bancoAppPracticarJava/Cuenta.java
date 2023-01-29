@@ -3,6 +3,8 @@ package src.bancoAppPracticarJava;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public  class  Cuenta{
 	private List<Movimiento>mMovimiento=new ArrayList<Movimiento>();
 	private String mNumero;

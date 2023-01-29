@@ -7,6 +7,9 @@ import java.util.List;
 public class Credito extends Tarjeta{
 	private double mCredito;
 	private List<Movimiento>mMovimientos=new ArrayList<Movimiento>();
+	//variable para calcular la comision
+	private double comision=5/100;
+	private double  minimo=3;
 	
 	
 	public Credito(String numero,String titular, LocalDate fechacaduc) {
@@ -16,13 +19,18 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public String toString() {
-		return "Credito [mCredito=" + mCredito + ", mMovimientos=" + mMovimientos + ", getmCredito()=" + getmCredito()
+		return "Credito [mCredito=" + mCredito + ", mMovimientos=" + mMovimientos + ", getmCredito()=" + getmCreditoDisponible()
 				+ ", getmFechaCaducidad()=" + getmFechaCaducidad() + ", getmNumero()=" + getmNumero()
 				+ ", getmTitular()=" + getmTitular() + "]";
 	}
 
 
-	public double getmCredito() {
+	public double getmCreditoDisponible() {
+		mCredito=0;
+		for(Movimiento m: mMovimientos) {
+			mCredito+=m.getmImporte();
+		}
+			
 		return mCredito;
 	}
 
@@ -38,8 +46,11 @@ public class Credito extends Tarjeta{
 
 
 	public void setmMovimientos(List<Movimiento> mMovimientos) {
-		this.mMovimientos = mMovimientos;
+		this.mMovimientos = new ArrayList<Movimiento>(mMovimientos);
 	}
+
+
+
 
 
 	@Override
@@ -50,15 +61,39 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public void ingresar(double x) throws Exception {
-		// TODO Auto-generated method stub
-		super.ingresar(x);
+		//creamos nuevo movimiento
+		Movimiento mov=new Movimiento();
+		//nos aseguramos que la cantidad a ingresar sea mayor que 0
+		if(x>0) {
+			mCredito+=x;
+		}//agregamos concepto e importe al nuevo movimiento
+		mov.setmConcepto("Ingreso en cuenta asociada: ");
+		mov.setmImporte(x);
+		//añadimos a nuestro ArrayList el movimiento creado
+		mMovimientos.add(mov);
+		
 	}
 
 
 	@Override
 	public void retirar(double x) {
-		// TODO Auto-generated method stub
-		super.retirar(x);
+		//creamos un nuevo movimiento
+		double com_act=(x*5)/100;
+		Movimiento mov=new Movimiento();
+		//comprobamos que x sea mayor que el credito disponible
+		if(x < getmCreditoDisponible()) {
+			if(com_act < minimo) {
+				x+=minimo;
+			}else {
+				x+=com_act;	
+			}
+			mov.setmConcepto("Retirada en cuenta asociada");
+			mov.setmImporte(-x);
+			mMovimientos.add(mov);
+			mCredito-=x;	
+	}else {
+		System.out.println("No se ha podido retirar el dinero");
+	}
 	}
 
 
