@@ -6,7 +6,7 @@ import java.util.Calendar;
 import javax.xml.crypto.Data;
 
 public class testBanco {
-	
+	private static String dni="26.752.080-K";
 	public static void main (String[]args) throws Exception {
 		
 		LocalDate date=LocalDate.now();
@@ -26,11 +26,16 @@ public class testBanco {
 		cred.retirar(300);
 		cred.liquidar(01, 2023);
 		System.out.println(cred.toString());
-	
-		
-
-		
-		
+		int suma = 0;
+		String charsToRemove = ".-";
+		 
+        for (char c : charsToRemove.toCharArray()) {
+            dni = dni.replace(String.valueOf(c), "");
+        }
+		int miDni=Integer.parseInt(dni.substring(0, 8));
+		suma=miDni%23;
+		System.out.println(suma);
 	}
-
 }
+
+

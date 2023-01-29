@@ -134,9 +134,17 @@ public class Validator {
 	public static boolean cumpleDNI(String dni){
 		//utilizamos Matcher para buscar y comprobar el patron en la variable
 		//comprobamos longitud y buscamos asignamos al caracter de la letra el % de 23
+		int suma = 0;
+		String dniDos=String.copyValueOf(dni.toCharArray());
+		String charsToRemove = ".-";
+        for (char c : charsToRemove.toCharArray()) {
+          dniDos = dniDos.replace(String.valueOf(c), "");
+          int miDni=Integer.parseInt(dniDos.substring(0, 8));
+          suma=miDni%23;
+        }
 		
-	    return dni != null && dni.matches(DNI_PATTERN)&& dni.length() == LONGITUD_DNI  && 
-	    		dni.charAt(11) == LETRA_DNI.charAt(Integer.parseInt(dni.substring(0, 10)) % 23);
+	    return dni != null && dni.matches(DNI_PATTERN)  && dni.length()== LONGITUD_DNI
+	    		&& dni.charAt(11) == LETRA_DNI.charAt(suma);
 	}
 	
 
