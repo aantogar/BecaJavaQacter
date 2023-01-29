@@ -18,15 +18,19 @@ public  class  Cuenta{
 		mMovimiento.add(m);
 		
 	}
-	public void getSaldo() {
+	public double getSaldo() {
+		double saldo=0;
+		for(Movimiento m: mMovimiento) {
+			saldo+=m.getmImporte();
+		}return saldo;
 		
 	}
-	public void ingresar(double x) {
-		
+	public void ingresar(double x) throws Exception {
+		ingresar("Ingreso de cantidad",x);
 		
 	}
 	public void ingresar(String concepto, double x) throws Exception {
-		/*double cant=0;
+		double cant=0;
 		Movimiento mov=new Movimiento();
 		//comprobamos que la cantidad a ingresar es mayor que 0
 		if(x > 0) {
@@ -36,20 +40,33 @@ public  class  Cuenta{
 			throw new Exception("La cantidad tiene que ser superior");
 		}
 		//añadimos concepto y cantidad a movimientos
-		*/
-		
+		mov.setmConcepto(concepto);
+		mov.setmImporte(x);
+		addMovimiento(mov);
 	}
 	public void retirar(double x) {
 		
 	}
 	public void retirar(String concepto, double x) {
+		double cant=0;
+		Movimiento mov=new Movimiento();
+		//comprobamos que el saldo sea superior
+		if(x<=getSaldo()) {
+			concepto="Retirada de efectivo";
+			cant-=x;
+		}
+		mov.setmConcepto(concepto);
+		mov.setmImporte(-x);
+		addMovimiento(mov);
+		
+		
 		
 	}
 	public List<Movimiento> getmMovimiento() {
 		return mMovimiento;
 	}
 	public void setmMovimiento(List<Movimiento> mMovimiento) {
-		this.mMovimiento = mMovimiento;
+		this.mMovimiento = new ArrayList<Movimiento>(mMovimiento);
 	}
 	public String getmNumero() {
 		return mNumero;

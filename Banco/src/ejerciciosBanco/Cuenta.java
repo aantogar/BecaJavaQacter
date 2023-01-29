@@ -121,7 +121,7 @@ public  class Cuenta {
 	}
 	public void setMovimientos(List<Movimiento> movimientos) {
 	
-		this.movimientos = new ArrayList<Movimiento>(movimientos);	// pointer.
+		this.movimientos = new ArrayList<Movimiento>(movimientos);	
 	}
 
 	@Override
@@ -131,11 +131,7 @@ public  class Cuenta {
 				"\n\nHa realizado los siguientes MOVIMIENTOS\n"+getMovimientos();
 	}
 
-	public void setMovimientos(List<Movimiento> movimientos,Movimiento m) {
-		this.movimientos=movimientos;
-	
-		
-	} 
+
 	protected void addMovimiento(Movimiento m) {
 		List<Movimiento>mov=getMovimientos();
 		mov.add(m);

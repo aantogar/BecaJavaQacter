@@ -2,7 +2,15 @@ package src.bancoAppPracticarJava;
 
 import java.time.LocalDate;
 
-public abstract class Movimiento {
+public  class Movimiento {
+	@Override
+	public String toString() {
+		return "Movimiento [mConcepto=" + mConcepto + ", mFecha=" + mFecha + ", mImporte=" + mImporte
+				+ ", getmConcepto()=" + getmConcepto() + ", getmFecha()=" + getmFecha() + ", getmImporte()="
+				+ getmImporte() + "]";
+	}
+
+
 	//declaramos sus atributos
 	private String mConcepto;
 	private LocalDate mFecha;

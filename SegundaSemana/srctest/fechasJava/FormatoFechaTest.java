@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import src.fechasJava.FormatoFecha;
+
 class FormatoFechaTest {
 	private  final String FECHA_UNO=("2020-12-07");
 	private  final String FECHA_DOS=("2020-12-07");
