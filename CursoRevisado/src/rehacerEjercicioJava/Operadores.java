@@ -1,4 +1,4 @@
-package rehacerEjercicio;
+package src.rehacerEjercicioJava;
 
 public class Operadores {
 	static int precio=5;

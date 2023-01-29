@@ -1,4 +1,4 @@
-package primerosEjerciciosjava;
+package src.primerosEjercicios;
 
 public  class Usuario extends Persona{
 	private String codigo;

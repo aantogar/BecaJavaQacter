@@ -1,4 +1,4 @@
-package VehiculoEjercicioInterfaces;
+package src.VehiculoEjercicioInterfaz;
 
 public interface interfazLeerGrabar {
 	

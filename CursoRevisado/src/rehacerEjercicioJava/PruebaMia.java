@@ -1,4 +1,4 @@
-package rehacerEjercicio;
+package src.rehacerEjercicioJava;
 
 import javax.swing.JOptionPane;
 

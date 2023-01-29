@@ -1,4 +1,4 @@
-package rehacerEjercicio;
+package src.rehacerEjercicioJava;
 
 public class ArraysPrimeraClase {
 	public static void main(String[]args) {

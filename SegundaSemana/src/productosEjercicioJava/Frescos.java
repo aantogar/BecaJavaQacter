@@ -1,4 +1,4 @@
-package productosEjercicio;
+package src.productosEjercicioJava;
 
 public class Frescos extends Productos{
 	private String pais;

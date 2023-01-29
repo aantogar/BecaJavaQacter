@@ -1,4 +1,4 @@
-package personaHerencia;
+package src.personaHerenciaJava;
 
 public abstract class Persona {
 	private String codPersona;

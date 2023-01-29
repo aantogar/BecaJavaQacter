@@ -1,4 +1,4 @@
-package ejerciciosRevisadosPrimerosdias;
+package src.ejerciciosRevisadosPrimerosdiasJava;
 
 public class NumerosPrimos {
 	static boolean primo;

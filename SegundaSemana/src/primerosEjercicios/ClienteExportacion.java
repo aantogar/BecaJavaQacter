@@ -1,4 +1,4 @@
-package primerosEjerciciosjava;
+package src.primerosEjercicios;
 
 public class ClienteExportacion extends Cliente{
 	private String vat;

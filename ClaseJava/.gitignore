@@ -1,2 +1,10 @@
-/bin/
-/.metadata/
+org.eclipse.*
+.classpath
+.metadata
+bin/
+tmp/
+/classpath
+/metadata
+/classpath
+.gitignore
+.settings

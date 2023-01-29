@@ -1,4 +1,4 @@
-package pruebaInterfaces;
+package src.pruebaInterfacesJava;
 
 public interface InterfazUno {
 	public int cuenta(int a, int b);

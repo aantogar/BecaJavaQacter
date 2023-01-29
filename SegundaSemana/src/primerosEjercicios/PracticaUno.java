@@ -1,4 +1,4 @@
-package primerosEjerciciosjava;
+package src.primerosEjercicios;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package primerosPasos;
+package src.primerosPasosJava;
 
 public class ArraysPrimeraClase {
 	public static void main(String[]args) {

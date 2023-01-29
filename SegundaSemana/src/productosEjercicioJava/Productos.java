@@ -1,4 +1,4 @@
-package productosEjercicio;
+package src.productosEjercicioJava;
 
 public abstract class  Productos {
 	private String fechaCaduc;

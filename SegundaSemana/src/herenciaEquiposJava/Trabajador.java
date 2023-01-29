@@ -1,4 +1,4 @@
-package herenciaEquipos;
+package src.herenciaEquiposJava;
 
 public abstract class Trabajador {
 	private int id;

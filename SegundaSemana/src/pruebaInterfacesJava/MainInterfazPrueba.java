@@ -1,4 +1,4 @@
-package pruebaInterfaces;
+package src.pruebaInterfacesJava;
 
 public class MainInterfazPrueba {
 	

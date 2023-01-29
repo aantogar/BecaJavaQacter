@@ -1,4 +1,4 @@
-package ejerciciosPrimerosDias;
+package src.ejerciciosPrimerosDiasJava;
 
 public class Ejercicio2MartesTarde {
 	static int nota=2;

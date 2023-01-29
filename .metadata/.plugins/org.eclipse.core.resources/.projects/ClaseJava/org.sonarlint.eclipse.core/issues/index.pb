@@ -1,10 +1,6 @@
 
-W
-'src/primerosPasos/DeNumerosaLetras.java,8\d\8d16f391691b7b8600790c0428ab08525c907cdb
 Y
 )src/primerosPasos/ArraysPrimeraClase.java,5\8\5853b9e218da1fcd52c02f3ecc9603314d3bf11f
-R
-"src/primerosPasos/AreaCirculo.java,f\5\f58e9abd2fe5e36517e3144ebf09145785b720b9
 M
 src/primerosPasos/Enlace.java,3\2\326923de41c918e55e482b2637f1324ed1fd71cd
 Q

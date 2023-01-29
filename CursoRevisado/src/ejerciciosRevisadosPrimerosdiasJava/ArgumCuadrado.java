@@ -1,4 +1,4 @@
-package ejerciciosRevisadosPrimerosdias;
+package src.ejerciciosRevisadosPrimerosdiasJava;
 
 public class ArgumCuadrado {
 	static int num;

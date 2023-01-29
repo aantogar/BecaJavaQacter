@@ -1,4 +1,4 @@
-package figurasEjercicio;
+package src.figurasEjercicioJava;
 
 import java.util.Scanner;
 

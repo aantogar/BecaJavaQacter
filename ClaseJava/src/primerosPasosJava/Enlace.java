@@ -1,4 +1,4 @@
-package primerosPasos;
+package src.primerosPasosJava;
 
 import java.time.LocalTime;
 

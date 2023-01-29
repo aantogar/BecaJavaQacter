@@ -14,3 +14,15 @@
 1674752281057	Copy compilation unit
 1674752288592	Delete element
 1674802589410	Copy compilation unit
+1674989695954	Rename package 'src.excepcionesEjerciciones'
+1674989719327	Rename package 'src.fechas'
+1674989731087	Rename package 'src.figurasEjercicio'
+1674989742766	Rename package 'src.herenciaEquipos'
+1674989753252	Rename package 'src.personaHerencia'
+1674989770163	Rename package 'src.primerosEjerciciosjava'
+1674989793644	Rename package 'src.primerosEjerciciosJava'
+1674989805881	Rename package 'src.productosEjercicio'
+1674989819724	Rename package 'src.pruebaInterfaces'
+1674989830878	Rename package 'src.StreamsPruebas'
+1674989841965	Rename package 'src.VehiculoEjercicioInterfaces'
+1674989854331	Rename package 'srctest.fechas'

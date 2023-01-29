@@ -1,4 +1,4 @@
-package primerosEjerciciosjava;
+package src.primerosEjercicios;
 
 public class ClienteNacional extends Cliente {
 	private String nif;

@@ -1,4 +1,4 @@
-package ejerciciosRevisadosPrimerosdias;
+package src.ejerciciosRevisadosPrimerosdiasJava;
 
 public class MesesDias {
 	static int dia=20;

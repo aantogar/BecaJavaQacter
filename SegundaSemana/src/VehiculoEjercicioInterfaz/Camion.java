@@ -1,4 +1,4 @@
-package VehiculoEjercicioInterfaces;
+package src.VehiculoEjercicioInterfaz;
 
 public class Camion extends Vehiculo{
 	private int pesoMax;

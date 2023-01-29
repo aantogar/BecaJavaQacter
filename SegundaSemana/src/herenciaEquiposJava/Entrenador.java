@@ -1,4 +1,4 @@
-package herenciaEquipos;
+package src.herenciaEquiposJava;
 
 public class Entrenador extends Trabajador{
 	private String idFederacion;

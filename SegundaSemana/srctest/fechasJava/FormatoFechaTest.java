@@ -1,4 +1,4 @@
-package fechas;
+package srctest.fechasJava;
 
 
 import static org.junit.jupiter.api.Assertions.*;

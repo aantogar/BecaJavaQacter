@@ -1,4 +1,4 @@
-package VehiculoEjercicioInterfaces;
+package src.VehiculoEjercicioInterfaz;
 
 public class Vehiculo implements interfazLeerGrabar {
 	private int numMarchas;

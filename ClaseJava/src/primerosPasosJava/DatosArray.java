@@ -1,4 +1,4 @@
-package primerosPasos;
+package src.primerosPasosJava;
 
 public class DatosArray {
 	int[]miArray= {31,28,30,31,30,30,31,30,31,31,30,31};

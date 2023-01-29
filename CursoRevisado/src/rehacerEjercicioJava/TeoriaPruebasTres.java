@@ -1,4 +1,4 @@
-package rehacerEjercicio;
+package src.rehacerEjercicioJava;
 
 public class TeoriaPruebasTres {
 	int[]miArray= {31,28,30,31,30,30,31,30,31,31,30,31};

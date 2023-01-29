@@ -1,4 +1,4 @@
-package ejerciciosPrimerosDias;
+package src.ejerciciosPrimerosDiasJava;
 
 public class NumerosPrimos {
 

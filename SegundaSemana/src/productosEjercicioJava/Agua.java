@@ -1,4 +1,4 @@
-package productosEjercicio;
+package src.productosEjercicioJava;
 
 import java.util.Scanner;
 

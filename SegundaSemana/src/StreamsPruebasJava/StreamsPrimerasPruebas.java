@@ -1,4 +1,4 @@
-package StreamsPruebas;
+package src.StreamsPruebasJava;
 
 import java.util.ArrayList;
 import java.util.Arrays;

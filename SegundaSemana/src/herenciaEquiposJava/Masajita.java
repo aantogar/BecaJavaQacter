@@ -1,4 +1,4 @@
-package herenciaEquipos;
+package src.herenciaEquiposJava;
 
 public class Masajita extends Trabajador{
 	private String titulacion;

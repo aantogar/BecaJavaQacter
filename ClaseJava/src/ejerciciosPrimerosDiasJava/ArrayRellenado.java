@@ -1,4 +1,4 @@
-package ejerciciosPrimerosDias;
+package src.ejerciciosPrimerosDiasJava;
 
 import java.util.Arrays;
 

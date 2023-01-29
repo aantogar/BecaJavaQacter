@@ -1,4 +1,4 @@
-package rehacerEjercicio;
+package src.rehacerEjercicioJava;
 
 public class Contadores {
 	//inicializamos variable con un valor

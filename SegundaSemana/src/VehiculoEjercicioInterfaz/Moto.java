@@ -1,4 +1,4 @@
-package VehiculoEjercicioInterfaces;
+package src.VehiculoEjercicioInterfaz;
 
 public class Moto extends Vehiculo {
 	private int deposito;

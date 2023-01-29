@@ -1,4 +1,4 @@
-package VehiculoEjercicioInterfaces;
+package src.VehiculoEjercicioInterfaz;
 
 public class Coche extends Vehiculo implements InterfaceUno{
 	private String color;

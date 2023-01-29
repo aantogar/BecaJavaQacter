@@ -1,4 +1,4 @@
-package personaHerencia;
+package src.personaHerenciaJava;
 
 public class TestPersonas {
 

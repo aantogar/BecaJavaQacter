@@ -1,4 +1,4 @@
-package ejerciciosRevisadosPrimerosdias;
+package src.ejerciciosRevisadosPrimerosdiasJava;
 
 import java.util.Scanner;
 

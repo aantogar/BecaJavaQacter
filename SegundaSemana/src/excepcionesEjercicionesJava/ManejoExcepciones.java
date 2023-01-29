@@ -1,4 +1,4 @@
-package excepcionesEjerciciones;
+package src.excepcionesEjercicionesJava;
 
 
 public class ManejoExcepciones {

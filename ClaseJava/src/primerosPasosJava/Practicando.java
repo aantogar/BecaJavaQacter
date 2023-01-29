@@ -1,4 +1,4 @@
-package primerosPasos;
+package src.primerosPasosJava;
 
 import javax.swing.JOptionPane;
 

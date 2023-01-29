@@ -1,4 +1,4 @@
-package figurasEjercicio;
+package src.figurasEjercicioJava;
 
 public class Figura {
 

@@ -1,4 +1,4 @@
-package herenciaEquipos;
+package src.herenciaEquiposJava;
 
 public class Futbolista extends Trabajador{
 	private int dorsal=0;

@@ -1,4 +1,4 @@
-package personaHerencia;
+package src.personaHerenciaJava;
 
 import java.util.ArrayList;
 import java.util.List;

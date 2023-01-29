@@ -1,4 +1,4 @@
-package productosEjercicio;
+package src.productosEjercicioJava;
 
 public class Aire extends Congelados{
 	private String gramosSal;

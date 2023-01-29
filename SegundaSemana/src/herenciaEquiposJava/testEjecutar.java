@@ -1,4 +1,4 @@
-package herenciaEquipos;
+package src.herenciaEquiposJava;
 
 import java.util.ArrayList;
 import java.util.Collection;
