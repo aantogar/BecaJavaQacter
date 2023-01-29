@@ -1,4 +1,4 @@
-package bancoAppPracticar;
+package src.bancoAppPracticarJava;
 
 import java.util.ArrayList;
 import java.util.List;

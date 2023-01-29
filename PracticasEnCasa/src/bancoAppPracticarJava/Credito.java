@@ -1,4 +1,4 @@
-package bancoAppPracticar;
+package src.bancoAppPracticarJava;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
