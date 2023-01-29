@@ -15,14 +15,13 @@ public class Tarjeta extends Cuenta{
 	
 
 	@Override
-	public void getSaldo() {
-		// TODO Auto-generated method stub
-		super.getSaldo();
+	public double getSaldo() {
+		return super.getSaldo();
 	}
 
 
 	@Override
-	public void ingresar(double x) {
+	public void ingresar(double x) throws Exception {
 		// TODO Auto-generated method stub
 		super.ingresar(x);
 	}
