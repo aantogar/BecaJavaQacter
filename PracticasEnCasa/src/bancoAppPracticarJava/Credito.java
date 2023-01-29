@@ -15,6 +15,34 @@ public class Credito extends Tarjeta{
 
 
 	@Override
+	public String toString() {
+		return "Credito [mCredito=" + mCredito + ", mMovimientos=" + mMovimientos + ", getmCredito()=" + getmCredito()
+				+ ", getmFechaCaducidad()=" + getmFechaCaducidad() + ", getmNumero()=" + getmNumero()
+				+ ", getmTitular()=" + getmTitular() + "]";
+	}
+
+
+	public double getmCredito() {
+		return mCredito;
+	}
+
+
+	public void setmCredito(double mCredito) {
+		this.mCredito = mCredito;
+	}
+
+
+	public List<Movimiento> getmMovimientos() {
+		return mMovimientos;
+	}
+
+
+	public void setmMovimientos(List<Movimiento> mMovimientos) {
+		this.mMovimientos = mMovimientos;
+	}
+
+
+	@Override
 	public void getSaldo() {
 		// TODO Auto-generated method stub
 		super.getSaldo();

@@ -45,6 +45,7 @@ public  class  Cuenta{
 		addMovimiento(mov);
 	}
 	public void retirar(double x) {
+		retirar("Retirada de efectivo",x);
 		
 	}
 	public void retirar(String concepto, double x) {

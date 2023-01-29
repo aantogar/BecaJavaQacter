@@ -1,6 +1,10 @@
 org.eclipse.*
 .classpath
 .metadata
-bin/
+/bin
 tmp/
-/classpath
+/.classpath
+/metadata
+/bin/*
+/.settings
+bin
