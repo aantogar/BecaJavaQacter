@@ -54,7 +54,7 @@ class ValidatorTest {
 	private final String ALFANUM_EXC="###444$$$jjj";
 	
 	
-	
+	//generamos los test
 	
 	@Test
 	

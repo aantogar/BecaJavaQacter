@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Usuario {
 	//declaramos los atributos de la clase Usuario
 	private static int id_usuario;
-	private String user_name;
+	private String user_nombre;
 	private String user_email;
 	private String user_pass;
 	private int id_tipo;
@@ -17,6 +17,7 @@ public class Usuario {
 	
 	//variables generadas para aplicar los filtros
 	private final LocalDate FECHA_ACTUAL=LocalDate.now();
+	private final int MAX_CARAC=200;
 	
 	//iniciamos un contador para autoincrementar el ID
 	private static int contador=0;
@@ -32,31 +33,41 @@ public class Usuario {
 			String envio)throws Exception{
 		//autoincrementamos el ID
 		setId_usuario();
-		this.user_name=name;
-		this.user_email=email;
 		this.id_tipo=tipo;
 		this.user_envio=envio;
 		this.user_pago=pago;
 		
-		//aplicamos el filtro para saber si se cumple el formato
+		//(USER_NAME)aplicamos el filtro para saber si cumple el max longitud
+		if(Validator.cumpleLongitudMax(name,MAX_CARAC)) {
+			this.user_nombre=name;
+		}else//si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
+		
+		//a(USER_EMAIL)plicamos el filtro para saber si cumple el formato de email
+		if(Validator.isEmailValido(email)) {
+			this.user_email=email;
+		}else//si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_001);
+		
+		//(USER_DNI)aplicamos el filtro para saber si se cumple el formato
 		if(Validator.cumpleDNI(dni)) {
 			this.user_dni=dni;
 		}else//si no se cumple lanzamos el mensaje de error
 			throw new Exception(ErrorMessages.PROERR_012);
 			
-		//aplicamos el formato de password valida
+		//(USER_PASS)aplicamos el formato de password valida
 		if(Validator.esPasswordValida(pass)){
 			this.user_pass=pass;
 		}else //si no se cumple lanzamos el mensaje de error
 			throw new Exception(ErrorMessages.PROERR_012);
 		
-		//aplicamos filtro para comprobar que la fecha es igual a la actual
+		//(USER_FECALTA)aplicamos filtro para comprobar que la fecha es igual a la actual
 		if(fech_alt.equals(FECHA_ACTUAL)) {
 			this.user_fecAlta=fech_alt;
 		}else//si no se cumple lanzamos el mensaje de error
 			throw new Exception(ErrorMessages.PROERR_009);
 		
-		//aplicamos filtro para comprobar que la fecha es igual a la actual
+		//(USER_FECCONFIRMACIONaplicamos filtro para comprobar que la fecha es igual a la actual
 		if(fech_conf.equals(FECHA_ACTUAL)) {
 			this.user_fecConfirmacion=fech_conf;
 		}else//si no se cumple lanzamos el mensaje de error
@@ -74,11 +85,11 @@ public class Usuario {
 	}
 
 	public String getUser_name() {
-		return user_name;
+		return user_nombre;
 	}
 
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setUser_nombre(String user_name) {
+		this.user_nombre = user_nombre;
 	}
 
 	public String getUser_email() {

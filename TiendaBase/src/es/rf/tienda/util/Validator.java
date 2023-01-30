@@ -235,7 +235,7 @@ public class Validator {
 	 * 
 	 * DESCRIPCIÓN: 
 	 * 		Comprobar que el texto pasado tiene una longitud de, como mucho, x caracteres, siendo
-	 * 		x el entero pasado como par�metro
+	 * 		x el entero pasado como parámetro
 	 * 
 	 * @param texto String con el texto a comprobar
 	 * @param longitudMaxima int con la longitud Máxima del texto

@@ -99,8 +99,12 @@ public class Credito extends Tarjeta{
 
 	@Override
 	public void pagoEnEstablecimiento(String datos, double x) {
-		// TODO Auto-generated method stub
-		super.pagoEnEstablecimiento(datos, x);
+		Movimiento mov=new Movimiento();
+		datos="Compra a crédito en: ";
+		mov.setmConcepto(datos);
+		mov.setmImporte(-x);
+		mMovimientos.add(mov);
+		mCredito-=x;
 	}
 
 }
