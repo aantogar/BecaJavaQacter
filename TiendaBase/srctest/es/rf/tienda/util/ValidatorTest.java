@@ -51,6 +51,7 @@ class ValidatorTest {
 	private final String NULL_STRING="";
 	private final String ID_PROD_BUENO="KK123";
 	private final String ID_PROD_FAL="KKKKK1222223";
+	private final String ALFANUM_EXC="###444$$$jjj";
 	
 	
 	
@@ -67,12 +68,11 @@ class ValidatorTest {
 	void testIsAlfanumeric() {
 		assertTrue(Validator.isAlfanumeric(ALFA_NUM));
 	}
-	
 	@Test
-	
 	void testIsAlfanumericDos() {
-		assertFalse(Validator.isAlfanumeric(ALFA_NUM_FAL));
+			assertFalse(Validator.isAlfanumeric(ALFANUM_EXC));
 	}
+	
 
 	@Test
 	void testCumplePhoneNumber() {
