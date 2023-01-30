@@ -132,8 +132,6 @@ public class Validator {
 	 * 
 	 * **************************************************************************************/
 	public static boolean cumpleDNI(String dni){
-		//utilizamos Matcher para buscar y comprobar el patron en la variable
-		//comprobamos longitud y buscamos asignamos al caracter de la letra el % de 23
 		int suma = 0;
 		//Creamos un nuevo String copia desde el original convirtiendolo en CharArray
 		String dniDos=String.copyValueOf(dni.toCharArray());
