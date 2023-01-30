@@ -1,5 +1,0 @@
-package figurasEjercicio;
-
-public class Punto extends Figura{
-
-}

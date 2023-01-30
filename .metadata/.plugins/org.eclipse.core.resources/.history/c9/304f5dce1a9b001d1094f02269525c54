@@ -1,8 +1,0 @@
-package VehiculoEjercicioInterfaces;
-
-public interface interfaz2 {
-	
-	 void leer(String dato);
-	 void grabar(String dato) ;
-
-}

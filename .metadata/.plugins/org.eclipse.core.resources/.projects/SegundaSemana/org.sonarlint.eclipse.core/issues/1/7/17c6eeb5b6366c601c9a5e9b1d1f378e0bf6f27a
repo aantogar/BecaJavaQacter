@@ -1,25 +1,0 @@
-
-k
-java:S1854"7Remove this useless assignment to local variable "d12".(‚ï•À8ó¡èß0HƒRMAJORZ
-CODE_SMELL
-a
-java:S1481"(Remove this unused "d20" local variable.(äÓê¶øÿÿÿÿ8ó¡èß0H•ƒRMINORZ
-CODE_SMELL
-p
-java:S1854"7Remove this useless assignment to local variable "d10".(„´Åêøÿÿÿÿ8ó¡èß0HƒRMAJORZ
-CODE_SMELL
-a
-java:S1481"(Remove this unused "d10" local variable.(„´Åêøÿÿÿÿ8ó¡èß0H‘ƒRMINORZ
-CODE_SMELL
-p
-java:S1854"7Remove this useless assignment to local variable "d20".(äÓê¶øÿÿÿÿ8ó¡èß0HƒRMAJORZ
-CODE_SMELL
-\
-java:S1481"(Remove this unused "d21" local variable.(ãöÊ¯8ó¡èß0H—ƒRMINORZ
-CODE_SMELL
-k
-java:S1854"7Remove this useless assignment to local variable "d21".(ãöÊ¯8ó¡èß0HƒRMAJORZ
-CODE_SMELL
-\
-java:S1481"(Remove this unused "d12" local variable.(‚ï•À8ó¡èß0H“ƒRMINORZ
-CODE_SMELL

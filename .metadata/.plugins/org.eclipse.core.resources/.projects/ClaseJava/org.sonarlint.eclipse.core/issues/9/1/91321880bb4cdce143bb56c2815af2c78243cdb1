@@ -1,13 +1,0 @@
-
-x
-java:S3973"HUse indentation to denote the code conditionally executed by this "for".(´¾ş¡HŠµRCRITICALZ
-CODE_SMELL
-®
-java:S2681"|This line will not be executed in a loop; only the first line of this 2-line block will be. The rest will execute only once.(ŞÒ—üÿÿÿÿHŒµRMAJORZ
-CODE_SMELL
-i
-java:S1854"7Remove this useless assignment to local variable "col".(Û¸•˜ùÿÿÿÿHµRMAJORZ
-CODE_SMELL
-e
-java:S1854"8Remove this useless assignment to local variable "fila".(‡òéÅHµRMAJORZ
-CODE_SMELL

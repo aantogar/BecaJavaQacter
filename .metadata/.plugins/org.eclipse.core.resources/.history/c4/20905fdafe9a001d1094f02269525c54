@@ -1,5 +1,0 @@
-package ejercicioTrabajadorDiagrama;
-
-public class Futbolista extends Trabajador{
-
-}
