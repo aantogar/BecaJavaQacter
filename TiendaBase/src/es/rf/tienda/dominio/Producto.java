@@ -27,6 +27,8 @@ public class Producto {
 	
 	//variables generadas para aplicar los filtros
 	private final LocalDate FECHA_ACTUAL=LocalDate.now();
+	private final int MAX_DESC_COR=100;
+	private final int MAX_DESC_LAR=2000;
 	
 	
 	//Generamos un constructor vacio
@@ -40,35 +42,48 @@ public class Producto {
 			int id_categ, int stock_res, int stock_alt, 
 			int stock_baj,char estado)throws Exception {
 		//asignamos los parámetros a sus atributos
-		this.id_producto=id_prod;
-		this.pro_descripcion=des_cor;
-		this.pro_desLarga=des_lar;
+		
+		
 		this.pro_precio=precio;
 		this.stock=stock;
 		this.pro_uniVenta=unidad;
 		this.pro_cantXUniVenta=cant_x;
 		this.pro_uniUltNivel=uni_ult;
 		this.id_pais=id_pais;
-		this.pro_usoRecomendado=uso_rec;
 		this.id_categoria=id_categ;
 		this.pro_stkReservado=stock_res;
 		this.pro_nStkAlto=stock_alt;
 		this.pro_nStkBajo=stock_baj;
 		this.pro_stat=estado;
 		
-		//aplicamos el filtro de fecha minima para fecha de reposicion
-		if(Validator.valDateMin(fech_repo,FECHA_ACTUAL)){
-			this.pro_fecRepos=fech_repo;
+		/**
+		 * Filtros aplicados para construir los atributos
+		 */
+		//(ID_PRODUCTO) aplicamos para saber si cumple el patrón
+		if(Validator.cumpleIdproduc(id_prod)){
+			this.id_producto=id_prod;
 		}else //si no se cumple lanzamos el mensaje de error
-			throw new Exception(ErrorMessages.PROERR_007);
+			throw new Exception(ErrorMessages.PROERR_001);
 		
-		//aplicamos el filtro de fecha minima para fecha activacion
+		//(PRO_DESCRIPCION)aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(des_cor,MAX_DESC_COR)){
+			this.pro_descripcion=des_cor;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
+			
+		//(PRO_DESLARGA)aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(des_lar,MAX_DESC_LAR)){
+			this.pro_desLarga=des_lar;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
+					
+		//(PRO_FECACTI)aplicamos el filtro de fecha minima para fecha activacion
 		if(Validator.valDateMin(fech_act,FECHA_ACTUAL)){
 			this.pro_fecActi=fech_act;
 		}else //si no se cumple lanzamos el mensaje de error
 					throw new Exception(ErrorMessages.PROERR_007);
 		
-		//comprobamos que no haya fecha de activación para que sea superior a la actual
+		//(PRO_FECDESACTI)comprobamos que no haya fecha de activación para que sea superior a la actual
 		if(fech_act==null && Validator.valDateMin(fech_des, FECHA_ACTUAL)) {
 			this.pro_fecDesacti=fech_des;
 			//si tiene fecha de activación, la fecha será superior a ésta.
@@ -77,6 +92,14 @@ public class Producto {
 			fech_des.isAfter(fech_act);
 		}else//lanzamos la excepción si no se cumple los pasos anteriores
 			throw new Exception(ErrorMessages.PROERR_007);	
+		
+		//(PRO_USORECOMENDADO)aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(uso_rec,MAX_DESC_LAR)){
+			this.pro_usoRecomendado=uso_rec;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
+		
+		
 	}
 	
 	//Generamos getters and setters
