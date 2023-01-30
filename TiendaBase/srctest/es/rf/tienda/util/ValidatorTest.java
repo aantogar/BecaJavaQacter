@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 class ValidatorTest {
 	Validator validator;
-	
+	//constantes para los test
 	private final String ALFA_NUM="Jjdshfjsdhf90";
 	private final String ALFA_NUM_FAL="";
 	private final String PHONE_NUM="987 67 8911";
@@ -49,6 +49,8 @@ class ValidatorTest {
 	private final String PASSWORD_TRUE="1@Holacomhola";
 	private final String PASSWORD_FALSE="jajajaja";
 	private final String NULL_STRING="";
+	private final String ID_PROD_BUENO="KK123";
+	private final String ID_PROD_FAL="KKKKK1222223";
 	
 	
 	
@@ -191,6 +193,14 @@ class ValidatorTest {
 	@Test
 	void testEsPasswordValidaDos() {
 		assertFalse(Validator.esPasswordValida(PASSWORD_FALSE));
+	}
+	@Test
+	void testCumpleIdProduc() {
+		assertTrue(Validator.cumpleIdproduc(ID_PROD_BUENO));
+	}
+	@Test
+	void testCumpleIdProducDos() {
+		assertFalse(Validator.cumpleIdproduc(ID_PROD_FAL));
 	}
 
 }

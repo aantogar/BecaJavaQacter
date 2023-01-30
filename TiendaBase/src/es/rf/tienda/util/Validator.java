@@ -52,7 +52,10 @@ public class Validator {
 	 * Longitud que debe tener todo DNI pasado a la aplicación.
 	 */
 	private final static int LONGITUD_DNI = 12;
-
+	/**
+	 * Permite verificar el patrón de Código de producto
+	 */
+	private final static String ID_PROD_PATTERN="[A-Z]{2}\\d{3}";
 	/* ***************************************************************************************
 	 * NOMBRE: isAlfanumeric                                                                 *
 	 * 
@@ -97,6 +100,28 @@ public class Validator {
         //utilizamos Matcher para buscar y comprobar el patron en la variable
         return !isVacio(phoneNumber) && phoneNumber.matches(PHONE_PATTERN);
 	}
+	/* ***************************************************************************************
+	 * NOMBRE: cumpleIdProduc                                                                 *
+	 * 
+	 * DESCRIPCIÓN: 
+	 * 		El código de producto ha de tener 5 carácteres, letras y números.
+	 * 		Dos letras mayúsculas al principio y 3 números al final
+	 * 
+	 * @param id_producto String con las carácteristicas anteriores. 
+	 * 		
+	 * 
+	 * @return true, si cumple todas las condiciones
+	 *
+	 * FECHA: Enero 2023
+	 * AUTOR: Andrea Anton
+	 * 
+	 * **************************************************************************************/
+	public static boolean cumpleIdproduc(String id_producto){
+        //utilizamos Matcher para buscar y comprobar el patron en la variable
+        return !isVacio(id_producto) && id_producto.matches(ID_PROD_PATTERN);
+	
+	}
+	
 
 	/* ***************************************************************************************
 	 * NOMBRE: isEmailValido                                                                 *
@@ -148,7 +173,7 @@ public class Validator {
         }
 		
 	    return !isVacio(dni) && dni.matches(DNI_PATTERN)  && dni.length()== LONGITUD_DNI
-	    		&& dni.charAt(11) == LETRA_DNI.charAt(suma);
+	    		&& dni.charAt(dni.length()-1) == LETRA_DNI.charAt(suma);
 	}
 	
 
