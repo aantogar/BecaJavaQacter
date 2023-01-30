@@ -1,0 +1,11 @@
+package src.bancoAppPracticarJava;
+
+public class testBanco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cuenta cuent=new Cuenta("123447","Andrea");
+
+	}
+
+}

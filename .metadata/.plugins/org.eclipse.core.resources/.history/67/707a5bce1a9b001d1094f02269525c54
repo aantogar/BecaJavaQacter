@@ -1,0 +1,10 @@
+package VehiculoEjercicioInterfaces;
+
+public class accesoBBDD {
+	
+	public void leer(interfaz2 uu) {
+		uu.leer(null);
+		System.out.println("Estamos leyendo");
+	}
+
+}

@@ -1,0 +1,15 @@
+package bancoAppPracticar;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Credito extends Tarjeta{
+	private double mCredito;
+	private List<Movimiento>mMovimientos=new ArrayList<Movimiento>();
+	
+	
+	public Credito(String numero,String titular, LocalDate fechacaduc) {
+		super(numero,titular,fechacaduc);
+	}
+}

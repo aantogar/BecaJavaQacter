@@ -1,0 +1,29 @@
+package excepcionesEjerciciones;
+
+
+public class ManejoExcepciones {
+	private int a;
+	private int b;
+	
+	
+	public void main (String[]args) {
+		
+		try {
+			System.out.println("El resultado es: ");
+			
+		
+		}catch{
+			
+		}
+		
+	}
+	public void Calcular(int num1,int num2) {
+		this.a=num1;
+		this.b=num2;
+		int result=num1/num2;
+		System.out.println(result);
+		
+				
+	}
+
+}

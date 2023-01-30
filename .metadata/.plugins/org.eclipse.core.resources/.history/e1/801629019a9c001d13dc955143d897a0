@@ -1,0 +1,12 @@
+package bancoUtils;
+
+public class Filtros {
+	
+	public boolean Filtername(String name,int min,int max)throws Exception {
+		if(name.length()< min || name.length()> max)
+			throw new Exception("El nombre ha superado los límites mínimos o máximos");
+		return true;
+		
+	}
+
+}

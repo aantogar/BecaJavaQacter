@@ -1,0 +1,5 @@
+package herenciaEquipos;
+
+public class Entrenador extends Trabajador{
+
+}

@@ -1,0 +1,21 @@
+package fechas;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class FormatoFechaTest {
+	private final String FECHA_UNO=("05-10-2020");
+	FormatoFecha=new FormatoFecha()
+
+	@Test
+	void testFechaCorrecta() {
+		;
+	}
+
+	@Test
+	void testFechaCorrectaDos() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,12 @@
+package ejerciciosBanco;
+
+import javax.xml.crypto.Data;
+
+public class Debito extends Tarjeta{
+	
+	public Debito(String numero,String titular,Data fecha) {
+		super(numero,titular,fecha);
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package primerosPasos;
+
+public class FraseDelReves {
+	public static void main(String[]args) {
+		System.out.println(args[0]);
+		String salida="";
+		for(String ele:args) {
+			salida= salida + ele + "";
+		}
+		System.out.println(salida);
+		System.out.println(args.length);
+		String cadenaInvertida="";
+		for (int x = salida.length() - 1; x >= 0; x--) {
+            cadenaInvertida = cadenaInvertida + salida.charAt(x);
+		}
+            
+            System.out.println(cadenaInvertida);
+		
+        
+	}
+
+}

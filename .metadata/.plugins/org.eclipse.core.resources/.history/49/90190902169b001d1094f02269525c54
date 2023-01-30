@@ -1,0 +1,9 @@
+package VehiculoEjercicioInterfaces;
+
+public interface Interface1 {
+	
+	public default boolean reductora(boolean activar) {
+		return false;
+	}
+
+}

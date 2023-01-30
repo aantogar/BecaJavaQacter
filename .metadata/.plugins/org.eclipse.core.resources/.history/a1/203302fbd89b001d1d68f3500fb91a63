@@ -1,0 +1,12 @@
+package ejerciciosBanco;
+
+public class Movimiento extends Tarjeta{
+	private String concepto;
+	private Data fecha;
+	private double miimporte;
+	
+	public Movimiento() {
+		
+	}
+
+}

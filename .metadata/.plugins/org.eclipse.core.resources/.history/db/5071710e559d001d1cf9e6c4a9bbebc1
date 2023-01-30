@@ -1,0 +1,32 @@
+package bancoUtils;
+
+import java.time.LocalDate;
+
+public class Filtros {
+	
+	public static boolean Filtername(String name,int min, int max) {
+		
+		return name.length() >min || name.length() < max;
+	}
+	
+	public static boolean FilterDate(LocalDate fecha, int min_anio,int max anio) {
+		fecha=LocalDate.now();
+		if(fecha.getYear()< fecha.getYear()-3 || fecha.getYear() >fecha.getYear()+5)
+			return false;
+		return true;
+	}
+	
+	public static boolean Filterconcept(String concepto, int min_con,int max_con) {
+		if(concepto.length()< min_con || concepto.length()> max_con)
+			return false;
+		return true;
+	}
+	public static boolean FilterIngresarCantidad(double x, double y)  {
+		return x > y;
+		
+	}
+	public static boolean FilterRetirarCantidad(double x, double y){
+		return x < y;
+	}
+
+}

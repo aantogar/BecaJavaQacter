@@ -1,0 +1,68 @@
+package productosEjercicio;
+
+import java.util.Scanner;
+
+public abstract class Congelados extends Productos{
+	protected String temprecomen;
+	protected String forma;
+
+
+	
+
+	public Congelados(String temp, String forma) {
+		super();
+		this.temprecomen=temp;
+		this.forma=forma;
+		
+	}
+
+
+
+
+	public String getTemprecomen() {
+		return temprecomen;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Estos productos han sido congelados  con el método: " + forma + ", su temperatura recomendada es: "
+				+getTemprecomen()+"y su forma de congelación ha sido: " 
+	+ comprobarTemp(forma) + ". Fecha de caducidad: " + getFechaCaduc() + " y su número de lote: "
+				+ getNumLote() + ".";
+	}
+
+
+
+	public void setTemprecomen(String temprecomen) {
+		this.temprecomen = temprecomen;
+	}
+
+
+
+	public String getForma() {
+		return comprobarTemp(forma);
+	}
+
+	public void setForma(String forma) {
+		this.forma = forma;
+	}
+
+	public String comprobarTemp(String temp,String forma) {
+
+		if(this.forma.equalsIgnoreCase("agua")) {
+			Agua ag=new Agua(temp,forma);
+			System.out.println(ag.toString());
+		}else if(this.forma.equalsIgnoreCase("aire")) {
+			Aire air=new Aire(temp,forma);
+		}else if(this.forma.equalsIgnoreCase("nitrogeno")) {
+			Nitrogeno n1=new Nitrogeno(temp,forma);
+			System.out.println(n1.toString());
+		}else{
+			System.out.println("La forma de congelación introducida no es correcta.");
+					
+		}return forma;
+		
+	}
+}

@@ -1,0 +1,27 @@
+package cuentas;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import bancoUtils.Filtros;
+
+class FiltrosTest {
+	final String TITULAR1=("Este titular tiene más de veinte letras");
+
+	@Test
+	void testFiltername() throws Exception {
+		System.out.println((Filtros.Filterconcept(TITULAR1, 2.0, 15, 40)));
+	}
+
+	@Test
+	void testFilterDate() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testFilterconcept() {
+		fail("Not yet implemented");
+	}
+
+}

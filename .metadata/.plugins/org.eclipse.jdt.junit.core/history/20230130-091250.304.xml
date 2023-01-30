@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ValidatorTest" project="Tienda" tests="15" started="15" failures="0" errors="0" ignored="0">
+  <testsuite name="es.rf.tienda.util.ValidatorTest" time="0.001" displayname="ValidatorTest" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]">
+    <testcase name="testIsAlfanumeric" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testIsAlfanumeric()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testIsAlfanumeric()]"/>
+    <testcase name="testCumpleLongitud" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleLongitud()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleLongitud()]"/>
+    <testcase name="testIsEmailValido" classname="es.rf.tienda.util.ValidatorTest" time="0.001" displayname="testIsEmailValido()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testIsEmailValido()]"/>
+    <testcase name="testCumplePhoneNumber" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumplePhoneNumber()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumplePhoneNumber()]"/>
+    <testcase name="testCumpleLongitudMax" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleLongitudMax()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleLongitudMax()]"/>
+    <testcase name="testCumpleLongitudMin" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleLongitudMin()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleLongitudMin()]"/>
+    <testcase name="testCumpleRangoDoubleIntInt" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleRangoDoubleIntInt()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleRangoDoubleIntInt()]"/>
+    <testcase name="testEsFechaValidaStringString" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testEsFechaValidaStringString()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testEsFechaValidaStringString()]"/>
+    <testcase name="testEsPasswordValida" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testEsPasswordValida()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testEsPasswordValida()]"/>
+    <testcase name="testEsFechaValidaString" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testEsFechaValidaString()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testEsFechaValidaString()]"/>
+    <testcase name="testCumpleRangoIntIntInt" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleRangoIntIntInt()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleRangoIntIntInt()]"/>
+    <testcase name="testValDateMax" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testValDateMax()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testValDateMax()]"/>
+    <testcase name="testValDateMin" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testValDateMin()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testValDateMin()]"/>
+    <testcase name="testCumpleDNI" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testCumpleDNI()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testCumpleDNI()]"/>
+    <testcase name="testIsVacio" classname="es.rf.tienda.util.ValidatorTest" time="0.0" displayname="testIsVacio()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testIsVacio()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,42 @@
+package ejerciciosBanco;
+
+import java.util.Calendar;
+
+import javax.xml.crypto.Data;
+
+public  class Movimiento extends Cuenta{
+	private String concepto;
+	private LocalDate fecha;
+	private double miimporte;
+	
+	public Movimiento() {
+		super();
+		fecha=(Data) Calendar.getInstance();
+		
+	}
+
+	public String getConcepto() {
+		return concepto;
+	}
+
+	public void setConcepto(String concepto) {
+		this.concepto = concepto;
+	}
+
+	public Data getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Data fecha) {
+		this.fecha = fecha;
+	}
+
+	public double getMiimporte() {
+		return miimporte;
+	}
+
+	public void setMiimporte(double miimporte) {
+		this.miimporte = miimporte;
+	}
+
+}

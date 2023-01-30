@@ -1,1 +1,14 @@
+org.eclipse.*
+.classpath
+/.metadata/
+.metadata
+/.settings
+.classpath
+*.class
 /bin/
+/bin
+/.metadata/
+.settings
+.project
+LICENSE
+README.md

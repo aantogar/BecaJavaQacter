@@ -1,0 +1,6 @@
+package src.primerosEjerciciosJava;
+
+public interface Cosas {
+	String aString();
+
+}

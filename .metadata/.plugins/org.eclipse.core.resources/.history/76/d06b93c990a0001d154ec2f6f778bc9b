@@ -1,0 +1,22 @@
+package TeoriayPracticas;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
+public class CreandoFicheros {
+
+	public static void main(String[] args) throws IOException {
+		/**
+		 * Utilizando path para origen y destino
+		 */
+		//ruta al fichero origen
+		Path pathsource=Paths.get("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\","Prueba.txt");
+		Path pathsource2=Paths.get("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\","probandoFile.txt");
+		Path target=Files.copy(pathsource, pathsource, StandardCopyOption.REPLACE_EXISTING);
+		System.out.println(target.getFileName());
+	}
+
+}

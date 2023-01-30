@@ -1,0 +1,36 @@
+package ejerciciosBanco;
+
+import javax.xml.crypto.Data;
+
+public class Debito extends Tarjeta{
+	
+	public Debito(String numero,String titular,Data fecha) {
+		super(numero,titular,fecha);
+		
+	}
+
+	@Override
+	public void pagoEstablecimiento(String datos, double x) {
+		// TODO Auto-generated method stub
+		super.pagoEstablecimiento(datos, x);
+	}
+
+	@Override
+	public double getSaldo(double saldo) {
+		// TODO Auto-generated method stub
+		return super.getSaldo(saldo);
+	}
+
+	@Override
+	public void ingresar(double x) {
+		// TODO Auto-generated method stub
+		super.ingresar(x);
+	}
+
+	@Override
+	public void retirar(double x) {
+		// TODO Auto-generated method stub
+		super.retirar(x);
+	}
+
+}

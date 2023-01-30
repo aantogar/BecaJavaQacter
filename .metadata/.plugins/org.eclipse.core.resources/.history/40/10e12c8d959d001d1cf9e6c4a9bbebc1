@@ -1,0 +1,17 @@
+import java.time.LocalDate;
+
+public class FormatoFecha {
+
+	public static void main(String[] args) {
+		fechaCorrecta("2022-10-02");
+		System.out.println(fechaCorrecta("20230226"));
+		
+
+	}
+	public static LocalDate fechaCorrecta(String fecha) {
+		LocalDate date=LocalDate.parse(fecha);
+		return date;
+		
+	}
+
+}

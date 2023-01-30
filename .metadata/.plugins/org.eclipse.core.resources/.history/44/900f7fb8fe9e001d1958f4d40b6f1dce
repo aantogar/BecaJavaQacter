@@ -1,0 +1,20 @@
+ package es.rf.tienda.dominio;
+
+import java.time.LocalDate;
+
+public class Producto {
+	private static String id_producto;
+	private String pro_descripcion;
+	private String pro_desLarga;
+	private double pro_precio;
+	private int stock;
+	private LocalDate pro_fecRepos;
+	private LocalDate pro_fecActi;
+	private LocalDate pro_fecDesacti;
+	private String pro_uniVenta;
+	private int pro_cantXUniVenta;
+	private String pro_uniUltNivel;
+	
+	
+
+}

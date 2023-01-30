@@ -1,0 +1,15 @@
+
+k
+java:S5993"9Change the visibility of this constructor to "protected".(ÌùñìøÿÿÿÿH£³RMAJORZ
+CODE_SMELL
+f
+java:S5993"9Change the visibility of this constructor to "protected".(ï°¬ëH¥³RMAJORZ
+CODE_SMELL
+p
+java:S4275"BRefactor this getter so that it actually refers to the field "id".(»ˆ»¶ùÿÿÿÿH§³RCRITICALZBUG
+f
+java:S2696"6Make the enclosing method "static" or remove this set.(áÚ£äH¨³RCRITICALZ
+CODE_SMELL
+X
+java:S1068"&Remove this unused "id" private field.(ôç¼ÓþÿÿÿÿH©³RMAJORZ
+CODE_SMELL

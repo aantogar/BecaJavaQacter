@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun testEsFechaValidaStringString()" project="Tienda" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="es.rf.tienda.util.ValidatorTest" time="0.043" displayname="ValidatorTest" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]">
+    <testcase name="testEsFechaValidaStringString" classname="es.rf.tienda.util.ValidatorTest" time="0.044" displayname="testEsFechaValidaStringString()" uniqueid="[engine:junit-jupiter]/[class:es.rf.tienda.util.ValidatorTest]/[method:testEsFechaValidaStringString()]"/>
+  </testsuite>
+</testrun>

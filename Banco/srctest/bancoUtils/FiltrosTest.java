@@ -18,11 +18,14 @@ class FiltrosTest {
 	final double CANTIDAD_UNO=0.00;
 	final double COMPROBAR_CERO=0;
 	final LocalDate fecha=LocalDate.of(2022, 10, 01);
+	final int fecha_min=2020;
+	final int fecha_max=2025;
 	final String FECHA_VEINTE="20.12.2020";
 	final String FORMATO_PUNTO="dd.MM.yyyy";
 	final String FECHA_VEINTEYTRES="2023/12/20";
 	final String FORMATO_BARRA="yyyy/MM/dd";
 	final String FECHA_CORRECTA="20-12-2023";
+	
 
 	@Test
 	void testFiltername()  {
@@ -32,7 +35,7 @@ class FiltrosTest {
 
 	@Test
 	void testFilterDate()  {
-		assertTrue(Filtros.FilterDate(fecha, fecha.getYear(), fecha.getMonthValue()));
+		assertTrue(Filtros.FilterDate(fecha,fecha_min,fecha_max));
 	}
 
 	@Test

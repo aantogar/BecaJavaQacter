@@ -1,0 +1,8 @@
+package VehiculoEjercicioInterfaces;
+
+public interface Utilities {
+	
+	 void leer(String dato);
+	 void grabar(String dato) ;
+
+}

@@ -1,0 +1,47 @@
+package excepcionesEjerciciones;
+
+
+public class ManejoExcepciones {
+
+	
+	
+	public static void main (String[]args)throws ArithmeticException {
+		//primera opción
+		int a=0;
+		int b=300;
+		int c;
+		try {
+			c=a/b;
+			System.out.println("El resultado es: "+c);
+			
+		
+		}finally{
+			System.out.println("Programa finalizado");
+			
+		}
+		
+		//segunda opción
+		
+		int d=0;
+		int e=300;
+		int f;
+		try {
+			f=d/e;
+			System.out.println("El resultado es: "+f);
+			
+		
+		}catch(ArithmeticException e){
+			System.out.println("Ha habido un error");
+			e.printStackTrace();
+			throw(new Exception());
+		}finally{
+			System.out.println("Programa finalizado");
+			
+		}
+		
+		
+		
+	}
+
+
+}

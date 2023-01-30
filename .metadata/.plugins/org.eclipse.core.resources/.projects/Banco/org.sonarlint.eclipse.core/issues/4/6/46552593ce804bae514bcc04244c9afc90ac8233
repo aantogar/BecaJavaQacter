@@ -1,0 +1,80 @@
+
+]
+java:S5960"+Remove this assertion from production code.(ÁøÑõüÿÿÿÿ8³ÜƒÇŞ0HãŒRMAJORZBUG
+Š	java:S116"XRename this field "FORMATO_PUNTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô×‘18Â³ê‘ß0HÔŒRMINORZ
+CODE_SMELL
+‹	java:S116"XRename this field "FORMATO_BARRA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éã–‡8â€’ß0H÷ŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(¥Š¡8â€’ß0HáŒRMINORZ
+CODE_SMELL
+Y
+java:S2201.",The return value of "parseInt" must be used.(¿™—›8†ğËŞ0HâŒRMAJORZBUG
+¥
+java:S11302"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ŸÒŸ”ûÿÿÿÿ8–ÂüÎŞ0HñŒRMINORZ
+CODE_SMELL
+Œ	java:S116"YRename this field "COMPROBAR_CERO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ùøÿ8í•ËŞ0HŞŒRMINORZ
+CODE_SMELL
+g
+java:S1128"3Remove this unused import 'ejerciciosBanco.Cuenta'.(ŸÔÙŠ8×–­’ß0HóŒRMINORZ
+CODE_SMELL
+Z
+java:S1170"!Make this final field static too.(‰ôÖ şÿÿÿÿ8‘Öç¾ß0H‡ªRMINORZ
+CODE_SMELL
+`
+java:S1602-",Remove useless curly braces around statement(œã§Ø8–ÂüÎŞ0HàŒRMINORZ
+CODE_SMELL
+g
+java:S1128"3Remove this unused import 'junit.framework.Assert'.(›¡ÇÕ8×–­’ß0HÖŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(‹ˆŠ€8ˆ÷¡ÇŞ0HüŒRMINORZ
+CODE_SMELL
+¥
+java:S1130,"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(…–Á‡ıÿÿÿÿ8öˆ¨ÉŞ0HõŒRMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "CONCEPTO_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ˆŠ€8ˆ÷¡ÇŞ0HÙŒRMINORZ
+CODE_SMELL
+`
+java:S16023",Remove useless curly braces around statement(œã§Ø8†ğËŞ0HùŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(Šá±Ó8ˆ÷¡ÇŞ0HßŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(ÓéØ×8³ÜƒÇŞ0HëŒRMINORZ
+CODE_SMELL
+~	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(ŸÒŸ”ûÿÿÿÿ8–ÂüÎŞ0HÕŒRMAJORZ
+CODE_SMELL
+a
+java:S1128"-Remove this unused import 'org.junit.Before'.(ÙşºÙ8×–­’ß0HîŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(Éã–‡8â€’ß0HøŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.(™ùøÿ8í•ËŞ0HúŒRMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "FECHA_VEINTE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ‡™¶8Â³ê‘ß0HÜŒRMINORZ
+CODE_SMELL
+‘	java:S116"YRename this field "FECHA_CORRECTA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ôÖ şÿÿÿÿ8‘Öç¾ß0H†ªRMINORZ
+CODE_SMELL
+n
+java:S1128":Remove this unused import 'org.junit.Assert.assertThrows'.(÷Ş¬ş8×–­’ß0HìŒRMINORZ
+CODE_SMELL
+Š	java:S116"WRename this field "CANTIDAD_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šá±Ó8ˆ÷¡ÇŞ0HØŒRMINORZ
+CODE_SMELL
+ˆ	java:S116"URename this field "NOMBRE_UNO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓéØ×8³ÜƒÇŞ0HÛŒRMINORZ
+CODE_SMELL
+U
+java:S1170"!Make this final field static too.( ‡™¶8Â³ê‘ß0HğŒRMINORZ
+CODE_SMELL
+Y
+java:S22014",The return value of "parseInt" must be used.(¿™—›8–ÂüÎŞ0HûŒRMAJORZBUG
+	java:S116"\Rename this field "FECHA_VEINTEYTRES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Š¡8â€’ß0HÓŒRMINORZ
+CODE_SMELL
+~	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(…–Á‡ıÿÿÿÿ8öˆ¨ÉŞ0HÚŒRMAJORZ
+CODE_SMELL
+T
+java:S1170"!Make this final field static too.(Ô×‘18Â³ê‘ß0HİŒRMINORZ
+CODE_SMELL

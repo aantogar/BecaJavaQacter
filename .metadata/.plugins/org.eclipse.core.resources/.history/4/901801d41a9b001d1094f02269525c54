@@ -1,0 +1,8 @@
+package VehiculoEjercicioInterfaces;
+
+public interface Interface1 {
+	
+	public void reductora(boolean activar);
+		
+
+}

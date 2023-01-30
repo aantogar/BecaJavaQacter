@@ -1,0 +1,81 @@
+package herenciaEquipos;
+
+public abstract class Trabajador {
+	private int id;
+	private static int contador=0;
+	private String apellidos;
+	private String nombre;
+	private int edad=0;
+	private int dorsal=0;
+	private String demarcacion;
+	
+	public Trabajador() {
+		
+	}
+	
+	public Trabajador(int id,String nombre,String apellidos,int edad) {
+		this.id=id;
+		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.edad=edad;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public static int getContador() {
+		return contador;
+	}
+
+	public static void setContador(int contador) {
+		Trabajador.contador = contador;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public int getDorsal() {
+		return dorsal;
+	}
+
+	public void setDorsal(int dorsal) {
+		this.dorsal = dorsal;
+	}
+
+	public String getDemarcacion() {
+		return demarcacion;
+	}
+
+	public void setDemarcacion(String demarcacion) {
+		this.demarcacion = demarcacion;
+	}
+	
+	
+
+}

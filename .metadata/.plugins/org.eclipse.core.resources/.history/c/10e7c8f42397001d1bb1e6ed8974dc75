@@ -1,0 +1,14 @@
+package primerosPasos;
+
+public class FraseDelReves {
+	public static void main(String[]args) {
+		System.out.println(args[0]);
+		String salida="";
+		for(String ele:args) {
+			salida= salida + ele + "";
+		}
+		System.out.println(salida);
+		args.toString();
+	}
+
+}

@@ -1,0 +1,13 @@
+package herenciaEquipos;
+
+public class Masajita extends Trabajador{
+	private String titulacion;
+	private int aniosExp;
+	
+	public Masajita(String nombre, String apellidos,int edad,String titulaciom , int anios) {
+		super(nombre, apellidos, edad);
+		this.titulacion=titulacion;
+		this.aniosExp=anios;
+	}
+
+}
