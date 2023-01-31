@@ -56,48 +56,14 @@ public class Producto {
 		this.pro_nStkBajo=stock_baj;
 		this.pro_stat=estado;
 		
-		/**
-		 * Filtros aplicados para construir los atributos
-		 */
-		//(ID_PRODUCTO) aplicamos para saber si cumple el patrón
-		if(Validator.cumpleIdproduc(id_prod)){
-			this.id_producto=id_prod;
-		}else //si no se cumple lanzamos el mensaje de error
-			throw new Exception(ErrorMessages.PROERR_001);
-		
-		//(PRO_DESCRIPCION)aplicamos para saber si cumple con la longitud máxima
-		if(Validator.cumpleLongitudMax(des_cor,MAX_DESC_COR)){
-			this.pro_descripcion=des_cor;
-		}else //si no se cumple lanzamos el mensaje de error
-			throw new Exception(ErrorMessages.PROERR_002);
-			
-		//(PRO_DESLARGA)aplicamos para saber si cumple con la longitud máxima
-		if(Validator.cumpleLongitudMax(des_lar,MAX_DESC_LAR)){
-			this.pro_desLarga=des_lar;
-		}else //si no se cumple lanzamos el mensaje de error
-			throw new Exception(ErrorMessages.PROERR_002);
-					
-		//(PRO_FECACTI)aplicamos el filtro de fecha minima para fecha activacion
-		if(Validator.valDateMin(fech_act,FECHA_ACTUAL)){
-			this.pro_fecActi=fech_act;
-		}else //si no se cumple lanzamos el mensaje de error
-					throw new Exception(ErrorMessages.PROERR_007);
-		
-		//(PRO_FECDESACTI)comprobamos que no haya fecha de activación para que sea superior a la actual
-		if(fech_act==null && Validator.valDateMin(fech_des, FECHA_ACTUAL)) {
-			this.pro_fecDesacti=fech_des;
-			//si tiene fecha de activación, la fecha será superior a ésta.
-		}else if(fech_act!=null) {
-			this.pro_fecDesacti=fech_des;
-			fech_des.isAfter(fech_act);
-		}else//lanzamos la excepción si no se cumple los pasos anteriores
-			throw new Exception(ErrorMessages.PROERR_007);	
-		
-		//(PRO_USORECOMENDADO)aplicamos para saber si cumple con la longitud máxima
-		if(Validator.cumpleLongitudMax(uso_rec,MAX_DESC_LAR)){
-			this.pro_usoRecomendado=uso_rec;
-		}else //si no se cumple lanzamos el mensaje de error
-			throw new Exception(ErrorMessages.PROERR_002);
+		//setters de los atributos que aplican filtros;
+		setId_producto(id_prod);
+		setPro_descripcion(des_cor);
+		setPro_desLarga(des_lar) ;
+		setPro_fecActi(fech_act);
+		setPro_fecRepos(fech_repo);
+		setPro_fecDesacti(fech_des);
+		setPro_usoRecomendado(uso_rec);
 		
 		
 	}
@@ -106,21 +72,33 @@ public class Producto {
 	public String getId_producto() {
 		return id_producto;
 	}
-	public void setId_producto(String id_producto) {
-		this.id_producto = id_producto;
+	public void setId_producto(String id_producto) throws Exception {
+		//aplicamos paa saber si cumple el patrón
+		if(Validator.cumpleIdproduc(id_producto)){
+			this.id_producto=id_producto;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_001);
 	
 	}
 	public String getPro_descripcion() {
 		return pro_descripcion;
 	}
-	public void setPro_descripcion(String pro_descripcion) {
-		this.pro_descripcion = pro_descripcion;
+	public void setPro_descripcion(String pro_descripcion) throws Exception {
+		//aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(pro_descripcion,MAX_DESC_COR)){
+			this.pro_descripcion=pro_descripcion;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
 	}
 	public String getPro_desLarga() {
 		return pro_desLarga;
 	}
-	public void setPro_desLarga(String pro_desLarga) {
-		this.pro_desLarga = pro_desLarga;
+	public void setPro_desLarga(String pro_desLarga) throws Exception {
+		//aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(pro_desLarga,MAX_DESC_LAR)){
+			this.pro_desLarga=pro_desLarga;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
 	}
 	public double getPro_precio() {
 		return pro_precio;
@@ -137,20 +115,36 @@ public class Producto {
 	public LocalDate getPro_fecRepos() {
 		return pro_fecRepos;
 	}
-	public void setPro_fecRepos(LocalDate pro_fecRepos) {
-		this.pro_fecRepos = pro_fecRepos;
+	public void setPro_fecRepos(LocalDate pro_fecRepos) throws Exception {
+		//aplicamos el filtro de fecha minima o mayor a la actual
+		if(Validator.valDateMin(pro_fecRepos,FECHA_ACTUAL)){
+			this.pro_fecActi=pro_fecRepos;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_007);
 	}
 	public LocalDate getPro_fecActi() {
 		return pro_fecActi;
 	}
-	public void setPro_fecActi(LocalDate pro_fecActi) {
-		this.pro_fecActi = pro_fecActi;
+	public void setPro_fecActi(LocalDate pro_fecActi) throws Exception {
+		//aplicamos el filtro de fecha minima para fecha activacion
+		if(Validator.valDateMin(pro_fecActi,FECHA_ACTUAL)){
+			this.pro_fecActi=pro_fecActi;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_007);
 	}
 	public LocalDate getPro_fecDesacti() {
 		return pro_fecDesacti;
 	}
-	public void setPro_fecDesacti(LocalDate pro_fecDesacti) {
-		this.pro_fecDesacti = pro_fecDesacti;
+	public void setPro_fecDesacti(LocalDate pro_fecDesacti) throws Exception {
+		//comprobamos que no haya fecha de activación para que sea superior a la actual
+		if(pro_fecActi==null && Validator.valDateMin(pro_fecDesacti, FECHA_ACTUAL)) {
+			this.pro_fecDesacti=pro_fecDesacti;
+		//si tiene fecha de activación, la fecha será superior a ésta.
+		}else if(pro_fecActi!=null) {
+			pro_fecDesacti.isAfter(pro_fecActi);
+			this.pro_fecDesacti=pro_fecDesacti;
+		}else//lanzamos la excepción si no se cumple los pasos anteriores
+			throw new Exception(ErrorMessages.PROERR_007);
 	}
 	public String getPro_uniVenta() {
 		return pro_uniVenta;
@@ -179,8 +173,12 @@ public class Producto {
 	public String getPro_usoRecomendado() {
 		return pro_usoRecomendado;
 	}
-	public void setPro_usoRecomendado(String pro_usoRecomendado) {
-		this.pro_usoRecomendado = pro_usoRecomendado;
+	public void setPro_usoRecomendado(String pro_usoRecomendado) throws Exception {
+		//aplicamos para saber si cumple con la longitud máxima
+		if(Validator.cumpleLongitudMax(pro_usoRecomendado,MAX_DESC_LAR)){
+			this.pro_usoRecomendado=pro_usoRecomendado;
+		}else //si no se cumple lanzamos el mensaje de error
+			throw new Exception(ErrorMessages.PROERR_002);
 	}
 	public int getId_categoria() {
 		return id_categoria;
