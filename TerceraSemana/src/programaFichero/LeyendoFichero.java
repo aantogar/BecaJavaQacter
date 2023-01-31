@@ -10,9 +10,12 @@ import java.util.Scanner;
 
 public class LeyendoFichero {
 	static String linea;
-	static String nombre="nombre";
-	static String apellidos="";
 	static String lectura="";
+	static String nombre="";
+	static String apellidos="";
+	static StringBuilder cadena=new StringBuilder();
+	static String nombreBuscar="nombre";
+	static String apellidosBuscar="apellidos";
 
 	public static void main(String[] args) throws IOException {
 		/**
@@ -20,22 +23,22 @@ public class LeyendoFichero {
 		 */
 			File fichero=new File("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\nombreape.txt");
 			FileReader fr = new FileReader(fichero);
-			String cadena="";
 			//reemplazamos los saltos de linea por ""
 			BufferedReader br = new BufferedReader(fr);
 			while ((lectura=br.readLine())!=null) { //mientras no se llegue al final del fichero
 		        //se lee una línea
-		     System.out.println(lectura);
 		     String dato[]=lectura.split("=");
-		     if(dato[0].equalsIgnoreCase("nombre")) {
+		     if(dato[0].equalsIgnoreCase(nombreBuscar)) {
 				 nombre=dato[1];
+				 cadena.append(nombre);
 			 }
-			 if(dato[0].equalsIgnoreCase("apellido")) {
+			 if(dato[0].equalsIgnoreCase(apellidosBuscar)) {
 				 apellidos=dato[1];
-			 }
-			 System.out.println(nombre+ " "+apellidos);
+				 cadena.append(" "+apellidos);
+			 	} 
+			}//Imprimimos por pantalla la cadena		
+			System.out.println(cadena);
 	}
-}
 }
 
 

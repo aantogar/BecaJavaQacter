@@ -7,15 +7,15 @@ import java.util.Scanner;
 
 public class JuegoContraMaquina {
 	static Scanner scan=new Scanner(System.in);
-	static Random rn=new Random();
-	static int mipartida = rn.nextInt(1000);
+	static int result=(int)(Math.random()*10)+1;
+	static int mipartida = (int)(Math.random()*10)+1;
 	static boolean fin=true;
 	static final String MAYOR="m";
 	static final String MENOR="n";
 	static final String FIN="f";
-	static int numrobot=rn.nextInt(1000);
+	static int numrobot;
 	static int min=0;
-	static int max=1000;
+	static int max=10;
 
 	public static void main (String[]args) {
 		System.out.println("Comienza el juego contra la máquina.");
@@ -25,13 +25,15 @@ public class JuegoContraMaquina {
 	}
 	
 	public static void Adivina() {
-		int result;
+		
+		//mientras sea distinto a fin se ejecuta
 		do {
-			System.out.print("Introduce cual es mi numero?");
+			System.out.print("Humano introduce cual es mi numero?");
 			result = scan.nextInt();
 			scan.nextLine();
 			if (result < mipartida) {
 				System.out.println("Error el número es mayor!!!");
+				//llamamos al metodo de la máquina
 				Robot();
 			}else if(result>mipartida) {
 				System.out.println("Error el número es menor!!!");
@@ -44,21 +46,25 @@ public class JuegoContraMaquina {
 	}
 
 	public static void Robot() {
+		numrobot=(int)(Math.random()*10)+1;
 		String respuesta;
 		int mitad=2;
+		//mientras !fin se ejecuta el metodo
 		do {
 		System.out.print("Soy el robot y digo que el número es: " + numrobot );
-		System.out.println("Responde (M)ayor,(M)enor y (F)in");
+		System.out.println("\nResponde (M)ayor,me(N)or y (F)in");
 		respuesta = scan.nextLine();
 		if(respuesta.equalsIgnoreCase(MAYOR)) {
 			min=(numrobot+1);
+			numrobot=(min + max);
 			System.out.println("El número es menor");
 			Adivina();
 		}else if (respuesta.equals(MENOR)){
 			max = (numrobot - 1);
+			numrobot=(max+min)/2;
 			System.out.println("El número es mayor");
+			Adivina();
 		}else {
-			numrobot=(min+max)/mitad;
 			fin = true;
 			System.out.println("La maquina ha adivinado el número.");
 			}
