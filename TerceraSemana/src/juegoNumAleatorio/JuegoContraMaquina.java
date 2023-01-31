@@ -63,7 +63,7 @@ public class JuegoContraMaquina {
 			respuesta = scan.nextLine();
 			if(respuesta.equalsIgnoreCase(MAYOR)) {
 				min=(numrobot+1);
-				numrobot=(min + max);
+				numrobot=(min + max)/2;
 				System.out.println("El número es menor");
 				Adivina();
 			}else if (respuesta.equals(MENOR)){
