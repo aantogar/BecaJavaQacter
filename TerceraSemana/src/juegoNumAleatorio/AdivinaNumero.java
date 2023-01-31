@@ -12,7 +12,7 @@ public class AdivinaNumero {
 	Random aleatorio = new Random();
 	Scanner entrada = new Scanner(System.in);
 	 
-	numero = aleatorio.nextInt();
+	numero = aleatorio.nextInt(1000)+1;;
 	 
 	System.out.printf("\nTengo un numero ");
 	System.out.println("Puede adivinarlo?");
