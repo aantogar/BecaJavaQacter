@@ -16,21 +16,17 @@ public class JuegoContraMaquina {
 			teclado.nextLine();
 			robot=(int)(Math.random()*1000)+1;
 			do {
-			if(mio<robot) {
-				System.out.println("el número es mayor");
-				System.out.println("Vuelve a intentarlo: ");
-				mio = teclado.nextInt(); 
-				teclado.nextLine();
-			}
-			else {
-				System.out.println("el número es menor");
-				System.out.println("Vuelve a intentarlo: ");
-				mio = teclado.nextInt(); 
-				teclado.nextLine();
-			}
+				if(mio<robot) {
+					System.out.println("Mi número es mayor");
+				}
+				
+				else {
+					System.out.println("Mi número es menor");
+
+				}
 			}
 			while(mio!=robot);
-			System.out.println("¡HAS GANADO AL ROBOT!: "+robot);
+			System.out.println("¡LOS NÚMEROS SON IGUALES!: "+robot);
 	    
 	        
 	 }
