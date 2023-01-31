@@ -1,4 +1,4 @@
-package teoriayPracticas;
+package creandoFicherosPracticas;
 
 import java.io.File;
 import java.io.FileWriter;

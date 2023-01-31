@@ -15,18 +15,17 @@ public class DatosPorTeclado {
 		Scanner entrada=new Scanner(System.in);
 		String nombre=entrada.nextLine();
 		System.out.println("\n¡Muy bien! Ahora introduce tus apellidos: ");
-		Scanner entrada2=new Scanner(System.in);
-		String apellidos=entrada2.nextLine();
+		String apellidos=entrada.nextLine();
 		//Creamos el nuevo fichero
 	
 		        FileWriter fichero = null;
 		        PrintWriter pw = null;
 		        try
 		        {
-		            fichero = new FileWriter("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\nombre.txt");
+		            fichero = new FileWriter("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\nombreape.txt");
 		            pw = new PrintWriter(fichero);
 		                pw.println("Nombre=" + nombre);
-		                pw.println("\nApellidos=" + apellidos);
+		                pw.println("Apellidos=" + apellidos);
 
 		        } catch (Exception e) {
 		            e.printStackTrace();

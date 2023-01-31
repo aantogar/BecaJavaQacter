@@ -1,16 +1,22 @@
 package teoriaThreadPracticas;
 
+import java.text.DecimalFormat;
+
 public class ClaseThreadSleep {
-	private static int i;
-	private static int x;
-	private static int y;
+	private static int s;
+	private static int m;
+	private static int h;
+	 private static DecimalFormat myformat=new DecimalFormat("00");
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("EJERCICIO TREAD SLEEP DEL RELOJ\n");
 		System.out.println("Bucles anidados:\n");
-		for(i=0;i<60;i++) {
-			for ( x=0;i<60;x++) {
-				for(y=0;y<60;y++) {
-					System.out.println(i+ ":"+x+":"+y+"\n");
+		
+		
+		for(h=0;h<24;h++) {
+			for ( m=0;m<60;m++) {
+				for(s=0;s<60;s++) {
+					System.out.println(myformat.format(h)+":"+
+				myformat.format(m)+":"+ myformat.format(s));
 					Thread.sleep(1000);
 				}
 			}
