@@ -25,8 +25,8 @@ public class DatosPorTeclado {
 		        {
 		            fichero = new FileWriter("C:\\Users\\andrea.anton.garcia\\OneDrive - Accenture\\Documents\\nombre.txt");
 		            pw = new PrintWriter(fichero);
-		                pw.println("Nombre: " + nombre);
-		                pw.println("\nApellidos: " + apellidos);
+		                pw.println("Nombre=" + nombre);
+		                pw.println("\nApellidos=" + apellidos);
 
 		        } catch (Exception e) {
 		            e.printStackTrace();
