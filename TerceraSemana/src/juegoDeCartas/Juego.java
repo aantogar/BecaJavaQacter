@@ -11,6 +11,9 @@ public class Juego {
 	
 
 	public static void main(String[] args) {
+		paq=new Paquete();
+		baraja=paq.getBaraja();
+		baraja.forEach(System.out::println);
 
 	}
 

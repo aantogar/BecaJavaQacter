@@ -6,6 +6,8 @@ public class Carta {
 	public int getNum() {
 		return num;
 	}
+	
+
 	public void setNum(int num) {
 		this.num = num;
 	}
@@ -14,6 +16,10 @@ public class Carta {
 	}
 	public void setPalo(String palo) {
 		this.palo = palo;
+	}
+	@Override
+	public String toString() {
+		return "[ CARTA: " + num + " PALO: " + palo + "]";
 	}
 
 }
