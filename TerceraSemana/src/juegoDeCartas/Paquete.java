@@ -1,5 +1,7 @@
 package juegoDeCartas;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -9,14 +11,26 @@ import java.util.stream.Collectors;
 
 public class Paquete {
 	//atributos de la clase paquete(baraja)
-	private static final int TOTALCARTAS=52;
+	private static  Carta [] totalcartas = new Carta[53];
 	private static final String[]PALOS= {"CORAZONES","DIAMANTES","PICAS","TRÉBOL"};
 	private static Set<Carta>baraja=new HashSet<Carta>();
+	private static int sigCarta;
+	private static final String POKER = "POKER";
+	private static int cartaActual = 0;
+	private static List<Jugador>jugadores=Jugador.getJugadores();
+	
 	
 	public Paquete(){
-
+		//llamamos al método para construir la baraja
+		construirBaraja();
+		
+	}
+	/**
+	 * Método para construit la baraja y llamarla desde el constructor
+	 */
+	public  void construirBaraja() {
 		for (String palos : PALOS) {
-			for (int i = 1; i < 13; i++) {
+			for (int i = 1; i < totalcartas.length; i++) {
 				Carta carta= new Carta();
 				carta.setNum(i);
 				carta.setPalo(palos);
@@ -26,35 +40,28 @@ public class Paquete {
 	}
 	
 	
-
-
-	public void mezclar(int cantidad){
-	  List<Carta> baraja1 = baraja.stream().collect(Collectors.toList());
-		Carta carta;
-	    int numVeces = cantidad * baraja1.size();
-	    Random rn = new Random();
-	    int indice = 0;
-	    for(int i = 0; i < numVeces; i++){
-	      indice = rn.nextInt(baraja1.size());
-	      carta = baraja1.remove(indice);
-	      indice = rn.nextInt(baraja1.size());
-	      baraja1.add(indice,carta);
-	      Set<Carta> baraja2 = new HashSet<>(baraja1);
-	      this.baraja=baraja2;
-	    }
+	public void mezclar(){
+		//borramos el contenido de la baraja
+		for(int i=0;i < this.baraja.size();i++) {
+		baraja.remove(i);
+		}
+		//llamamos al método construir baraja
+		construirBaraja();
 	  }
-	public Set<Carta> getBaraja() {
+	
+	public static Set<Carta> getBaraja() {
+		//utilizamos iterator para reorrer la baraja e imprimirla
 		Iterator itr = baraja.iterator();
         while (itr.hasNext()) {
             System.out.println(itr.next());
-        }return this.baraja;
+        }return baraja;
 	}
-	public static int getTotalcartas() {
-		return TOTALCARTAS;
-	}
-	@Override
-	public String toString() {
-		return "Paquete " + baraja.size() + ", getBaraja()=" + getBaraja() + "]";
+
+
+	public void mostrarBaraja() {
+		for(Carta carta : baraja) {
+			System.out.println(carta.toString());
+		}
 	}
 	public void setBaraja(Set<Carta> baraja) {
 		this.baraja = baraja;

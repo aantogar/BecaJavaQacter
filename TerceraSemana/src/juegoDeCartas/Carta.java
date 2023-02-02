@@ -19,7 +19,7 @@ public class Carta {
 	}
 	@Override
 	public String toString() {
-		return "[ CARTA: " + num + " PALO: " + palo + "]";
+		return "[ CARTA: " + getNum() + " PALO: " + getPalo() + "]";
 	}
 
 }
