@@ -17,7 +17,7 @@ public class Paquete {
 	private static int sigCarta;
 	private static final String POKER = "POKER";
 	private static int cartaActual = 0;
-	private static List<Jugador>jugadores=Jugador.getJugadores();
+
 	
 	
 	public Paquete(){
@@ -47,14 +47,13 @@ public class Paquete {
 		}
 		//llamamos al método construir baraja
 		construirBaraja();
+		
 	  }
 	
 	public static Set<Carta> getBaraja() {
 		//utilizamos iterator para reorrer la baraja e imprimirla
-		Iterator itr = baraja.iterator();
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
-        }return baraja;
+
+        return baraja;
 	}
 
 
@@ -69,5 +68,6 @@ public class Paquete {
 	public static String[] getPalos() {
 		return PALOS;
 	}
+	
 
 }

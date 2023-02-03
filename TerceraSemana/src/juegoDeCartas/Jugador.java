@@ -10,34 +10,35 @@ public class Jugador {
 	private static String nombre;
 	private static int edad;
 	private static Carta Carta;
-	private static List<Carta>mano=new ArrayList <Carta>();
-	private static List<Jugador>jugadores=new ArrayList <Jugador>();
-	private static Paquete baraja;
+	private static List<Jugador>players;
+	private static List<Carta>baraja;
 
 
-	public static void setMano(List<Carta> mano) {
-		Jugador.mano = mano;
-	}
-
-	public static List<Carta> getMano() {
-		return mano;
-	}
 	public Jugador(String nombre,int edad) {
 		this.nombre=nombre;
 		this.edad=edad;
-		this.jugadores=new ArrayList<Jugador>();
-	}
+		this.players=new ArrayList<Jugador>();
+		this.baraja=new ArrayList<Carta>();
 	
-	 public static List<Jugador> getJugadores() {
-		return jugadores;
 	}
 
-	public static void setJugadores(List<Jugador> jugadores) {
-		Jugador.jugadores = jugadores;
+
+	public static void setMano(List<Jugador> players) {
+		this.players = players;
 	}
+
+	public static List<Jugador> getPlayers() {
+		return players;
+	}
+
+	@Override
+	public String toString() {
+		return "Jugador [getNombre()=" + getNombre() + ", getEdad()=" + getEdad() + "]";
+	}
+
 
 	public void robar(Carta carta){
-		    this.mano.add(carta);
+		    this.baraja.add(carta);
 		  }
 
 	public String getNombre() {
@@ -54,10 +55,8 @@ public class Jugador {
 		this.edad = edad;
 	}
 
-	@Override
-	public String toString() {
-		return "Jugador [getNombre()=" + getNombre() + ", getEdad()=" + getEdad() + "]";
-	}
+
+
 
 	
 
