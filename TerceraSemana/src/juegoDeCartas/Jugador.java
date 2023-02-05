@@ -7,38 +7,37 @@ import java.util.List;
 import java.util.Set;
 
 public class Jugador {
+	@Override
+	public String toString() {
+		return "Jugador [getNombre()=" + nombre + ", edad" + edad + "]";
+	}
+
 	private static String nombre;
 	private static int edad;
 	private static Carta Carta;
-	private static List<Jugador>players;
-	private static List<Carta>baraja;
+	private static Set<Carta>mano;
 
-
-	public Jugador(String nombre,int edad) {
-		this.nombre=nombre;
-		this.edad=edad;
-		this.players=new ArrayList<Jugador>();
-		this.baraja=new ArrayList<Carta>();
 	
+	public Jugador() {
+		this.mano=new HashSet<>();
+		
+	}
+	
+	public Jugador(String nombre,int edad,Set<Carta>mano) {
+	super();
+	this.nombre=nombre;
+	this.edad=edad;
+
 	}
 
 
-	public static void setMano(List<Jugador> players) {
-		this.players = players;
-	}
-
-	public static List<Jugador> getPlayers() {
-		return players;
-	}
-
-	@Override
-	public String toString() {
-		return "Jugador [getNombre()=" + getNombre() + ", getEdad()=" + getEdad() + "]";
+	public static Set<Carta> getMano() {
+		return mano;
 	}
 
 
 	public void robar(Carta carta){
-		    this.baraja.add(carta);
+		    this.mano.add(carta);
 		  }
 
 	public String getNombre() {
