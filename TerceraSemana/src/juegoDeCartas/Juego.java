@@ -23,9 +23,9 @@ public class Juego {
 		paquete.construirBaraja();
 		baraja.forEach(System.out::println);
 		crearJugadores(jugadores);
-		//repartirCartas(baraja,jugadores);
+		repartirCartas(baraja,jugadores);
 		visualizarJugadores(jugadores);
-		//jugadores.forEach(System.out::println);
+	
 
 	}
 	public static  void crearJugadores(Set<Jugador>jugadores) {
@@ -48,24 +48,25 @@ public class Juego {
 		j4.setNombre("Mario");
 		j4.setEdad(32);
 		jugadores.add(j4);
-
+	
 		
 	}
 	
 	public static void repartirCartas(Set<Carta> baraja,Set<Jugador> jugadores) {
-		Iterator<Carta> iterator = baraja.iterator();
+		Iterator<Carta> carta = baraja.iterator();
 		for(int i = 0; i < NUM_CARTAS; i++) {
 			for(Iterator<Jugador> jugad = jugadores.iterator();
 					jugad.hasNext();) {
 				Jugador actual = jugad.next();
-				actual.robar(iterator.next());
-				iterator.remove();
+				actual.robar(carta.next());
+				carta.remove();
 			}
 		}
 	}
 	static void visualizarJugadores(Set<Jugador> jugadores) {
 	    for(Jugador juga: jugadores)
-	    	System.out.println(juga.toString());
+	    	System.out.println("El jugador ->"+juga.getNombre()+
+	    			" tiene de mano\n"+juga.getMano());
 	        }	
 
 	}	    
