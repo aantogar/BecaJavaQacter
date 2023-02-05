@@ -8,7 +8,6 @@ public class Main {
 	static Scanner entrada=new Scanner(System.in);
 	static int eleccion;
 	static JuegoNumeroAleat juego;
-	static int mirespuesta=0;
 	static JuegoContraMaquina juego1;
 	
 	public static void main(String[]args) {
@@ -23,9 +22,10 @@ public class Main {
 		case 2:
 			juego1.ejecutaJuego();
 			break;
-		case 4:
-			System.out.println("Tienes que ingresar una opción valida");
-		}
+		default:
+             System.out.println("Error !" + eleccion);
+             
+			}
 	
 	}
 	
