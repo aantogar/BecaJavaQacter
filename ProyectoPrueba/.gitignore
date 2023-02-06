@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# VSCode
+.vscode/
+.devcontainer/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# ItelliJ IDEA
+.idea
+*.iml
