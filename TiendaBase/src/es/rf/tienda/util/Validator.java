@@ -56,6 +56,12 @@ public class Validator {
 	 * Permite verificar el patrón de Código de producto
 	 */
 	private final static String ID_PROD_PATTERN="[A-Z]{2}\\d{3}";
+	/**
+	 * 
+	 * Permite verificar que double en precio producto
+	 * 
+	 */
+	private final static String PRECIO_PROD_PATTERN= "\\d{0,3}\\.\\d{1,2}";
 	/* ***************************************************************************************
 	 * NOMBRE: isAlfanumeric                                                                 *
 	 * 
@@ -99,6 +105,31 @@ public class Validator {
 	public static boolean cumplePhoneNumber(String phoneNumber){
         //utilizamos Matcher para buscar y comprobar el patron en la variable
         return !isVacio(phoneNumber) && phoneNumber.matches(PHONE_PATTERN);
+	}
+	/* ***************************************************************************************
+	 * NOMBRE: cumplePrecioProduc                                                              *
+	 * 
+	 * DESCRIPCIÓN: 
+	 * 		El precio del producto tiene que tener como mínimo 2 decimales.
+	 * 		
+	 * 
+	 * @param pro_precio String con las carácteristicas anteriores. 
+	 * 		
+	 * 
+	 * @return true, si cumple todas las condiciones
+	 *
+	 * FECHA: Enero 2023
+	 * AUTOR: Andrea Anton
+	 * 
+	 * **************************************************************************************/
+	
+	public static boolean cumplePrecioProduc(double pro_precio){
+        //utilizamos Matcher para buscar y comprobar el patron en la variable
+		String dob=String.format("%.2f", pro_precio);
+		if(pro_precio!=0 && dob.matches(PRECIO_PROD_PATTERN)) 
+			return true;
+		else
+			return false;
 	}
 	/* ***************************************************************************************
 	 * NOMBRE: cumpleIdProduc                                                                 *

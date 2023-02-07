@@ -110,21 +110,28 @@ public class Usuario {
 	public LocalDate getUser_fecAlta() {
 		return user_fecAlta;
 	}
-
+	/**
+	 * aplicamos filtro para comprobar que la fecha es igual a la actual
+	 * @param user_fecAlta
+	 * @throws Exception
+	 */
 	public void setUser_fecAlta(LocalDate user_fecAlta) throws Exception {
-		//aplicamos filtro para comprobar que la fecha es igual a la actual
 		if(user_fecAlta.equals(FECHA_ACTUAL)) {
 			this.user_fecAlta=user_fecAlta;
-		}else//si no se cumple lanzamos el mensaje de error
+		}else
 			throw new Exception(ErrorMessages.PROERR_009);
 	}
 
 	public LocalDate getUser_fecConfirmacion() {
 		return user_fecConfirmacion;
 	}
-
+	/**
+	 * 
+	 * aplicamos filtro para comprobar que la fecha es igual a la actual
+	 * 
+	 */
 	public void setUser_fecConfirmacion(LocalDate user_fecConfirmacion) throws Exception {
-		//(USER_FECCONFIRMACIONaplicamos filtro para comprobar que la fecha es igual a la actual
+		
 		if(user_fecConfirmacion.equals(FECHA_ACTUAL)) {
 			this.user_fecConfirmacion=user_fecConfirmacion;
 		}else//si no se cumple lanzamos el mensaje de error

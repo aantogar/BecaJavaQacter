@@ -52,6 +52,8 @@ class ValidatorTest {
 	private final String ID_PROD_BUENO="KK123";
 	private final String ID_PROD_FAL="KKKKK1222223";
 	private final String ALFANUM_EXC="###444$$$jjj";
+	private final double PRO_PRECIO_BUENO=20.30;
+	private final double PRO_PRECIO_FALSE=2030;
 	
 	
 	//generamos los test
@@ -65,6 +67,18 @@ class ValidatorTest {
 
 	@Test
 		
+	void cumplePrecioProduc() {
+		assertTrue(Validator.cumplePrecioProduc(PRO_PRECIO_BUENO));
+	}
+	
+	@Test
+	
+	void cumplePrecioProducDos() {
+		assertFalse(Validator.cumplePrecioProduc(PRO_PRECIO_FALSE));
+	}
+	
+	@Test
+	
 	void testIsAlfanumeric() {
 		assertTrue(Validator.isAlfanumeric(ALFA_NUM));
 	}
