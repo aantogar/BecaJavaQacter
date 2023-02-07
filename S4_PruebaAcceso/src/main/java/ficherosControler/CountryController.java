@@ -8,7 +8,7 @@ import ficherosDao.CountryDaoI;
 import rf.curso.maven.ProyectoPrueba.Country;
 
 public class CountryController {
-	CountryDaoI cDao;
+	CountryDao cDao;
 	
 	public CountryController()throws SQLException{
 		cDao=new CountryDao();
