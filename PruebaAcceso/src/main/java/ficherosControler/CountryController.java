@@ -4,10 +4,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 import ficherosDao.CountryDao;
+import ficherosDao.CountryDaoI;
 import rf.curso.maven.ProyectoPrueba.Country;
 
 public class CountryController {
-	CountryDao cDao;
+	CountryDaoI cDao;
 	
 	public CountryController()throws SQLException{
 		cDao=new CountryDao();

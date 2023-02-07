@@ -96,8 +96,13 @@ public class CountryDao implements CountryDaoI {
 	}
 
 	@Override
-	public int actualizar(Country country) {
-		return 0;
+	public int actualizar(Country country) throws SQLException {
+	String sql="Update countries set"+montaSQLU(country);
+	sql+=" where ";
+	sql=MontadorSQL.addSalida(sql,"country_id", country.getCountry_id(), " ");
+	System.out.println(sql);
+	Statement stm=con.createStatement();
+	return stm.executeUpdate(sql);
 	}
 
 	@Override
